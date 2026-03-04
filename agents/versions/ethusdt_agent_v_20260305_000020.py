@@ -37,7 +37,7 @@ AGENT_CONFIG = {
         'rsi_period': 14,
         'rsi_min': 40,
         'rsi_max': 75,
-        'volume_threshold': 0.6,
+        'volume_threshold': 1.0,
         'consecutive_bullish': 2,
         'require_confirmation': True,
         'max_range_location': 70,  # Don't chase
