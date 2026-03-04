@@ -1,0 +1,31 @@
+{
+  "mode": "in_position",
+  "score": 85,
+  "last_update": "2026-03-05T06:20:23.934996",
+  "history": [
+    {
+      "timestamp": "2026-03-05T06:20:23.934422",
+      "from_mode": "idle",
+      "to_mode": "watch",
+      "setup_score": 52
+    },
+    {
+      "timestamp": "2026-03-05T06:20:23.934618",
+      "from_mode": "watch",
+      "to_mode": "alert",
+      "setup_score": 72
+    },
+    {
+      "timestamp": "2026-03-05T06:20:23.934785",
+      "from_mode": "alert",
+      "to_mode": "active",
+      "setup_score": 85
+    },
+    {
+      "timestamp": "2026-03-05T06:20:23.934993",
+      "from_mode": "active",
+      "to_mode": "in_position",
+      "setup_score": 85
+    }
+  ]
+}
