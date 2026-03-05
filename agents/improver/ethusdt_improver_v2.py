@@ -17,7 +17,7 @@ import sys
 
 IMPROVER_CONFIG = {
     'symbol': 'ETHUSDT',
-    'max_iterations': 10,  # Max hypotheses to test
+    'max_iterations': 100,  # Max hypotheses to test
     'min_improvement': 0.05,  # 5% minimum improvement
     'confidence_threshold': 0.7,  # 70% confidence required
     
