@@ -23,12 +23,12 @@ IMPROVER_CONFIG = {
     
     # Directories
     'base_dir': '/root/.openclaw/workspace/ETHUSDT_TradeBot',
-    'data_dir': '/root/.openclaw/workspace/data/binance/ETHUSDT',
-    'trade_history': '/root/.openclaw/workspace/projects/crypto-analysis/backtest_data/ETHUSDT_trade_history.csv',
-    'analysis_dir': '/root/.openclaw/workspace/ETHUSDT_TradeBot/analysis',
+    'data_dir': '/root/.openclaw/workspace/ETHUSDT_TradeBot/data',
+    'trade_history': '/root/.openclaw/workspace/ETHUSDT_TradeBot/backtests/ETHUSDT_trade_history.csv',
+    'analysis_dir': '/root/.openclaw/workspace/ETHUSDT_TradeBot/agents/analysis',
     'backtest_dir': '/root/.openclaw/workspace/ETHUSDT_TradeBot/backtests',
-    'state_file': '/root/.openclaw/workspace/ETHUSDT_TradeBot/improver/state.json',
-    'log_file': '/root/.openclaw/workspace/ETHUSDT_TradeBot/improver/improver.log',
+    'state_file': '/root/.openclaw/workspace/ETHUSDT_TradeBot/agents/improver/state.json',
+    'log_file': '/root/.openclaw/workspace/ETHUSDT_TradeBot/agents/improver/improver.log',
     
     # Analysis Parameters
     'lookback_days': 30,
@@ -271,7 +271,7 @@ class ETHUSDTImprovementAgent:
         missed = []
         
         # Load from our previous analysis
-        missed_file = Path('/root/.openclaw/workspace/projects/crypto-analysis/backtest_data/MISSED_OPPORTUNITIES.json')
+        missed_file = Path('/root/.openclaw/workspace/ETHUSDT_TradeBot/backtests/MISSED_OPPORTUNITIES.json')
         if missed_file.exists():
             with open(missed_file, 'r') as f:
                 data = json.load(f)

@@ -1,14 +1,17 @@
 #!/bin/bash
-# ETHUSDT Auto-Implementer Cron Job
-# Runs after improver to test and implement suggestions
+# ETHUSDT Auto-Implementer
+# Deploys validated improvements automatically
+# Runs at 6:30 AM daily (after improver)
 
-# Run 30 minutes after improver (6:30 AM)
-# This gives time for improver to finish and user to review if needed
+cd /root/.openclaw/workspace/ETHUSDT_TradeBot/agents/auto_implementer
 
-cd /root/.openclaw/workspace/projects/crypto-analysis/agents/ethusdt/auto_implementer
+# Create logs directory
+mkdir -p logs
 
-# Run auto-implementer
-python3 auto_implementer.py
+echo "[$(date)] Starting ETHUSDT Auto-Implementer" >> logs/cron.log
 
-# Log completion
-echo "[$(date)] Auto-implementer cycle complete" >> /root/.openclaw/workspace/projects/crypto-analysis/agents/ethusdt/auto_implementer/auto_implementer.log
+# Check for validated suggestions and deploy
+python3 auto_implementer_v2.py >> logs/cron.log 2>&1
+
+echo "[$(date)] Auto-implementer cycle complete" >> logs/cron.log
+echo "---" >> logs/cron.log

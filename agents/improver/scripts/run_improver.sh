@@ -1,15 +1,26 @@
 #!/bin/bash
-# ETHUSDT Improvement Agent Cron Job
-# Runs daily to analyze performance and suggest optimizations
+# ETHUSDT Improver - Daily Analysis
+# Runs at 6:00 AM daily
 
-# Run the improvement agent
-python3 /root/.openclaw/workspace/projects/crypto-analysis/agents/ethusdt/improver/ethusdt_improver.py
+cd /root/.openclaw/workspace/ETHUSDT_TradeBot/agents/improver
 
-# Run backtest simulation with current parameters
-python3 /root/.openclaw/workspace/projects/crypto-analysis/agents/ethusdt/improver/backtest_runner.py
+# Create logs directory
+mkdir -p logs
 
-# Analyze missed opportunities from last 24 hours
-python3 /root/.openclaw/workspace/projects/crypto-analysis/agents/ethusdt/improver/missed_opportunity_tracker.py
+# Run improvement cycle
+echo "[$(date)] Starting ETHUSDT Improvement cycle" >> logs/cron.log
 
-# Log completion
-echo "[$(date)] ETHUSDT Improvement cycle complete" >> /root/.openclaw/workspace/projects/crypto-analysis/agents/ethusdt/improver/logs/cron.log
+# Analyze recent trades
+python3 ethusdt_improver.py >> logs/cron.log 2>&1
+
+# Run backtest on suggestions
+if [ -f "validated_suggestion.json" ]; then
+    echo "[$(date)] Testing validated suggestion..." >> logs/cron.log
+    python3 backtest_runner.py >> logs/cron.log 2>&1
+fi
+
+# Track missed opportunities
+python3 missed_opportunity_tracker.py >> logs/cron.log 2>&1
+
+echo "[$(date)] ETHUSDT Improvement cycle complete" >> logs/cron.log
+echo "---" >> logs/cron.log
