@@ -1,8 +1,8 @@
 {
   "timeframe": "1d",
   "candles": 510,
-  "indicators": 34,
-  "calculated_at": "2026-03-05T13:02:30.428819",
+  "indicators": 60,
+  "calculated_at": "2026-03-05T14:21:09.169165",
   "date_range": {
     "start": "2024-10-12T00:00:00",
     "end": "2026-03-05T00:00:00"

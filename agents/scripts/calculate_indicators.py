@@ -82,6 +82,80 @@ class IndicatorCalculator:
         df['volume_ratio'] = df['volume'] / df['volume_sma_20']
         df['volume_trend'] = df['volume'].rolling(window=5).mean() / df['volume'].rolling(window=20).mean()
         
+        # VWAP (Volume Weighted Average Price)
+        df['typical_price'] = (df['high'] + df['low'] + df['close']) / 3
+        df['tp_volume'] = df['typical_price'] * df['volume']
+        df['vwap'] = df['tp_volume'].rolling(window=20).sum() / df['volume'].rolling(window=20).sum()
+        df['vwap_distance'] = (df['close'] - df['vwap']) / df['vwap'] * 100
+        
+        # ========== ADX (Average Directional Index) ==========
+        # +DM and -DM
+        df['plus_dm'] = np.where(
+            (df['high'] - df['high'].shift(1)) > (df['low'].shift(1) - df['low']),
+            np.maximum(df['high'] - df['high'].shift(1), 0),
+            0
+        )
+        df['minus_dm'] = np.where(
+            (df['low'].shift(1) - df['low']) > (df['high'] - df['high'].shift(1)),
+            np.maximum(df['low'].shift(1) - df['low'], 0),
+            0
+        )
+        
+        # Smooth DM and TR
+        df['plus_di'] = 100 * (df['plus_dm'].rolling(window=14).mean() / df['atr'])
+        df['minus_di'] = 100 * (df['minus_dm'].rolling(window=14).mean() / df['atr'])
+        df['dx'] = 100 * abs(df['plus_di'] - df['minus_di']) / (df['plus_di'] + df['minus_di'])
+        df['adx'] = df['dx'].rolling(window=14).mean()
+        df['adx_trending'] = df['adx'] > 25  # ADX > 25 indicates strong trend
+        
+        # ========== FIBONACCI LEVELS ==========
+        # Based on recent swing high/low
+        recent_high = df['high'].rolling(window=20).max()
+        recent_low = df['low'].rolling(window=20).min()
+        fib_range = recent_high - recent_low
+        
+        df['fib_0'] = recent_high
+        df['fib_236'] = recent_high - (fib_range * 0.236)
+        df['fib_382'] = recent_high - (fib_range * 0.382)
+        df['fib_500'] = recent_high - (fib_range * 0.500)
+        df['fib_618'] = recent_high - (fib_range * 0.618)
+        df['fib_786'] = recent_high - (fib_range * 0.786)
+        df['fib_100'] = recent_low
+        
+        # Current position in Fibonacci range
+        df['fib_position'] = (recent_high - df['close']) / fib_range
+        
+        # ========== STRUCTURE SCORE (HH/HL/LH/LL) ==========
+        # Find swing points (2-bar pattern)
+        swing_highs = (df['high'] > df['high'].shift(1)) & (df['high'] > df['high'].shift(-1))
+        swing_lows = (df['low'] < df['low'].shift(1)) & (df['low'] < df['low'].shift(-1))
+        
+        # Count Higher Highs (HH), Lower Highs (LH)
+        df['hh'] = swing_highs & (df['high'] > df['high'].shift(2).where(swing_highs.shift(1).cumsum() > 0, df['high']))
+        df['lh'] = swing_highs & (df['high'] < df['high'].shift(2).where(swing_highs.shift(1).cumsum() > 0, df['high']))
+        
+        # Count Higher Lows (HL), Lower Lows (LL)
+        df['hl'] = swing_lows & (df['low'] > df['low'].shift(2).where(swing_lows.shift(1).cumsum() > 0, df['low']))
+        df['ll'] = swing_lows & (df['low'] < df['low'].shift(2).where(swing_lows.shift(1).cumsum() > 0, df['low']))
+        
+        # Structure score (bullish = positive, bearish = negative)
+        hh_count = df['hh'].rolling(window=10).sum()
+        hl_count = df['hl'].rolling(window=10).sum()
+        lh_count = df['lh'].rolling(window=10).sum()
+        ll_count = df['ll'].rolling(window=10).sum()
+        
+        bullish_signals = hh_count + hl_count
+        bearish_signals = lh_count + ll_count
+        total_signals = bullish_signals + bearish_signals
+        
+        df['structure_score'] = np.where(
+            total_signals > 0,
+            (bullish_signals - bearish_signals) / total_signals,
+            0
+        )
+        df['structure_bullish'] = df['structure_score'] > 0.3
+        df['structure_bearish'] = df['structure_score'] < -0.3
+        
         # ========== PRICE ACTION ==========
         # Candle characteristics
         df['body_size'] = abs(df['close'] - df['open'])
