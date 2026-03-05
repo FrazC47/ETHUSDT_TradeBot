@@ -1,17 +1,20 @@
 #!/bin/bash
 # ETHUSDT Dedicated Agent Cron Job
-# Runs every 15 minutes during active trading hours
+# Runs every 15 minutes
 
 # Set environment
-export PYTHONPATH=/root/.openclaw/workspace/projects/crypto-analysis:$PYTHONPATH
-export ETHUSDT_AGENT_CONFIG=/root/.openclaw/workspace/projects/crypto-analysis/agents/ethusdt/config/agent.conf
+export PYTHONPATH=/root/.openclaw/workspace/ETHUSDT_TradeBot:$PYTHONPATH
+export ETHUSDT_AGENT_CONFIG=/root/.openclaw/workspace/ETHUSDT_TradeBot/agents/config/agent.conf
 
 # Log file with timestamp
-LOG_FILE="/root/.openclaw/workspace/projects/crypto-analysis/agents/ethusdt/logs/cron_$(date +\%Y\%m\%d).log"
+LOG_FILE="/root/.openclaw/workspace/ETHUSDT_TradeBot/agents/logs/cron_$(date +\%Y\%m\%d).log"
+
+# Create log directory if needed
+mkdir -p "$(dirname "$LOG_FILE")"
 
 # Run the agent
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting ETHUSDT Agent" >> "$LOG_FILE"
-python3 /root/.openclaw/workspace/projects/crypto-analysis/agents/ethusdt/ethusdt_agent.py >> "$LOG_FILE" 2>&1
+python3 /root/.openclaw/workspace/ETHUSDT_TradeBot/agents/ethusdt_agent.py >> "$LOG_FILE" 2>&1
 
 # Check exit code
 if [ $? -eq 0 ]; then
