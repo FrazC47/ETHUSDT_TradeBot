@@ -80,3 +80,246 @@ VERIFYING DATA COVERAGE
 ======================================================================
 Complete! Processed 7/7 timeframes
 ======================================================================
+======================================================================
+INCREMENTAL INDICATOR CALCULATOR
+======================================================================
+
+Data directory: /root/.openclaw/workspace/ETHUSDT_TradeBot/data/raw
+Output directory: /root/.openclaw/workspace/ETHUSDT_TradeBot/data/indicators
+
+Processing 7 timeframes...
+
+
+======================================================================
+Processing 1M
+======================================================================
+📊 Loading raw data...
+   Loaded 104 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 1w
+======================================================================
+📊 Loading raw data...
+   Loaded 447 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 1d
+======================================================================
+📊 Loading raw data...
+   Loaded 510 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 4h
+======================================================================
+📊 Loading raw data...
+   Loaded 561 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 1h
+======================================================================
+📊 Loading raw data...
+   Loaded 741 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 15m
+======================================================================
+📊 Loading raw data...
+   Loaded 1437 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 5m
+======================================================================
+📊 Loading raw data...
+   Loaded 2946 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+VERIFYING DATA COVERAGE
+======================================================================
+✅ 1M: 104 candles - FULLY COVERED
+✅ 1w: 447 candles - FULLY COVERED
+✅ 1d: 510 candles - FULLY COVERED
+✅ 4h: 561 candles - FULLY COVERED
+✅ 1h: 741 candles - FULLY COVERED
+✅ 15m: 1437 candles - FULLY COVERED
+✅ 5m: 2946 candles - FULLY COVERED
+======================================================================
+
+======================================================================
+Complete! Processed 7/7 timeframes
+======================================================================
+======================================================================
+INCREMENTAL INDICATOR CALCULATOR
+======================================================================
+
+Data directory: /root/.openclaw/workspace/ETHUSDT_TradeBot/data/raw
+Output directory: /root/.openclaw/workspace/ETHUSDT_TradeBot/data/indicators
+
+Processing 7 timeframes...
+
+
+======================================================================
+Processing 1M
+======================================================================
+📊 Loading raw data...
+   Loaded 104 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 1w
+======================================================================
+📊 Loading raw data...
+   Loaded 447 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 1d
+======================================================================
+📊 Loading raw data...
+   Loaded 510 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 4h
+======================================================================
+📊 Loading raw data...
+   Loaded 561 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 1h
+======================================================================
+📊 Loading raw data...
+   Loaded 741 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 15m
+======================================================================
+📊 Loading raw data...
+   Loaded 1437 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 5m
+======================================================================
+📊 Loading raw data...
+   Loaded 2946 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+VERIFYING DATA COVERAGE
+======================================================================
+✅ 1M: 104 candles - FULLY COVERED
+✅ 1w: 447 candles - FULLY COVERED
+✅ 1d: 510 candles - FULLY COVERED
+✅ 4h: 561 candles - FULLY COVERED
+✅ 1h: 741 candles - FULLY COVERED
+✅ 15m: 1437 candles - FULLY COVERED
+✅ 5m: 2946 candles - FULLY COVERED
+======================================================================
+
+======================================================================
+Complete! Processed 7/7 timeframes
+======================================================================
+======================================================================
+INCREMENTAL INDICATOR CALCULATOR
+======================================================================
+
+Data directory: /root/.openclaw/workspace/ETHUSDT_TradeBot/data/raw
+Output directory: /root/.openclaw/workspace/ETHUSDT_TradeBot/data/indicators
+
+Processing 7 timeframes...
+
+
+======================================================================
+Processing 1M
+======================================================================
+📊 Loading raw data...
+   Loaded 104 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 1w
+======================================================================
+📊 Loading raw data...
+   Loaded 447 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 1d
+======================================================================
+📊 Loading raw data...
+   Loaded 510 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 4h
+======================================================================
+📊 Loading raw data...
+   Loaded 561 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 1h
+======================================================================
+📊 Loading raw data...
+   Loaded 741 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 15m
+======================================================================
+📊 Loading raw data...
+   Loaded 1437 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+Processing 5m
+======================================================================
+📊 Loading raw data...
+   Loaded 2946 candles
+📂 Loading existing indicators...
+✅ All data already processed
+
+======================================================================
+VERIFYING DATA COVERAGE
+======================================================================
+✅ 1M: 104 candles - FULLY COVERED
+✅ 1w: 447 candles - FULLY COVERED
+✅ 1d: 510 candles - FULLY COVERED
+✅ 4h: 561 candles - FULLY COVERED
+✅ 1h: 741 candles - FULLY COVERED
+✅ 15m: 1437 candles - FULLY COVERED
+✅ 5m: 2946 candles - FULLY COVERED
+======================================================================
+
+======================================================================
+Complete! Processed 7/7 timeframes
+======================================================================

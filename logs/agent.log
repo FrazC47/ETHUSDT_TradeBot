@@ -287,3 +287,190 @@
 2026-03-05 15:15:01,655 - ETHUSDT_AGENT - INFO - ============================================================
 2026-03-05 15:15:01,655 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
 2026-03-05 15:15:01,655 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 15:30:02,118 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 15:30:02,119 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 15:30:02,119 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 15:30:02,120 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 15:30:02,261 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 15:30:02,261 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 15:30:02,261 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 15:30:02,261 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 15:30:02,261 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 15:30:02,261 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 15:30:02,261 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 15:30:02,261 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 15:30:02,261 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 15:30:02,263 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 15:30:02,263 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 15:30:02,263 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 15:30:02,263 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 15:45:01,561 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 15:45:01,561 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 15:45:01,561 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 15:45:01,562 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 15:45:01,704 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 15:45:01,704 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 15:45:01,704 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 15:45:01,704 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 15:45:01,704 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 15:45:01,704 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 15:45:01,704 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 15:45:01,704 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 15:45:01,704 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 15:45:01,707 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 15:45:01,707 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 15:45:01,707 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 15:45:01,707 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:00:02,043 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:00:02,043 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 16:00:02,043 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:00:02,043 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 16:00:02,239 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 16:00:02,239 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 16:00:02,239 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 16:00:02,239 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 16:00:02,239 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 16:00:02,239 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 16:00:02,239 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 16:00:02,239 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 16:00:02,239 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 16:00:02,241 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 16:00:02,241 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:00:02,241 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 16:00:02,241 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:15:01,639 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:15:01,639 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 16:15:01,639 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:15:01,640 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 16:15:01,789 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 16:15:01,789 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 16:15:01,789 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 16:15:01,789 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 16:15:01,789 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 16:15:01,789 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 16:15:01,789 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 16:15:01,789 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 16:15:01,789 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 16:15:01,792 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 16:15:01,792 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:15:01,792 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 16:15:01,792 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:30:01,202 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:30:01,202 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 16:30:01,202 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:30:01,202 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 16:30:01,353 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 16:30:01,353 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 16:30:01,353 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 16:30:01,353 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 16:30:01,353 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 16:30:01,353 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 16:30:01,353 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 16:30:01,353 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 16:30:01,353 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 16:30:01,355 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 16:30:01,355 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:30:01,356 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 16:30:01,356 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:45:01,544 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:45:01,544 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 16:45:01,544 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:45:01,544 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 16:45:01,706 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 16:45:01,706 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 16:45:01,706 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 16:45:01,706 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 16:45:01,706 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 16:45:01,706 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 16:45:01,706 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 16:45:01,706 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 16:45:01,706 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 16:45:01,709 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 16:45:01,709 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 16:45:01,709 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 16:45:01,709 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:00:02,064 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:00:02,064 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 17:00:02,064 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:00:02,064 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 17:00:02,226 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 17:00:02,226 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 17:00:02,226 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 17:00:02,226 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 17:00:02,226 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 17:00:02,226 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 17:00:02,226 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 17:00:02,226 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 17:00:02,226 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 17:00:02,229 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 17:00:02,229 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:00:02,229 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 17:00:02,229 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:15:01,365 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:15:01,365 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 17:15:01,365 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:15:01,365 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 17:15:01,538 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 17:15:01,538 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 17:15:01,538 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 17:15:01,538 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 17:15:01,538 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 17:15:01,538 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 17:15:01,538 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 17:15:01,538 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 17:15:01,538 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 17:15:01,541 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 17:15:01,541 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:15:01,541 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 17:15:01,541 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:30:01,827 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:30:01,827 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 17:30:01,827 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:30:01,827 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 17:30:02,006 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 17:30:02,006 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 17:30:02,006 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 17:30:02,006 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 17:30:02,006 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 17:30:02,006 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 17:30:02,006 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 17:30:02,006 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 17:30:02,006 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 17:30:02,009 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 17:30:02,010 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:30:02,010 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 17:30:02,010 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:45:01,169 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:45:01,169 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 17:45:01,169 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:45:01,169 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 17:45:01,347 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 17:45:01,347 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 17:45:01,347 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 17:45:01,347 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 17:45:01,347 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 17:45:01,347 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 17:45:01,347 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 17:45:01,347 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 17:45:01,347 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 17:45:01,350 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 17:45:01,350 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 17:45:01,351 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 17:45:01,351 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 18:00:01,735 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 18:00:01,735 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT STARTING
+2026-03-05 18:00:01,735 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 18:00:01,736 - ETHUSDT_AGENT - INFO - Analyzing ETHUSDT using full MTF framework...
+2026-03-05 18:00:02,086 - ETHUSDT_AGENT - INFO - ETH MTF Analysis @ $2064.36
+2026-03-05 18:00:02,086 - ETHUSDT_AGENT - INFO -   Timeframes: 1M,1w,1d,4h,1h,15m,5m (all loaded)
+2026-03-05 18:00:02,086 - ETHUSDT_AGENT - INFO -   Primary (1h) EMA9: $2010.30, EMA21: $1991.83
+2026-03-05 18:00:02,086 - ETHUSDT_AGENT - INFO -   Primary (1h) RSI: 73.1, ATR%: 1.19%
+2026-03-05 18:00:02,086 - ETHUSDT_AGENT - INFO -   Volume (1h): 0.02x, Range: 98.3%
+2026-03-05 18:00:02,086 - ETHUSDT_AGENT - INFO -   HTF Trend Aligned: True
+2026-03-05 18:00:02,086 - ETHUSDT_AGENT - INFO -   Bullish candles (1h): 5, Breakout: False
+2026-03-05 18:00:02,087 - ETHUSDT_AGENT - INFO -   Filters passed: 5/8
+2026-03-05 18:00:02,087 - ETHUSDT_AGENT - INFO - ❌ Filters failed: volume_ok, breakout, range_ok
+2026-03-05 18:00:02,097 - ETHUSDT_AGENT - INFO - No valid setup found this cycle
+2026-03-05 18:00:02,097 - ETHUSDT_AGENT - INFO - ============================================================
+2026-03-05 18:00:02,097 - ETHUSDT_AGENT - INFO - ETHUSDT AGENT COMPLETE
+2026-03-05 18:00:02,097 - ETHUSDT_AGENT - INFO - ============================================================
