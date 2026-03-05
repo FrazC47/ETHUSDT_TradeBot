@@ -19,10 +19,10 @@ echo "" >> "$LOG_FILE"
 echo "[$(date '+%H:%M:%S')] Step 1: Quick performance check..." >> "$LOG_FILE"
 python3 agents/backtest_reviews/quick_performance_check.py >> "$LOG_FILE" 2>&1
 
-# Step 2: Comprehensive backtest on ALL historical data
+# Step 2: FULL SYSTEM BACKTEST (all 7 timeframes like live trading)
 echo "" >> "$LOG_FILE"
-echo "[$(date '+%H:%M:%S')] Step 2: COMPREHENSIVE BACKTEST (all historical data)..." >> "$LOG_FILE"
-python3 agents/backtest_reviews/comprehensive_backtest.py >> "$LOG_FILE" 2>&1
+echo "[$(date '+%H:%M:%S')] Step 2: FULL SYSTEM BACKTEST (all 7 timeframes)..." >> "$LOG_FILE"
+python3 agents/backtest_reviews/full_system_backtest.py >> "$LOG_FILE" 2>&1
 
 # Step 3: Check for degradation
 echo "" >> "$LOG_FILE"
