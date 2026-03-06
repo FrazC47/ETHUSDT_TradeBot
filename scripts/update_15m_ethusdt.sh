@@ -31,6 +31,25 @@ echo "" >> "$LOG_FILE"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Step 5: Indicators..." >> "$LOG_FILE"
 python3 /root/.openclaw/workspace/scripts/calculate_15m_indicators.py >> "$LOG_FILE" 2>&1
 
+# Step 6: Generate analysis (with 1h + 4h + 1d context)
 echo "" >> "$LOG_FILE"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] Step 6: Generating analysis (with 1h + 4h + 1d context)..." >> "$LOG_FILE"
+python3 /root/.openclaw/workspace/scripts/analyze_15m.py >> "$LOG_FILE" 2>&1
+ANALYSIS_STATUS=$?
+
+if [ $ANALYSIS_STATUS -eq 0 ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ✅ Analysis generation successful" >> "$LOG_FILE"
+else
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ⚠️  Analysis generation had issues" >> "$LOG_FILE"
+fi
+
+echo "" >> "$LOG_FILE"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] =======================================" >> "$LOG_FILE"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] ✅ 15m update complete!" >> "$LOG_FILE"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] Files updated:" >> "$LOG_FILE"
+echo "  - data/ETHUSDT_15m.csv" >> "$LOG_FILE"
+echo "  - data/ETHUSDT_15m_indicators.csv" >> "$LOG_FILE"
+echo "  - data/analysis/15m_current.json" >> "$LOG_FILE"
+echo "  - data/analysis/15m_log.jsonl" >> "$LOG_FILE"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] =======================================" >> "$LOG_FILE"
 echo "" >> "$LOG_FILE"
