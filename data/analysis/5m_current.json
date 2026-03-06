@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "candle_date": "2026-03-06 08:30:00",
+    "analysis_timestamp": "2026-03-06T21:44:35.333371",
+    "timeframe": "5m",
+    "total_indicators": 42,
+    "close_price": 2077.88,
+    "parent_timeframes": [
+      "15m",
+      "1h",
+      "4h"
+    ],
+    "parent_contexts_loaded": 3,
+    "all_parents_loaded": true,
+    "analysis_type": "trade_spotlight_precision"
+  },
+  "indicator_values": {
+    "trend": {
+      "ema_9": 2078.81673835286,
+      "ema_21": 2077.616053728599,
+      "ema_50": 2075.744332438633,
+      "ema_bullish": true,
+      "ema_bearish": false,
+      "ema_trend_strength": 0.0577914587301099
+    },
+    "momentum": {
+      "rsi_14": 51.53129161118513,
+      "rsi_sma_7": 58.86675904995932,
+      "rsi_oversold": false,
+      "rsi_overbought": false
+    },
+    "volatility": {
+      "atr_14": 4.03142857142864,
+      "atr_pct": 0.1940164288326872,
+      "bb_upper": 2086.3445254386024,
+      "bb_lower": 2070.733474561397,
+      "bb_width": 0.0075105883879038,
+      "bb_squeeze": true
+    },
+    "volume": {
+      "volume_sma_20": 9994.46145,
+      "volume_ratio": 1.4315164525448243,
+      "vwap": 2048.0247747538647,
+      "vwap_distance": 1.4577570356649363,
+      "above_vwap": true,
+      "below_vwap": false
+    },
+    "price_action": {
+      "body_size_pct": 0.068820143607922,
+      "upper_wick_pct": 27.83661119515555,
+      "lower_wick_pct": 50.52950075642748,
+      "is_bullish": true,
+      "upper_rejection": false,
+      "lower_rejection": false
+    },
+    "micro_structure": {
+      "hh_5": false,
+      "ll_5": false,
+      "micro_resistance": 2081.51,
+      "micro_support": 2067.24,
+      "dist_to_micro_res": 0.1746972876200795,
+      "dist_to_micro_sup": 0.5120603692224924
+    },
+    "patterns": {
+      "pattern_hammer": false,
+      "pattern_bullish_engulfing": false,
+      "pattern_bearish_engulfing": false,
+      "pattern_doji": true,
+      "pattern_signal": 0
+    },
+    "composite": {
+      "momentum_score": 0.1970824091369291,
+      "momentum_bullish": false,
+      "momentum_bearish": false
+    }
+  },
+  "parent_contexts": {
+    "fifteen_min": {
+      "regime": "bearish_distribution",
+      "trend_strength": "strong",
+      "bias": "bearish",
+      "close": 2054.99,
+      "key_levels": {
+        "nearest_resistance": 2086.57,
+        "nearest_support": 2073.11,
+        "distance_to_resistance_pct": 1.5367471374556754,
+        "distance_to_support_pct": -0.8817561156015526
+      },
+      "fib_zone": "mid_range",
+      "alignments": {
+        "15m_vs_1h": "aligned",
+        "15m_vs_4h": "mixed",
+        "15m_vs_daily": "mixed",
+        "quad_alignment": "moderate_confluence"
+      }
+    },
+    "one_hour": {
+      "regime": "bearish_distribution",
+      "trend_strength": "weak",
+      "bias": "bearish",
+      "close": 2079.66,
+      "key_levels": {
+        "nearest_resistance": 2199.0,
+        "nearest_support": 2107.57,
+        "distance_to_resistance_pct": 5.738438013906126,
+        "distance_to_support_pct": -1.3420462960291737
+      },
+      "fib_zone": "extension",
+      "alignments": {
+        "1h_vs_4h": "mixed",
+        "1h_vs_daily": "mixed",
+        "1h_vs_weekly": "aligned",
+        "quad_alignment": "moderate_confluence"
+      }
+    },
+    "four_hour": {
+      "regime": "transition",
+      "trend_strength": "strong",
+      "bias": "transition",
+      "close": 2047.65,
+      "key_levels": {
+        "nearest_resistance": 2090.0,
+        "nearest_support": 1945.08,
+        "distance_to_resistance_pct": 2.0682245500940057,
+        "distance_to_support_pct": 5.00915683832687
+      },
+      "fib_zone": "mid_range",
+      "alignments": {
+        "4h_vs_monthly": "mixed",
+        "4h_vs_weekly": "mixed",
+        "4h_vs_daily": "aligned",
+        "quad_alignment": "moderate_confluence"
+      }
+    },
+    "summary": "3/3 contexts loaded"
+  },
+  "interpretations": {
+    "regime": {
+      "classification": "mixed",
+      "using_indicators": [
+        "ema_bullish",
+        "momentum_bullish"
+      ]
+    },
+    "entry_signals": {
+      "long_setup": false,
+      "short_setup": false,
+      "caution": true
+    },
+    "key_levels": {
+      "micro_resistance": 2081.51,
+      "micro_support": 2067.24,
+      "vwap": 2048.0247747538647
+    },
+    "mtf_alignment": {
+      "alignments": {
+        "5m_vs_15m": "5m_counter_in_bearish_15m",
+        "5m_vs_1h": "5m_counter_in_bearish_1h",
+        "5m_vs_4h": "mixed",
+        "quad_alignment": "mixed_signals"
+      },
+      "confluence_count": 0,
+      "using_context": [
+        "15m_regime",
+        "1h_regime",
+        "4h_regime"
+      ]
+    }
+  },
+  "comprehensive_analysis": {
+    "all_indicators_reviewed": true,
+    "total_indicators": 42,
+    "categories": [
+      "trend",
+      "momentum",
+      "volatility",
+      "volume",
+      "price_action",
+      "micro_structure",
+      "patterns",
+      "composite"
+    ],
+    "narrative": "5m Trade Spotlight: Close 2077.88. Regime: mixed. Quad alignment: mixed_signals. Long setup: False. Short setup: False."
+  }
+}
