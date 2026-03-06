@@ -1,0 +1,22 @@
+# ETHUSDT Trading Data Pipeline - ALL TIMEFRAMES
+# Asia/Shanghai timezone (GMT+8)
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# Monthly (1M) - 1st of month at 00:05
+5 0 1 * * /root/.openclaw/workspace/scripts/update_monthly_ethusdt.sh >> /root/.openclaw/workspace/data/monthly_cron.log 2>&1
+
+# Weekly (1w) - Monday at 00:05
+5 0 * * 1 /root/.openclaw/workspace/scripts/update_weekly_ethusdt.sh >> /root/.openclaw/workspace/data/weekly_cron.log 2>&1
+
+# Daily (1d) - Every day at 00:05
+5 0 * * * /root/.openclaw/workspace/scripts/update_daily_ethusdt.sh >> /root/.openclaw/workspace/data/daily_cron.log 2>&1
+
+# 4-Hour (4h) - Every 4 hours at :05
+5 */4 * * * /root/.openclaw/workspace/scripts/update_4h_ethusdt.sh >> /root/.openclaw/workspace/data/4h_cron.log 2>&1
+
+# 1-Hour (1h) - Every hour at :05
+5 * * * * /root/.openclaw/workspace/scripts/update_1h_ethusdt.sh >> /root/.openclaw/workspace/data/1h_cron.log 2>&1
+
+# 15-Minute (15m) - Every 15 minutes at :05
+5,20,35,50 * * * * /root/.openclaw/workspace/scripts/update_15m_ethusdt.sh >> /root/.openclaw/workspace/data/15m_cron.log 2>&1
