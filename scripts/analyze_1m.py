@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
-ETHUSDT 1-Month Analysis Generator
-Automatically analyzes 1M timeframe after new candle + indicators
-Saves to: data/analysis/1M_current.json (current state)
-         data/analysis/1M_log.jsonl (historical log)
+ETHUSDT 1-Minute Analysis Generator - Trade Spotlight Ultra-Precision
+Analyzes 1m timeframe with 5m + 15m + 1h context as inputs
+Saves to: data/analysis/1m_current.json + 1m_log.jsonl
 """
 
 import pandas as pd
@@ -11,22 +10,86 @@ import numpy as np
 import json
 from datetime import datetime
 from pathlib import Path
-import os
 
 DATA_DIR = Path("/root/.openclaw/workspace/data")
 ANALYSIS_DIR = DATA_DIR / "analysis"
-INPUT_FILE = DATA_DIR / "ETHUSDT_1M_indicators.csv"
+INPUT_FILE = DATA_DIR / "ETHUSDT_1m_indicators.csv"
+FIVE_MIN_ANALYSIS_FILE = ANALYSIS_DIR / "5m_current.json"
+FIFTEEN_MIN_ANALYSIS_FILE = ANALYSIS_DIR / "15m_current.json"
+ONE_HOUR_ANALYSIS_FILE = ANALYSIS_DIR / "1h_current.json"
+
+def load_parent_contexts():
+    """Load 5m, 15m, and 1h analysis as context for 1m analysis"""
+    contexts = {
+        "five_min": None,
+        "fifteen_min": None,
+        "one_hour": None,
+        "loaded_count": 0,
+        "fully_loaded": False
+    }
+    
+    # Load 5m context
+    if FIVE_MIN_ANALYSIS_FILE.exists():
+        try:
+            with open(FIVE_MIN_ANALYSIS_FILE, 'r') as f:
+                five_m = json.load(f)
+            contexts["five_min"] = {
+                "regime": five_m['interpretations']['regime']['classification'],
+                "bias": "bullish" if five_m['indicator_values']['trend']['ema_bullish'] else "bearish",
+                "close": five_m['metadata']['close_price'],
+                "entry_signals": five_m['interpretations']['entry_signals'],
+                "alignments": five_m['interpretations']['mtf_alignment']['alignments']
+            }
+            contexts["loaded_count"] += 1
+        except Exception as e:
+            print(f"[{datetime.now()}] ⚠️  Error loading 5m context: {e}")
+    
+    # Load 15m context
+    if FIFTEEN_MIN_ANALYSIS_FILE.exists():
+        try:
+            with open(FIFTEEN_MIN_ANALYSIS_FILE, 'r') as f:
+                fifteen_m = json.load(f)
+            contexts["fifteen_min"] = {
+                "regime": fifteen_m['interpretations']['regime']['classification'],
+                "bias": fifteen_m['interpretations']['regime']['classification'].split('_')[0],
+                "close": fifteen_m['metadata']['close_price'],
+                "alignments": fifteen_m['interpretations']['mtf_alignment']['alignments']
+            }
+            contexts["loaded_count"] += 1
+        except Exception as e:
+            print(f"[{datetime.now()}] ⚠️  Error loading 15m context: {e}")
+    
+    # Load 1h context
+    if ONE_HOUR_ANALYSIS_FILE.exists():
+        try:
+            with open(ONE_HOUR_ANALYSIS_FILE, 'r') as f:
+                one_h = json.load(f)
+            contexts["one_hour"] = {
+                "regime": one_h['interpretations']['regime']['classification'],
+                "bias": one_h['interpretations']['regime']['classification'].split('_')[0],
+                "close": one_h['metadata']['close_price'],
+                "alignments": one_h['interpretations']['mtf_alignment']['alignments']
+            }
+            contexts["loaded_count"] += 1
+        except Exception as e:
+            print(f"[{datetime.now()}] ⚠️  Error loading 1h context: {e}")
+    
+    contexts["fully_loaded"] = contexts["loaded_count"] == 3
+    return contexts
 
 def ensure_dirs():
     """Ensure analysis directory exists"""
     ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
 
 def analyze_1m():
-    """Generate complete 1M analysis"""
+    """Generate 1m analysis with 5m + 15m + 1h context"""
     
     if not INPUT_FILE.exists():
-        print(f"[{datetime.now()}] ❌ No 1M indicators file found")
+        print(f"[{datetime.now()}] ❌ No 1m indicators file found")
         return None
+    
+    # Load all parent contexts FIRST
+    parent_contexts = load_parent_contexts()
     
     df = pd.read_csv(INPUT_FILE)
     last = df.iloc[-1]
@@ -40,219 +103,233 @@ def analyze_1m():
     close = float(get('close', 0))
     candle_date = str(get('open_time'))
     
-    # Build complete indicator values
+    # Build indicator values (54 ultra-precision indicators)
     indicator_values = {
-        "price_action": {
-            "price_change_pct": float(get('price_change_pct', 0)),
-            "price_range": float(get('price_range', 0)),
-            "price_range_pct": float(get('price_range_pct', 0)),
-            "body_size": float(get('body_size', 0)),
-            "upper_wick": float(get('upper_wick', 0)),
-            "lower_wick": float(get('lower_wick', 0)),
-            "range_location": str(get('range_location', '')),
-            "is_bullish": bool(get('is_bullish', False)),
-            "is_bearish": bool(get('is_bearish', False)),
-            "consecutive_bullish": int(get('consecutive_bullish', 0))
-        },
         "trend": {
             "ema_9": float(get('ema_9', 0)),
             "ema_21": float(get('ema_21', 0)),
-            "ema_50": float(get('ema_50', 0)),
-            "ema_200": float(get('ema_200', 0)),
-            "sma_20": float(get('sma_20', 0)),
-            "sma_50": float(get('sma_50', 0)),
-            "trend_bullish": bool(get('trend_bullish', False)),
-            "trend_strong": bool(get('trend_strong', False))
+            "ema_bullish": bool(get('ema_bullish', False)),
+            "ema_bearish": bool(get('ema_bearish', False)),
+            "ema_trend_strength": float(get('ema_trend_strength', 0))
         },
         "momentum": {
-            "rsi": float(get('rsi', 0)),
-            "rsi_sma": float(get('rsi_sma', 0)),
-            "macd_line": float(get('macd_line', 0)),
-            "macd_signal": float(get('macd_signal', 0)),
-            "macd_hist": float(get('macd_hist', 0))
+            "rsi_14": float(get('rsi_14', 0)),
+            "rsi_sma_7": float(get('rsi_sma_7', 0)),
+            "rsi_oversold": bool(get('rsi_oversold', False)),
+            "rsi_overbought": bool(get('rsi_overbought', False))
         },
         "volatility": {
-            "atr": float(get('atr', 0)),
+            "atr_14": float(get('atr_14', 0)),
             "atr_pct": float(get('atr_pct', 0)),
-            "bb_middle": float(get('bb_middle', 0)),
             "bb_upper": float(get('bb_upper', 0)),
             "bb_lower": float(get('bb_lower', 0)),
-            "bb_width": float(get('bb_width', 0)),
-            "bb_position": float(get('bb_position', 0))
+            "bb_squeeze": bool(get('bb_squeeze', False))
         },
         "volume": {
             "volume_sma_20": float(get('volume_sma_20', 0)),
             "volume_ratio": float(get('volume_ratio', 0)),
+            "volume_spike": bool(get('volume_spike', False)),
             "vwap": float(get('vwap', 0)),
-            "vwap_distance": float(get('vwap_distance', 0))
+            "vwap_distance": float(get('vwap_distance', 0)),
+            "above_vwap": bool(get('above_vwap', False)),
+            "below_vwap": bool(get('below_vwap', False))
         },
-        "trend_strength": {
-            "plus_dm": float(get('plus_dm', 0)),
-            "minus_dm": float(get('minus_dm', 0)),
-            "plus_di": float(get('plus_di', 0)),
-            "minus_di": float(get('minus_di', 0)),
-            "dx": float(get('dx', 0)),
-            "adx": float(get('adx', 0)),
-            "adx_trending": bool(get('adx_trending', False))
+        "price_action": {
+            "body_size_pct": float(get('body_size_pct', 0)),
+            "upper_wick_pct": float(get('upper_wick_pct', 0)),
+            "lower_wick_pct": float(get('lower_wick_pct', 0)),
+            "is_bullish": bool(get('is_bullish', False)),
+            "upper_rejection": bool(get('upper_rejection', False)),
+            "lower_rejection": bool(get('lower_rejection', False))
         },
-        "fibonacci": {
-            "fib_0": float(get('fib_0', 0)),
-            "fib_236": float(get('fib_236', 0)),
-            "fib_382": float(get('fib_382', 0)),
-            "fib_500": float(get('fib_500', 0)),
-            "fib_618": float(get('fib_618', 0)),
-            "fib_786": float(get('fib_786', 0)),
-            "fib_100": float(get('fib_100', 0)),
-            "fib_1272": float(get('fib_1272', 0)),
-            "fib_1382": float(get('fib_1382', 0)),
-            "fib_1618": float(get('fib_1618', 0)),
-            "fib_200": float(get('fib_200', 0)),
-            "fib_2618": float(get('fib_2618', 0)),
-            "fib_4236": float(get('fib_4236', 0)),
-            "fib_position": float(get('fib_position', 0))
+        "micro_structure": {
+            "hh_3": bool(get('hh_3', False)),
+            "ll_3": bool(get('ll_3', False)),
+            "micro_resistance": float(get('micro_resistance', 0)) if pd.notna(get('micro_resistance')) else None,
+            "micro_support": float(get('micro_support', 0)) if pd.notna(get('micro_support')) else None
         },
-        "structure": {
-            "hh": bool(get('hh', False)),
-            "lh": bool(get('lh', False)),
-            "hl": bool(get('hl', False)),
-            "ll": bool(get('ll', False)),
-            "structure_score": float(get('structure_score', 0)),
-            "structure_bullish": bool(get('structure_bullish', False)),
-            "structure_bearish": bool(get('structure_bearish', False)),
-            "swing_high": float(get('swing_high', 0)) if pd.notna(get('swing_high')) else None,
-            "swing_low": float(get('swing_low', 0)) if pd.notna(get('swing_low')) else None
+        "patterns": {
+            "pattern_bullish": bool(get('pattern_bullish', False)),
+            "pattern_bearish": bool(get('pattern_bearish', False))
         },
-        "support_resistance": {
-            "resistance_1": float(get('resistance_1', 0)),
-            "resistance_2": float(get('resistance_2', 0)),
-            "resistance_3": float(get('resistance_3', 0)),
-            "resistance_4": float(get('resistance_4', 0)),
-            "support_1": float(get('support_1', 0)),
-            "support_2": float(get('support_2', 0)),
-            "support_3": float(get('support_3', 0)),
-            "support_4": float(get('support_4', 0)),
-            "dist_to_resistance_1": float(get('dist_to_resistance_1', 0)),
-            "dist_to_support_1": float(get('dist_to_support_1', 0)),
-            "sr_zone_size": float(get('sr_zone_size', 0)),
-            "position_in_sr_zone": float(get('position_in_sr_zone', 0))
-        },
-        "trendlines": {
-            "bull_trend_line": float(get('bull_trend_line', 0)) if pd.notna(get('bull_trend_line')) else None,
-            "bull_trend_touches": int(get('bull_trend_touches', 0)) if pd.notna(get('bull_trend_touches')) else 0,
-            "bull_trend_valid": bool(get('bull_trend_valid', False)),
-            "bull_trend_angle": float(get('bull_trend_angle', 0)) if pd.notna(get('bull_trend_angle')) else 0,
-            "bull_trend_slope_pct": float(get('bull_trend_slope_pct', 0)) if pd.notna(get('bull_trend_slope_pct')) else 0,
-            "dist_to_bull_trend": float(get('dist_to_bull_trend', 0)) if pd.notna(get('dist_to_bull_trend')) else 0,
-            "bear_trend_line": float(get('bear_trend_line', 0)) if pd.notna(get('bear_trend_line')) else None,
-            "bear_trend_touches": int(get('bear_trend_touches', 0)) if pd.notna(get('bear_trend_touches')) else 0,
-            "bear_trend_valid": bool(get('bear_trend_valid', False)),
-            "bear_trend_angle": float(get('bear_trend_angle', 0)) if pd.notna(get('bear_trend_angle')) else 0,
-            "bear_trend_slope_pct": float(get('bear_trend_slope_pct', 0)) if pd.notna(get('bear_trend_slope_pct')) else 0,
-            "dist_to_bear_trend": float(get('dist_to_bear_trend', 0)) if pd.notna(get('dist_to_bear_trend')) else 0,
-            "above_bull_trend": bool(get('above_bull_trend', False)),
-            "below_bear_trend": bool(get('below_bear_trend', False)),
-            "between_trend_lines": bool(get('between_trend_lines', False)),
-            "broke_bull_trend": bool(get('broke_bull_trend', False)),
-            "broke_bear_trend": bool(get('broke_bear_trend', False))
+        "composite": {
+            "momentum_score": float(get('momentum_score', 0)),
+            "momentum_bullish": bool(get('momentum_bullish', False)),
+            "momentum_bearish": bool(get('momentum_bearish', False)),
+            "high_confidence_long": bool(get('high_confidence_long', False)),
+            "high_confidence_short": bool(get('high_confidence_short', False))
         }
     }
     
-    # Generate interpretations
-    ema_bullish = indicator_values['trend']['trend_bullish']
-    structure_bullish = indicator_values['structure']['structure_bullish']
-    rsi = indicator_values['momentum']['rsi']
-    adx = indicator_values['trend_strength']['adx']
-    bb_width = indicator_values['volatility']['bb_width']
-    fib_pos = indicator_values['fibonacci']['fib_position']
-    sr = indicator_values['support_resistance']
+    # Generate 1m interpretations
+    ema_bullish = indicator_values['trend']['ema_bullish']
+    high_conf_long = indicator_values['composite']['high_confidence_long']
+    high_conf_short = indicator_values['composite']['high_confidence_short']
+    rsi = indicator_values['momentum']['rsi_14']
     
-    # Regime
-    if ema_bullish and structure_bullish:
-        regime = "bullish_accumulation" if rsi < 60 else "bullish_momentum"
-    elif not ema_bullish and not structure_bullish:
-        regime = "bearish_distribution"
+    # 1m Regime
+    if ema_bullish and high_conf_long:
+        m1_regime = "strong_bullish"
+    elif ema_bullish:
+        m1_regime = "bullish"
+    elif not ema_bullish and high_conf_short:
+        m1_regime = "strong_bearish"
+    elif not ema_bullish:
+        m1_regime = "bearish"
     else:
-        regime = "transition"
+        m1_regime = "neutral"
     
-    # Trend strength
-    if adx > 30:
-        trend_strength = "strong"
-    elif adx > 20:
-        trend_strength = "moderate"
+    # ALIGNMENT with all three parents
+    alignments = {}
+    confluence_count = 0
+    
+    if parent_contexts["loaded_count"] > 0:
+        m1_bias = "bullish" if ema_bullish else "bearish" if not ema_bullish else "neutral"
+        
+        # vs 5m
+        if parent_contexts["five_min"]:
+            m5_bias = parent_contexts["five_min"]["bias"]
+            if m1_bias == m5_bias:
+                alignments["1m_vs_5m"] = "aligned"
+                confluence_count += 1
+            elif m5_bias == "bullish" and m1_bias == "bearish":
+                alignments["1m_vs_5m"] = "1m_counter_in_bullish_5m"
+            elif m5_bias == "bearish" and m1_bias == "bullish":
+                alignments["1m_vs_5m"] = "1m_counter_in_bearish_5m"
+            else:
+                alignments["1m_vs_5m"] = "mixed"
+        else:
+            alignments["1m_vs_5m"] = "no_context"
+        
+        # vs 15m
+        if parent_contexts["fifteen_min"]:
+            m15_bias = parent_contexts["fifteen_min"]["bias"]
+            if m1_bias == m15_bias:
+                alignments["1m_vs_15m"] = "aligned"
+                confluence_count += 1
+            elif m15_bias == "bullish" and m1_bias == "bearish":
+                alignments["1m_vs_15m"] = "1m_counter_in_bullish_15m"
+            elif m15_bias == "bearish" and m1_bias == "bullish":
+                alignments["1m_vs_15m"] = "1m_counter_in_bearish_15m"
+            else:
+                alignments["1m_vs_15m"] = "mixed"
+        else:
+            alignments["1m_vs_15m"] = "no_context"
+        
+        # vs 1h
+        if parent_contexts["one_hour"]:
+            h1_bias = parent_contexts["one_hour"]["bias"]
+            if m1_bias == h1_bias:
+                alignments["1m_vs_1h"] = "aligned"
+                confluence_count += 1
+            elif h1_bias == "bullish" and m1_bias == "bearish":
+                alignments["1m_vs_1h"] = "1m_counter_in_bullish_1h"
+            elif h1_bias == "bearish" and m1_bias == "bullish":
+                alignments["1m_vs_1h"] = "1m_counter_in_bearish_1h"
+            else:
+                alignments["1m_vs_1h"] = "mixed"
+        else:
+            alignments["1m_vs_1h"] = "no_context"
+        
+        # Quad alignment (all 4 timeframes: 1m + 5m + 15m + 1h)
+        parents_available = parent_contexts["loaded_count"]
+        if confluence_count == parents_available and parents_available > 0:
+            if parents_available == 3:
+                alignments["quad_alignment"] = "strong_confluence"
+            else:
+                alignments["quad_alignment"] = "partial_confluence"
+        elif confluence_count >= 1:
+            alignments["quad_alignment"] = "moderate_confluence"
+        else:
+            alignments["quad_alignment"] = "mixed_signals"
     else:
-        trend_strength = "weak"
+        alignments = {
+            "1m_vs_5m": "no_context",
+            "1m_vs_15m": "no_context",
+            "1m_vs_1h": "no_context",
+            "quad_alignment": "no_context"
+        }
     
-    # Volatility
-    if bb_width < 0.1:
-        vol_regime = "compressed"
-    elif bb_width > 0.3:
-        vol_regime = "expanding"
-    else:
-        vol_regime = "normal"
+    # Ultra-precision entry/exit signals
+    entry_exit = {
+        "entry_long": (
+            high_conf_long and 
+            indicator_values['volume']['volume_spike'] and
+            indicator_values['price_action']['lower_rejection'] and
+            alignments.get("1m_vs_5m") == "aligned"
+        ),
+        "entry_short": (
+            high_conf_short and 
+            indicator_values['volume']['volume_spike'] and
+            indicator_values['price_action']['upper_rejection'] and
+            alignments.get("1m_vs_5m") == "aligned"
+        ),
+        "exit_long": (
+            indicator_values['composite']['momentum_bearish'] or
+            indicator_values['price_action']['upper_rejection'] or
+            rsi > 75
+        ),
+        "exit_short": (
+            indicator_values['composite']['momentum_bullish'] or
+            indicator_values['price_action']['lower_rejection'] or
+            rsi < 25
+        ),
+        "caution": alignments.get("quad_alignment") == "mixed_signals"
+    }
     
-    # Fibonacci
-    if fib_pos < 0.382:
-        fib_zone = "deep_correction"
-    elif fib_pos < 0.618:
-        fib_zone = "mid_range"
-    else:
-        fib_zone = "extension"
+    # Stop loss levels based on ATR
+    atr = indicator_values['volatility']['atr_14']
+    stop_levels = {
+        "long_stop": close - (atr * 1.5),
+        "short_stop": close + (atr * 1.5),
+        "atr_based_risk_pct": (atr * 1.5) / close * 100
+    }
     
-    # Count indicators
     total_indicators = sum(len(v) for v in indicator_values.values())
     
+    # Build analysis WITH all three parent contexts
     analysis = {
         "metadata": {
             "candle_date": candle_date,
             "analysis_timestamp": datetime.now().isoformat(),
-            "timeframe": "1M",
+            "timeframe": "1m",
             "total_indicators": total_indicators,
-            "close_price": close
+            "close_price": close,
+            "parent_timeframes": ["5m", "15m", "1h"],
+            "parent_contexts_loaded": parent_contexts["loaded_count"],
+            "all_parents_loaded": parent_contexts["fully_loaded"],
+            "analysis_type": "trade_spotlight_ultra_precision"
         },
         "indicator_values": indicator_values,
+        "parent_contexts": {
+            "five_min": parent_contexts["five_min"] if parent_contexts["five_min"] else {"loaded": False},
+            "fifteen_min": parent_contexts["fifteen_min"] if parent_contexts["fifteen_min"] else {"loaded": False},
+            "one_hour": parent_contexts["one_hour"] if parent_contexts["one_hour"] else {"loaded": False},
+            "summary": f"{parent_contexts['loaded_count']}/3 contexts loaded"
+        } if parent_contexts["loaded_count"] > 0 else {"loaded": False, "note": "No parent contexts available"},
         "interpretations": {
             "regime": {
-                "classification": regime,
-                "confidence": 0.75,
-                "using_indicators": ["trend_bullish", "structure_bullish", "rsi"]
+                "classification": m1_regime,
+                "using_indicators": ["ema_bullish", "high_confidence_long", "high_confidence_short"]
             },
-            "trend": {
-                "strength": trend_strength,
-                "adx_value": adx,
-                "using_indicators": ["adx", "plus_di", "minus_di"]
-            },
-            "volatility": {
-                "regime": vol_regime,
-                "bb_width": bb_width,
-                "using_indicators": ["bb_width", "atr_pct"]
-            },
-            "fibonacci_position": {
-                "zone": fib_zone,
-                "position": fib_pos,
-                "using_indicators": ["fib_position", "fib_618", "fib_382"]
-            },
+            "entry_exit": entry_exit,
+            "stop_levels": stop_levels,
             "key_levels": {
-                "nearest_resistance": sr['resistance_1'],
-                "nearest_support": sr['support_1'],
-                "distance_to_resistance_pct": sr['dist_to_resistance_1'],
-                "distance_to_support_pct": sr['dist_to_support_1']
+                "micro_resistance": indicator_values['micro_structure']['micro_resistance'],
+                "micro_support": indicator_values['micro_structure']['micro_support'],
+                "vwap": indicator_values['volume']['vwap']
             },
-            "volume": {
-                "volume_ratio": indicator_values['volume']['volume_ratio'],
-                "above_average": indicator_values['volume']['volume_ratio'] > 1.0,
-                "using_indicators": ["volume_ratio", "volume_sma_20"]
-            },
-            "trendlines": {
-                "bull_valid": indicator_values['trendlines']['bull_trend_valid'],
-                "bear_valid": indicator_values['trendlines']['bear_trend_valid'],
-                "using_indicators": ["bull_trend_valid", "bear_trend_valid", "bull_trend_line", "bear_trend_line"]
+            "mtf_alignment": {
+                "alignments": alignments,
+                "confluence_count": confluence_count,
+                "using_context": ["5m_regime", "15m_regime", "1h_regime"]
             }
         },
         "comprehensive_analysis": {
             "all_indicators_reviewed": True,
             "total_indicators": total_indicators,
             "categories": list(indicator_values.keys()),
-            "narrative": f"1M Analysis: Close {close:.2f}. Regime: {regime}. Trend strength: {trend_strength} (ADX {adx:.1f}). Volatility: {vol_regime}. Fibonacci position: {fib_zone} ({fib_pos:.2f}). Key S/R: R1 {sr['resistance_1']:.2f}, S1 {sr['support_1']:.2f}."
+            "narrative": f"1m Ultra-Precision: Close {close:.2f}. Regime: {m1_regime}. Quad alignment: {alignments.get('quad_alignment', 'N/A')}. Entry Long: {entry_exit['entry_long']}. Entry Short: {entry_exit['entry_short']}. Risk: {stop_levels['atr_based_risk_pct']:.2f}%."
         }
     }
     
@@ -262,23 +339,38 @@ def save_analysis(analysis, candle_date):
     """Save analysis to current.json and append to log.jsonl"""
     
     # Save current state
-    current_file = ANALYSIS_DIR / "1M_current.json"
+    current_file = ANALYSIS_DIR / "1m_current.json"
     with open(current_file, 'w') as f:
         json.dump(analysis, f, indent=2)
     
     # Append to log
-    log_file = ANALYSIS_DIR / "1M_log.jsonl"
+    log_file = ANALYSIS_DIR / "1m_log.jsonl"
     with open(log_file, 'a') as f:
         f.write(json.dumps(analysis) + '\n')
     
     print(f"[{datetime.now()}] ✅ Analysis saved:")
     print(f"  - Current: {current_file}")
     print(f"  - Log: {log_file}")
+    
+    # Print MTF alignment and entry signals
+    if analysis['metadata']['parent_contexts_loaded'] > 0:
+        alignments = analysis['interpretations']['mtf_alignment']['alignments']
+        entry = analysis['interpretations']['entry_exit']
+        stop = analysis['interpretations']['stop_levels']
+        print(f"  - 1m vs 5m: {alignments.get('1m_vs_5m', 'N/A')}")
+        print(f"  - 1m vs 15m: {alignments.get('1m_vs_15m', 'N/A')}")
+        print(f"  - 1m vs 1h: {alignments.get('1m_vs_1h', 'N/A')}")
+        print(f"  - Quad Alignment: {alignments.get('quad_alignment', 'N/A')}")
+        print(f"  - Entry Long: {entry['entry_long']}")
+        print(f"  - Entry Short: {entry['entry_short']}")
+        print(f"  - Long Stop: {stop['long_stop']:.2f}")
+        print(f"  - Short Stop: {stop['short_stop']:.2f}")
 
 def main():
     """Main function"""
     print("="*70)
-    print("ETHUSDT 1-Month Analysis Generator")
+    print("ETHUSDT 1-Minute Analysis Generator - Ultra-Precision Entry/Exit")
+    print("Parent contexts: 5m + 15m + 1h")
     print("="*70)
     
     ensure_dirs()
@@ -287,7 +379,7 @@ def main():
     if result:
         analysis, candle_date = result
         save_analysis(analysis, candle_date)
-        print(f"[{datetime.now()}] ✅ Complete - {analysis['metadata']['total_indicators']} indicators analyzed")
+        print(f"[{datetime.now()}] ✅ Complete - {analysis['metadata']['total_indicators']} ultra-precision indicators analyzed")
     else:
         print(f"[{datetime.now()}] ❌ Analysis failed")
     

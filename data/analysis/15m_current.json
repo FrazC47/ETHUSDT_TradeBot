@@ -1,10 +1,10 @@
 {
   "metadata": {
     "candle_date": "None",
-    "analysis_timestamp": "2026-03-06T21:35:11.906020",
+    "analysis_timestamp": "2026-03-06T22:50:10.130240",
     "timeframe": "15m",
     "total_indicators": 93,
-    "close_price": 2054.99,
+    "close_price": 1979.97,
     "parent_timeframes": [
       "1h",
       "4h",
@@ -18,108 +18,108 @@
       "price_change_pct": 0.0,
       "price_range": 0.0,
       "price_range_pct": 0.0,
-      "body_size": 6.389999999999873,
-      "upper_wick": 1.610000000000127,
-      "lower_wick": 13.519999999999982,
-      "range_location": "92.5185873605942",
-      "is_bullish": true,
-      "is_bearish": false,
-      "consecutive_bullish": 4
+      "body_size": 10.319999999999936,
+      "upper_wick": 5.230000000000018,
+      "lower_wick": 1.9700000000000275,
+      "range_location": "11.24429223744309",
+      "is_bullish": false,
+      "is_bearish": true,
+      "consecutive_bullish": 0
     },
     "trend": {
-      "ema_9": 2052.0066015667185,
-      "ema_21": 2057.32938154056,
-      "ema_50": 2066.243233525243,
-      "ema_200": 2074.763934898045,
-      "sma_20": 2057.273,
-      "sma_50": 2068.704,
+      "ema_9": 2020.2798240013824,
+      "ema_21": 2038.8704424316268,
+      "ema_50": 2056.109743053641,
+      "ema_200": 2071.6679859151586,
+      "sma_20": 2044.3160000000005,
+      "sma_50": 2061.6044,
       "trend_bullish": false,
       "trend_strong": false
     },
     "momentum": {
-      "rsi": 43.24015972618359,
-      "rsi_sma": 38.1667758474346,
-      "macd_line": -5.865232857315277,
-      "macd_signal": -5.692936037512136,
-      "macd_hist": -0.1722968198031411
+      "rsi": 14.270806157056924,
+      "rsi_sma": 32.69351288815455,
+      "macd_line": -16.437116679111796,
+      "macd_signal": -9.860079124068276,
+      "macd_hist": -6.577037555043519
     },
     "volatility": {
-      "atr": 7.474285714285721,
-      "atr_pct": 0.3637139701062157,
-      "bb_middle": 2057.273,
-      "bb_upper": 2076.3101891997208,
-      "bb_lower": 2038.2358108002795,
-      "bb_width": 0.0185072075506952,
-      "bb_position": 0.4400384170150041
+      "atr": 13.268571428571429,
+      "atr_pct": 0.6701400237665939,
+      "bb_middle": 2044.3160000000005,
+      "bb_upper": 2091.117189098645,
+      "bb_lower": 1997.5148109013555,
+      "bb_width": 0.0457866485402892,
+      "bb_position": -0.1874397984245154
     },
     "volume": {
-      "volume_sma_20": 22422.9509,
-      "volume_ratio": 3.990278059254012,
-      "vwap": 2053.9752130746538,
-      "vwap_distance": 0.0494059966686235
+      "volume_sma_20": 33002.54745,
+      "volume_ratio": 2.536758204100393,
+      "vwap": 2028.431241450979,
+      "vwap_distance": -2.389099539618298
     },
     "trend_strength": {
       "plus_dm": 0.0,
-      "minus_dm": 11.990000000000007,
-      "plus_di": 12.748470948011924,
-      "minus_di": 37.25152905198753,
-      "dx": 49.00611620795175,
-      "adx": 40.70487061934495,
+      "minus_dm": 18.58999999999992,
+      "plus_di": 4.053617571059295,
+      "minus_di": 53.85981912144713,
+      "dx": 86.00111544896869,
+      "adx": 54.90449329361293,
       "adx_trending": true
     },
     "fibonacci": {
-      "fib_0": 2081.61,
-      "fib_236": 2070.62892,
-      "fib_382": 2063.83554,
-      "fib_500": 2058.3450000000003,
-      "fib_618": 2052.85446,
-      "fib_786": 2045.03742,
-      "fib_100": 2035.08,
-      "fib_1272": 2094.26616,
-      "fib_1382": 2099.38446,
-      "fib_1618": 2110.36554,
-      "fib_200": 2128.1400000000003,
-      "fib_2618": 2156.8955400000004,
-      "fib_4236": 2232.1810800000007,
-      "fib_position": 0.5721040189125345
+      "fib_0": 2067.43,
+      "fib_236": 2046.32452,
+      "fib_382": 2033.26774,
+      "fib_500": 2022.715,
+      "fib_618": 2012.16226,
+      "fib_786": 1997.13802,
+      "fib_100": 1978.0,
+      "fib_1272": 2091.75496,
+      "fib_1382": 2101.59226,
+      "fib_1618": 2122.69774,
+      "fib_200": 2156.86,
+      "fib_2618": 2212.1277399999994,
+      "fib_4236": 2356.8254799999995,
+      "fib_position": 0.9779715978977968
     },
     "structure": {
       "hh": false,
       "lh": false,
       "hl": false,
       "ll": false,
-      "structure_score": -0.3333333333333333,
+      "structure_score": -0.5,
       "structure_bullish": false,
       "structure_bearish": true,
       "swing_high": 0.0,
       "swing_low": 0.0
     },
     "support_resistance": {
-      "resistance_1": 2086.57,
-      "resistance_2": 2081.61,
-      "resistance_3": 2067.43,
-      "resistance_4": 2064.58,
-      "support_1": 2073.11,
-      "support_2": 2047.38,
-      "support_3": 2058.01,
-      "support_4": 2038.1,
-      "dist_to_resistance_1": 1.5367471374556754,
-      "dist_to_support_1": -0.8817561156015526,
-      "sr_zone_size": 0.6549910218541227,
-      "position_in_sr_zone": -134.621099554237
+      "resistance_1": 2081.61,
+      "resistance_2": 2067.43,
+      "resistance_3": 2064.58,
+      "resistance_4": 2056.6,
+      "support_1": 2047.38,
+      "support_2": 2058.01,
+      "support_3": 2038.1,
+      "support_4": 2035.08,
+      "dist_to_resistance_1": 5.1334111122895845,
+      "dist_to_support_1": -3.404597039349085,
+      "sr_zone_size": 1.7288140729405,
+      "position_in_sr_zone": -196.93251533742344
     },
     "trendlines": {
       "bull_trend_line": null,
       "bull_trend_touches": 0,
       "bull_trend_valid": false,
-      "bull_trend_angle": -0.2066191847882724,
-      "bull_trend_slope_pct": -0.0360620070471958,
+      "bull_trend_angle": -0.2066078835462166,
+      "bull_trend_slope_pct": -0.0360600345827119,
       "dist_to_bull_trend": 0,
       "bear_trend_line": null,
       "bear_trend_touches": 0,
       "bear_trend_valid": false,
-      "bear_trend_angle": -0.2636481273593934,
-      "bear_trend_slope_pct": -0.0460156036708804,
+      "bear_trend_angle": -0.410147915469023,
+      "bear_trend_slope_pct": -0.0715855382114065,
       "dist_to_bear_trend": 0,
       "above_bull_trend": false,
       "below_bear_trend": false,
@@ -131,14 +131,14 @@
   "parent_contexts": {
     "one_hour": {
       "regime": "bearish_distribution",
-      "trend_strength": "weak",
+      "trend_strength": "strong",
       "bias": "bearish",
-      "close": 2079.66,
+      "close": 2020.77,
       "key_levels": {
-        "nearest_resistance": 2199.0,
-        "nearest_support": 2107.57,
-        "distance_to_resistance_pct": 5.738438013906126,
-        "distance_to_support_pct": -1.3420462960291737
+        "nearest_resistance": 2163.0,
+        "nearest_support": 2092.43,
+        "distance_to_resistance_pct": 7.038406152110335,
+        "distance_to_support_pct": -3.5461729934628807
       },
       "fib_zone": "extension",
       "alignments": {
@@ -199,7 +199,7 @@
     },
     "trend": {
       "strength": "strong",
-      "adx_value": 40.70487061934495,
+      "adx_value": 54.90449329361293,
       "using_indicators": [
         "adx",
         "plus_di",
@@ -208,15 +208,15 @@
     },
     "volatility": {
       "regime": "normal",
-      "bb_width": 0.0185072075506952,
+      "bb_width": 0.0457866485402892,
       "using_indicators": [
         "bb_width",
         "atr_pct"
       ]
     },
     "fibonacci_position": {
-      "zone": "mid_range",
-      "position": 0.5721040189125345,
+      "zone": "extension",
+      "position": 0.9779715978977968,
       "using_indicators": [
         "fib_position",
         "fib_618",
@@ -224,13 +224,13 @@
       ]
     },
     "key_levels": {
-      "nearest_resistance": 2086.57,
-      "nearest_support": 2073.11,
-      "distance_to_resistance_pct": 1.5367471374556754,
-      "distance_to_support_pct": -0.8817561156015526
+      "nearest_resistance": 2081.61,
+      "nearest_support": 2047.38,
+      "distance_to_resistance_pct": 5.1334111122895845,
+      "distance_to_support_pct": -3.404597039349085
     },
     "volume": {
-      "volume_ratio": 3.990278059254012,
+      "volume_ratio": 2.536758204100393,
       "above_average": true,
       "using_indicators": [
         "volume_ratio",
@@ -275,6 +275,6 @@
       "support_resistance",
       "trendlines"
     ],
-    "narrative": "15m Analysis: Close 2054.99. Regime: bearish_distribution. Quad alignment: moderate_confluence. Trend strength: strong (ADX 40.7). Volatility: normal. Fibonacci: mid_range (0.57)."
+    "narrative": "15m Analysis: Close 1979.97. Regime: bearish_distribution. Quad alignment: moderate_confluence. Trend strength: strong (ADX 54.9). Volatility: normal. Fibonacci: extension (0.98)."
   }
 }
