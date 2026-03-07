@@ -1,0 +1,604 @@
+{
+  "timestamp": "20260308_070741",
+  "best_return": 0,
+  "best_params": {
+    "min_confluence": 2,
+    "weighted_threshold": 0.6,
+    "max_risk_per_trade": 1.5,
+    "min_rr_ratio": 1.5,
+    "entry_buffer": 2.0,
+    "stop_buffer": 5.0,
+    "confidence_very_high": 90.0,
+    "confidence_high": 80.0,
+    "avoid_bear_market": true,
+    "avoid_chop": false
+  },
+  "total_iterations": 20,
+  "param_grid": {
+    "min_confluence": [
+      2,
+      3
+    ],
+    "weighted_threshold": [
+      0.6,
+      0.65,
+      0.7
+    ],
+    "max_risk_per_trade": [
+      1.5,
+      2.0,
+      2.5
+    ],
+    "entry_buffer": [
+      2.0,
+      3.0,
+      4.0
+    ],
+    "avoid_bear_market": [
+      true,
+      false
+    ]
+  },
+  "results": [
+    {
+      "iteration": 1,
+      "param_key": "3b4d8237",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 1.5,
+        "entry_buffer": 2.0,
+        "avoid_bear_market": true
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 2,
+      "param_key": "46ada7d1",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 1.5,
+        "entry_buffer": 2.0,
+        "avoid_bear_market": false
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 3,
+      "param_key": "d6b9ea6a",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 1.5,
+        "entry_buffer": 3.0,
+        "avoid_bear_market": true
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 4,
+      "param_key": "15172361",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 1.5,
+        "entry_buffer": 3.0,
+        "avoid_bear_market": false
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 5,
+      "param_key": "9d3cab63",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 1.5,
+        "entry_buffer": 4.0,
+        "avoid_bear_market": true
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 6,
+      "param_key": "e26b404b",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 1.5,
+        "entry_buffer": 4.0,
+        "avoid_bear_market": false
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 7,
+      "param_key": "2a3fc66a",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.0,
+        "entry_buffer": 2.0,
+        "avoid_bear_market": true
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 8,
+      "param_key": "d62376af",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.0,
+        "entry_buffer": 2.0,
+        "avoid_bear_market": false
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 9,
+      "param_key": "f567ee27",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.0,
+        "entry_buffer": 3.0,
+        "avoid_bear_market": true
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 10,
+      "param_key": "21616447",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.0,
+        "entry_buffer": 3.0,
+        "avoid_bear_market": false
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 11,
+      "param_key": "5fe2a609",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.0,
+        "entry_buffer": 4.0,
+        "avoid_bear_market": true
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 12,
+      "param_key": "854dd264",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.0,
+        "entry_buffer": 4.0,
+        "avoid_bear_market": false
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 13,
+      "param_key": "18abe03d",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.5,
+        "entry_buffer": 2.0,
+        "avoid_bear_market": true
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 14,
+      "param_key": "be14bc8e",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.5,
+        "entry_buffer": 2.0,
+        "avoid_bear_market": false
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 15,
+      "param_key": "e0e8ffdb",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.5,
+        "entry_buffer": 3.0,
+        "avoid_bear_market": true
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 16,
+      "param_key": "9a8a5976",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.5,
+        "entry_buffer": 3.0,
+        "avoid_bear_market": false
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 17,
+      "param_key": "230f4435",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.5,
+        "entry_buffer": 4.0,
+        "avoid_bear_market": true
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 18,
+      "param_key": "b6250a82",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.6,
+        "max_risk_per_trade": 2.5,
+        "entry_buffer": 4.0,
+        "avoid_bear_market": false
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 19,
+      "param_key": "a5ff4f6a",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.65,
+        "max_risk_per_trade": 1.5,
+        "entry_buffer": 2.0,
+        "avoid_bear_market": true
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    },
+    {
+      "iteration": 20,
+      "param_key": "c212d359",
+      "params": {
+        "min_confluence": 2,
+        "weighted_threshold": 0.65,
+        "max_risk_per_trade": 1.5,
+        "entry_buffer": 2.0,
+        "avoid_bear_market": false
+      },
+      "metrics": {
+        "return": 0,
+        "final_equity": 10000.0,
+        "num_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "avg_trade": 0
+      },
+      "analysis": {
+        "num_winners": 0,
+        "num_losers": 0,
+        "regime_performance": {},
+        "confluence_performance": {},
+        "avg_confluence_winners": 0,
+        "avg_confluence_losers": 0
+      }
+    }
+  ]
+}
