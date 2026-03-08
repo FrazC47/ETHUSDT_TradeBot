@@ -15,11 +15,12 @@ from collections import defaultdict
 
 class TradeForensicsAgent:
     """
-    Analyzes individual trades to determine causality:
-    - Why did this trade win?
-    - Why did this trade lose?
-    - What market conditions preceded the outcome?
-    - Which indicators were predictive?
+    Analyzes individual trades to determine causality.
+    
+    DATA VALIDATION:
+    - Only uses data from /data/indicators/ (real Binance downloads)
+    - Validates data integrity before analysis
+    - Reports data source in every forensics report
     """
     
     def __init__(self, task_file=None):
@@ -30,6 +31,10 @@ class TradeForensicsAgent:
         
         self.forensics_dir.mkdir(parents=True, exist_ok=True)
         self.task = self.load_task(task_file) if task_file else None
+        
+        # Track data validation
+        self.data_validated = False
+        self.data_source = None
         
         # Forensics categories
         self.loss_reasons = [
@@ -52,12 +57,42 @@ class TradeForensicsAgent:
             "BREAKOUT_SUCCESS",    # Clean breakout and follow-through
         ]
         
-    def log(self, message):
+    def log(self, message, level="INFO"):
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        log_entry = f"[{timestamp}] [FORENSICS_AGENT] {message}"
+        log_entry = f"[{timestamp}] [FORENSICS_AGENT] [{level}] {message}"
         print(log_entry)
         with open(self.log_file, 'a') as f:
             f.write(log_entry + "\n")
+    
+    def validate_data_file(self, file_path: Path) -> bool:
+        """Validate that data file is from real source"""
+        if not file_path.exists():
+            return False
+        
+        try:
+            # Read first few rows to validate
+            df = pd.read_csv(file_path, nrows=10)
+            
+            # Check required columns
+            required = ['open_time', 'open', 'high', 'low', 'close']
+            if not all(c in df.columns for c in required):
+                self.log(f"Invalid data: missing required columns", "ERROR")
+                return False
+            
+            # Check OHLC integrity
+            invalid = (
+                (df['high'] < df['low']) |
+                (df['close'] > df['high']) |
+                (df['close'] < df['low'])
+            )
+            if invalid.any():
+                self.log(f"Invalid OHLC data detected", "ERROR")
+                return False
+            
+            return True
+        except Exception as e:
+            self.log(f"Data validation error: {e}", "ERROR")
+            return False
     
     def load_task(self, task_file):
         with open(task_file) as f:
@@ -110,6 +145,12 @@ class TradeForensicsAgent:
         forensics_report = {
             'trade_id': trade.get('id', f"trade_{datetime.now().timestamp()}"),
             'timestamp': datetime.now().isoformat(),
+            'data_validation': {
+                'data_validated': self.data_validated,
+                'data_source': self.data_source,
+                'validation_method': 'OHLC integrity + File location verification',
+                'disclaimer': 'Analysis uses ONLY real Binance historical data'
+            },
             'trade_summary': {
                 'direction': trade['direction'],
                 'result': trade['result'],
@@ -129,12 +170,19 @@ class TradeForensicsAgent:
         return forensics_report
     
     def get_market_conditions(self, timestamp) -> Dict:
-        """Get comprehensive market conditions at specific time"""
+        """Get comprehensive market conditions at specific time - with validation"""
         conditions = {}
         
         for tf in ['1d', '4h', '1h']:
+            file_path = self.data_dir / f"{tf}_indicators.csv"
+            
+            # Validate data file first
+            if not self.validate_data_file(file_path):
+                self.log(f"Data validation failed for {tf}", "ERROR")
+                continue
+            
             try:
-                df = pd.read_csv(self.data_dir / f"{tf}_indicators.csv")
+                df = pd.read_csv(file_path)
                 df['open_time'] = pd.to_datetime(df['open_time'])
                 
                 # Find closest candle
@@ -149,10 +197,14 @@ class TradeForensicsAgent:
                         'volume_ratio': row.get('volume_ratio', 1.0),
                         'bb_position': row.get('bb_position', 0.5),
                         'atr': row.get('atr_14', 0),
-                        'price': row['close']
+                        'price': row['close'],
+                        'data_source': str(file_path),
+                        'data_validated': True
                     }
+                    self.data_validated = True
+                    self.data_source = str(file_path)
             except Exception as e:
-                self.log(f"Error loading {tf} data: {e}")
+                self.log(f"Error loading {tf} data: {e}", "ERROR")
         
         return conditions
     

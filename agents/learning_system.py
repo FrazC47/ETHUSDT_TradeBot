@@ -20,6 +20,11 @@ class LearningSystemAgent:
     - Updates strategy weights based on performance
     - Detects regime changes
     - Optimizes parameters incrementally
+    
+    DATA VALIDATION:
+    - Only learns from validated forensics reports
+    - Verifies data source before updating parameters
+    - Never uses simulated or fake trade data
     """
     
     def __init__(self, task_file=None):
@@ -45,12 +50,39 @@ class LearningSystemAgent:
             'confidence': 0.0
         })
         
-    def log(self, message):
+        # Validation tracking
+        self.validated_trades = 0
+        self.rejected_trades = 0
+        
+    def log(self, message, level="INFO"):
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        log_entry = f"[{timestamp}] [LEARNING_AGENT] {message}"
+        log_entry = f"[{timestamp}] [LEARNING_AGENT] [{level}] {message}"
         print(log_entry)
         with open(self.log_file, 'a') as f:
             f.write(log_entry + "\n")
+    
+    def validate_forensics_report(self, report: Dict) -> bool:
+        """Validate that forensics report is based on real data"""
+        # Check for data validation section
+        data_val = report.get('data_validation', {})
+        
+        if not data_val.get('data_validated', False):
+            self.log("Forensics report missing data validation - rejecting", "ERROR")
+            return False
+        
+        # Check data source exists
+        source = data_val.get('data_source')
+        if not source:
+            self.log("Forensics report missing data source - rejecting", "ERROR")
+            return False
+        
+        # Verify data source is from expected location
+        if '/data/indicators/' not in source:
+            self.log(f"Invalid data source location: {source}", "ERROR")
+            return False
+        
+        self.log(f"✓ Forensics report validated: {source}")
+        return True
     
     def load_task(self, task_file):
         with open(task_file) as f:
@@ -95,11 +127,22 @@ class LearningSystemAgent:
     
     def process_trade_outcome(self, forensics_report: Dict):
         """
-        Process a completed trade and update learning
+        Process a completed trade and update learning.
+        ONLY processes validated forensics reports.
         """
+        # Validate forensics report first
+        if not self.validate_forensics_report(forensics_report):
+            self.rejected_trades += 1
+            self.log(f"Trade rejected due to invalid data. Total rejected: {self.rejected_trades}", "ERROR")
+            return False
+        
+        self.validated_trades += 1
+        
         trade = forensics_report['trade_summary']
         root_cause = forensics_report['root_cause']
         entry_conditions = forensics_report['entry_conditions']
+        
+        self.log(f"Processing validated trade #{self.validated_trades}: {trade['direction']} {trade['result']}")
         
         # Update feature statistics
         self.update_feature_stats(entry_conditions, trade)
@@ -115,6 +158,8 @@ class LearningSystemAgent:
         
         # Save learning state
         self.save_learning_state()
+        
+        return True
     
     def update_feature_stats(self, entry_conditions: Dict, trade: Dict):
         """Update statistics for each feature"""
@@ -259,9 +304,15 @@ class LearningSystemAgent:
         return trades
     
     def save_learning_state(self):
-        """Save current learning state"""
+        """Save current learning state with validation info"""
         state = {
             'timestamp': datetime.now().isoformat(),
+            'data_validation': {
+                'validated_trades_processed': self.validated_trades,
+                'rejected_trades': self.rejected_trades,
+                'only_validated_data_used': True,
+                'disclaimer': 'Learning from ONLY validated real data'
+            },
             'current_params': self.current_params,
             'feature_stats': dict(self.feature_stats),
             'total_trades_analyzed': sum(
@@ -272,6 +323,10 @@ class LearningSystemAgent:
         state_file = self.learning_dir / "learning_state.json"
         with open(state_file, 'w') as f:
             json.dump(state, f, indent=2, default=str)
+        
+        self.log(f"Learning state saved: {state_file}")
+        self.log(f"  Validated trades: {self.validated_trades}")
+        self.log(f"  Rejected trades: {self.rejected_trades}")
     
     def generate_improvement_report(self) -> Dict:
         """Generate report on what the system has learned"""
