@@ -1,0 +1,97 @@
+{
+  "trade_id": "demo_001",
+  "timestamp": "2026-03-09T00:43:13.993475",
+  "trade_summary": {
+    "direction": "LONG",
+    "result": "LOSS",
+    "entry": 2000.0,
+    "exit": 1940.0,
+    "pnl_pct": -3.0,
+    "duration_hours": 1.0
+  },
+  "entry_conditions": {
+    "1d": {
+      "trend": "STRONG_UPTREND",
+      "rsi": 89.39348059154258,
+      "macd_hist": 0,
+      "adx": 79.24667763551523,
+      "volume_ratio": 0.9941003870494944,
+      "bb_position": 0.5,
+      "atr": 220.72142857142865,
+      "price": 3886.04
+    },
+    "4h": {
+      "trend": "UPTREND",
+      "rsi": 77.51999787398022,
+      "macd_hist": 0,
+      "adx": 20.19424091960078,
+      "volume_ratio": 0.4368771231199457,
+      "bb_position": 0.5,
+      "atr": 102.86285714285708,
+      "price": 3954.66
+    },
+    "1h": {
+      "trend": "STRONG_UPTREND",
+      "rsi": 53.168812316155424,
+      "macd_hist": 0,
+      "adx": 59.77458372216635,
+      "volume_ratio": 0.875237197793577,
+      "bb_position": 0.5,
+      "atr": 38.4992857142857,
+      "price": 3950.19
+    }
+  },
+  "exit_conditions": {
+    "1d": {
+      "trend": "STRONG_UPTREND",
+      "rsi": 89.39348059154258,
+      "macd_hist": 0,
+      "adx": 79.24667763551523,
+      "volume_ratio": 0.9941003870494944,
+      "bb_position": 0.5,
+      "atr": 220.72142857142865,
+      "price": 3886.04
+    },
+    "4h": {
+      "trend": "UPTREND",
+      "rsi": 77.51999787398022,
+      "macd_hist": 0,
+      "adx": 20.19424091960078,
+      "volume_ratio": 0.4368771231199457,
+      "bb_position": 0.5,
+      "atr": 102.86285714285708,
+      "price": 3954.66
+    },
+    "1h": {
+      "trend": "STRONG_UPTREND",
+      "rsi": 69.76687712481774,
+      "macd_hist": 0,
+      "adx": 58.06058354616169,
+      "volume_ratio": 0.6806154555571119,
+      "bb_position": 0.5,
+      "atr": 34.082142857142834,
+      "price": 3954.66
+    }
+  },
+  "price_action": {
+    "max_favorable_excursion": 97.99900000000001,
+    "max_adverse_excursion": -96.3015,
+    "candles_in_trade": 2,
+    "volume_avg": 80547.8995,
+    "volatility_avg": 36.290714285714266
+  },
+  "root_cause": {
+    "primary_reason": "EARLY_STOP_HIT",
+    "all_reasons": [
+      "EARLY_STOP_HIT",
+      "FALSE_BREAKOUT"
+    ],
+    "confidence": 40,
+    "prevention_suggestion": "Wait for 1-2 candle confirmation before entry"
+  },
+  "lessons_learned": [
+    "Avoid EARLY_STOP_HIT setups",
+    "Wait for 1-2 candle confirmation before entry"
+  ],
+  "signal_quality_score": 70
+}

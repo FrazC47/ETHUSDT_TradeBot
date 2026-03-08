@@ -1,0 +1,21 @@
+{
+  "baseline": {
+    "name": "baseline",
+    "description": "Original +1040% strategy",
+    "params": {
+      "risk_per_trade": 0.015,
+      "min_confirmations": 4,
+      "min_r_r": 2.0,
+      "adx_threshold": 25,
+      "volume_threshold": 1.0
+    },
+    "status": "active",
+    "allocation": 0.5,
+    "stats": {
+      "trades": 3,
+      "wins": 1,
+      "total_return": 0.0,
+      "win_rate": 33.33333333333333
+    }
+  }
+}

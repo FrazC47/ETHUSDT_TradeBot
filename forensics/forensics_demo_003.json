@@ -1,0 +1,98 @@
+{
+  "trade_id": "demo_003",
+  "timestamp": "2026-03-09T00:43:20.965112",
+  "trade_summary": {
+    "direction": "SHORT",
+    "result": "LOSS",
+    "entry": 2100.0,
+    "exit": 2163.0,
+    "pnl_pct": -3.0,
+    "duration_hours": 1.0
+  },
+  "entry_conditions": {
+    "1d": {
+      "trend": "STRONG_UPTREND",
+      "rsi": 88.95102987314144,
+      "macd_hist": 0,
+      "adx": 77.03975906687101,
+      "volume_ratio": 0.2957020833985508,
+      "bb_position": 0.5,
+      "atr": 218.7421428571429,
+      "price": 3908.15
+    },
+    "4h": {
+      "trend": "UPTREND",
+      "rsi": 68.91399215599624,
+      "macd_hist": 0,
+      "adx": 29.663063069665608,
+      "volume_ratio": 0.3667241950909486,
+      "bb_position": 0.5,
+      "atr": 75.84857142857138,
+      "price": 3915.99
+    },
+    "1h": {
+      "trend": "RANGING",
+      "rsi": 47.61512674233955,
+      "macd_hist": 0,
+      "adx": 19.266445764186415,
+      "volume_ratio": 0.3976837659768003,
+      "bb_position": 0.5,
+      "atr": 26.563571428571414,
+      "price": 3923.89
+    }
+  },
+  "exit_conditions": {
+    "1d": {
+      "trend": "STRONG_UPTREND",
+      "rsi": 88.95102987314144,
+      "macd_hist": 0,
+      "adx": 77.03975906687101,
+      "volume_ratio": 0.2957020833985508,
+      "bb_position": 0.5,
+      "atr": 218.7421428571429,
+      "price": 3908.15
+    },
+    "4h": {
+      "trend": "UPTREND",
+      "rsi": 68.91399215599624,
+      "macd_hist": 0,
+      "adx": 29.663063069665608,
+      "volume_ratio": 0.3667241950909486,
+      "bb_position": 0.5,
+      "atr": 75.84857142857138,
+      "price": 3915.99
+    },
+    "1h": {
+      "trend": "MIXED",
+      "rsi": 40.35970390932219,
+      "macd_hist": 0,
+      "adx": 21.386275385746533,
+      "volume_ratio": 0.6689637770710608,
+      "bb_position": 0.5,
+      "atr": 26.839285714285683,
+      "price": 3909.83
+    }
+  },
+  "price_action": {
+    "max_favorable_excursion": -85.23857142857145,
+    "max_adverse_excursion": 87.37428571428572,
+    "candles_in_trade": 2,
+    "volume_avg": 68475.7305,
+    "volatility_avg": 26.70142857142855
+  },
+  "root_cause": {
+    "primary_reason": "CHOPPY_MARKET",
+    "all_reasons": [
+      "CHOPPY_MARKET",
+      "EARLY_STOP_HIT",
+      "LOW_VOLUME"
+    ],
+    "confidence": 60,
+    "prevention_suggestion": "Avoid trading when ADX < 20"
+  },
+  "lessons_learned": [
+    "Avoid CHOPPY_MARKET setups",
+    "Avoid trading when ADX < 20"
+  ],
+  "signal_quality_score": 35
+}

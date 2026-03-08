@@ -1,0 +1,194 @@
+{
+  "timestamp": "2026-03-09T00:43:21.282995",
+  "current_params": {
+    "risk_per_trade": 0.015,
+    "min_confirmations": 4,
+    "min_r_r": 2.0,
+    "adx_threshold": 25.5,
+    "volume_threshold": 1.0,
+    "rsi_overbought": 75,
+    "rsi_oversold": 25,
+    "tf_weights": {
+      "1M": 5,
+      "1w": 4,
+      "1d": 3,
+      "4h": 2,
+      "1h": 1,
+      "15m": 1
+    },
+    "entry_aggression": 0.5,
+    "learning_rate": 0.1,
+    "last_updated": "2026-03-09T00:43:17.800783"
+  },
+  "feature_stats": {
+    "1d_trend_STRONG_UPTREND": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1d_rsi_88.95102987314144": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1d_macd_hist_0": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1d_adx_77.03975906687101": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1d_volume_ratio_0.2957020833985508": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1d_bb_position_0.5": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1d_atr_218.7421428571429": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "4h_trend_UPTREND": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "4h_rsi_68.91399215599624": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "4h_macd_hist_0": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "4h_adx_29.663063069665608": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "4h_volume_ratio_0.3667241950909486": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "4h_bb_position_0.5": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "4h_atr_75.84857142857138": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1h_trend_RANGING": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1h_rsi_47.61512674233955": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1h_macd_hist_0": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1h_adx_19.266445764186415": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1h_volume_ratio_0.3976837659768003": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1h_bb_position_0.5": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    },
+    "1h_atr_26.563571428571414": {
+      "appearances": 1,
+      "wins_when_present": 0,
+      "losses_when_present": 1,
+      "win_rate": 0.0,
+      "avg_return": -3.0,
+      "confidence": 5
+    }
+  },
+  "total_trades_analyzed": 1
+}

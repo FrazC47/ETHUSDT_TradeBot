@@ -1,0 +1,20 @@
+{
+  "risk_per_trade": 0.015,
+  "min_confirmations": 4,
+  "min_r_r": 2.0,
+  "adx_threshold": 25.5,
+  "volume_threshold": 1.0,
+  "rsi_overbought": 75,
+  "rsi_oversold": 25,
+  "tf_weights": {
+    "1M": 5,
+    "1w": 4,
+    "1d": 3,
+    "4h": 2,
+    "1h": 1,
+    "15m": 1
+  },
+  "entry_aggression": 0.5,
+  "learning_rate": 0.1,
+  "last_updated": "2026-03-09T00:43:21.283369"
+}

@@ -1,0 +1,98 @@
+{
+  "trade_id": "demo_002",
+  "timestamp": "2026-03-09T00:43:17.496567",
+  "trade_summary": {
+    "direction": "LONG",
+    "result": "WIN",
+    "entry": 2050.0,
+    "exit": 2173.0,
+    "pnl_pct": 6.0,
+    "duration_hours": 6.0
+  },
+  "entry_conditions": {
+    "1d": {
+      "trend": "STRONG_UPTREND",
+      "rsi": 89.39348059154258,
+      "macd_hist": 0,
+      "adx": 79.24667763551523,
+      "volume_ratio": 0.9941003870494944,
+      "bb_position": 0.5,
+      "atr": 220.72142857142865,
+      "price": 3886.04
+    },
+    "4h": {
+      "trend": "UPTREND",
+      "rsi": 60.30731451889574,
+      "macd_hist": 0,
+      "adx": 23.338287073230383,
+      "volume_ratio": 1.2452061924351403,
+      "bb_position": 0.5,
+      "atr": 92.8107142857142,
+      "price": 3904.01
+    },
+    "1h": {
+      "trend": "STRONG_UPTREND",
+      "rsi": 72.3714041009624,
+      "macd_hist": 0,
+      "adx": 58.77786981368222,
+      "volume_ratio": 0.6416597543511686,
+      "bb_position": 0.5,
+      "atr": 31.83785714285711,
+      "price": 3948.78
+    }
+  },
+  "exit_conditions": {
+    "1d": {
+      "trend": "STRONG_UPTREND",
+      "rsi": 89.39348059154258,
+      "macd_hist": 0,
+      "adx": 79.24667763551523,
+      "volume_ratio": 0.9941003870494944,
+      "bb_position": 0.5,
+      "atr": 220.72142857142865,
+      "price": 3886.04
+    },
+    "4h": {
+      "trend": "UPTREND",
+      "rsi": 55.00726580568576,
+      "macd_hist": 0,
+      "adx": 23.114205627619025,
+      "volume_ratio": 1.2428035785572609,
+      "bb_position": 0.5,
+      "atr": 95.4057142857142,
+      "price": 3932.0
+    },
+    "1h": {
+      "trend": "MIXED",
+      "rsi": 54.65589724916418,
+      "macd_hist": 0,
+      "adx": 42.542536311842696,
+      "volume_ratio": 0.7393119444896247,
+      "bb_position": 0.5,
+      "atr": 48.06071428571421,
+      "price": 3931.75
+    }
+  },
+  "price_action": {
+    "max_favorable_excursion": 95.28439024390244,
+    "max_adverse_excursion": -86.6380487804878,
+    "candles_in_trade": 7,
+    "volume_avg": 279853.25914285716,
+    "volatility_avg": 39.37020408163262
+  },
+  "root_cause": {
+    "primary_reason": "STRONG_TREND",
+    "all_reasons": [
+      "STRONG_TREND",
+      "MULTI_TF_CONFLUENCE",
+      "PERFECT_ENTRY"
+    ],
+    "confidence": 70,
+    "replication_suggestion": "Only trade when ADX > 30"
+  },
+  "lessons_learned": [
+    "Seek STRONG_TREND setups",
+    "Only trade when ADX > 30"
+  ],
+  "signal_quality_score": 55
+}
