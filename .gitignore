@@ -1,0 +1,21 @@
+# Data files - too large for GitHub
+data/indicators/*.csv
+data/raw/*.csv
+data/*.csv
+
+# Logs
+*.log
+logs/*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Results
+backtest_results/*.csv
+final_results/*.csv
+
+# Temporary files
+*.tmp
+*.swp
