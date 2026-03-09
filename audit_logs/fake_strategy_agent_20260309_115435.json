@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-03-09T11:54:35.042046",
+  "agent": "fake_strategy_agent",
+  "operation": "claim_1040_percent_return",
+  "inputs": {
+    "strategy": "mystery_strategy",
+    "period": "6_months"
+  },
+  "outputs": {
+    "total_return": 1040,
+    "win_rate": 95.5,
+    "total_trades": 100
+  },
+  "data_sources": [
+    {
+      "source": "/simulated/data/fake_prices.csv",
+      "verified": false,
+      "checks": {
+        "valid_location": false
+      }
+    }
+  ],
+  "verification_status": "failed",
+  "suspicious_findings": [
+    "Suspicious return: 1040% (too high)",
+    "Suspicious win rate: 95.5% (too perfect)"
+  ]
+}

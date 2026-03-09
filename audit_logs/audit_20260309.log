@@ -1,0 +1,19 @@
+2026-03-09T11:54:22.196158 | INFO | AUDITOR | Executing audit task: audit_operation
+2026-03-09T11:54:22.196355 | INFO | backtesting_agent | Auditing backtesting_agent: 6_month_backtest
+2026-03-09T11:54:22.196432 | VERIFICATION | backtesting_agent | Verifying data source: /root/.openclaw/workspace/data/indicators/1h_indicators.csv
+2026-03-09T11:54:22.204118 | VERIFICATION | backtesting_agent | ✅ VERIFIED: Data source '/root/.openclaw/workspace/data/indicators/1h_indicators.csv' is valid
+2026-03-09T11:54:22.204282 | VERIFICATION | backtesting_agent | Verifying data source: /root/.openclaw/workspace/data/indicators/4h_indicators.csv
+2026-03-09T11:54:22.219897 | VERIFICATION | backtesting_agent | ✅ VERIFIED: Data source '/root/.openclaw/workspace/data/indicators/4h_indicators.csv' is valid
+2026-03-09T11:54:22.220048 | VERIFICATION | backtesting_agent | Verifying data source: /root/.openclaw/workspace/data/indicators/1d_indicators.csv
+2026-03-09T11:54:22.226318 | VERIFICATION | backtesting_agent | ✅ VERIFIED: Data source '/root/.openclaw/workspace/data/indicators/1d_indicators.csv' is valid
+2026-03-09T11:54:22.226637 | INFO | backtesting_agent | ✅ Audit PASSED for backtesting_agent: 6_month_backtest
+2026-03-09T11:54:35.041842 | INFO | AUDITOR | Executing audit task: audit_operation
+2026-03-09T11:54:35.041976 | INFO | fake_strategy_agent | Auditing fake_strategy_agent: claim_1040_percent_return
+2026-03-09T11:54:35.042051 | VERIFICATION | fake_strategy_agent | Verifying data source: /simulated/data/fake_prices.csv
+2026-03-09T11:54:35.042112 | WARNING | fake_strategy_agent | ⚠️ SUSPICIOUS: Data source '/simulated/data/fake_prices.csv' not in validated locations. Agent fake_strategy_agent may be using fake data.
+2026-03-09T11:54:35.042172 | WARNING | fake_strategy_agent | 🚩 AUDIT ALERT: fake_strategy_agent used unverified data source: /simulated/data/fake_prices.csv
+2026-03-09T11:54:35.042247 | WARNING | fake_strategy_agent | 🚩 SUSPICIOUS: fake_strategy_agent claims 1040% return - likely fake
+2026-03-09T11:54:35.042313 | WARNING | fake_strategy_agent | 🚩 SUSPICIOUS: fake_strategy_agent claims 95.5% win rate - likely fake
+2026-03-09T11:54:35.042540 | ERROR | fake_strategy_agent | ❌ Audit FAILED for fake_strategy_agent: claim_1040_percent_return
+2026-03-09T11:54:43.991553 | INFO | AUDITOR | Executing audit task: generate_report
+2026-03-09T11:54:43.992005 | INFO | AUDITOR | Audit report generated: /root/.openclaw/workspace/audit_logs/audit_report_20260309_115443.json

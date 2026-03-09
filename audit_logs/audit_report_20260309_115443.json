@@ -1,0 +1,131 @@
+{
+  "generated": "2026-03-09T11:54:43.991682",
+  "summary": {
+    "total_audits": 1,
+    "warnings_issued": 0,
+    "errors_found": 0,
+    "verifications_passed": 0,
+    "verifications_failed": 0
+  },
+  "principles": [
+    "TRUST BUT VERIFY - Question everything",
+    "SOURCE OF TRUTH - All data must be traceable",
+    "IMMUTABLE LOGS - Once recorded, never altered",
+    "GROUNDED IN FACTS - No hallucinations allowed"
+  ],
+  "validated_data_sources": [
+    "/data/raw/",
+    "/data/indicators/",
+    "https://fapi.binance.com"
+  ],
+  "recent_audits": [
+    {
+      "timestamp": "2026-03-09T11:54:22.196158",
+      "level": "info",
+      "agent": "AUDITOR",
+      "message": "Executing audit task: audit_operation"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:22.196355",
+      "level": "info",
+      "agent": "backtesting_agent",
+      "message": "Auditing backtesting_agent: 6_month_backtest"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:22.196432",
+      "level": "verification",
+      "agent": "backtesting_agent",
+      "message": "Verifying data source: /root/.openclaw/workspace/data/indicators/1h_indicators.csv"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:22.204118",
+      "level": "verification",
+      "agent": "backtesting_agent",
+      "message": "\u2705 VERIFIED: Data source '/root/.openclaw/workspace/data/indicators/1h_indicators.csv' is valid"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:22.204282",
+      "level": "verification",
+      "agent": "backtesting_agent",
+      "message": "Verifying data source: /root/.openclaw/workspace/data/indicators/4h_indicators.csv"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:22.219897",
+      "level": "verification",
+      "agent": "backtesting_agent",
+      "message": "\u2705 VERIFIED: Data source '/root/.openclaw/workspace/data/indicators/4h_indicators.csv' is valid"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:22.220048",
+      "level": "verification",
+      "agent": "backtesting_agent",
+      "message": "Verifying data source: /root/.openclaw/workspace/data/indicators/1d_indicators.csv"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:22.226318",
+      "level": "verification",
+      "agent": "backtesting_agent",
+      "message": "\u2705 VERIFIED: Data source '/root/.openclaw/workspace/data/indicators/1d_indicators.csv' is valid"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:22.226637",
+      "level": "info",
+      "agent": "backtesting_agent",
+      "message": "\u2705 Audit PASSED for backtesting_agent: 6_month_backtest"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:35.041842",
+      "level": "info",
+      "agent": "AUDITOR",
+      "message": "Executing audit task: audit_operation"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:35.041976",
+      "level": "info",
+      "agent": "fake_strategy_agent",
+      "message": "Auditing fake_strategy_agent: claim_1040_percent_return"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:35.042051",
+      "level": "verification",
+      "agent": "fake_strategy_agent",
+      "message": "Verifying data source: /simulated/data/fake_prices.csv"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:35.042112",
+      "level": "warning",
+      "agent": "fake_strategy_agent",
+      "message": "\u26a0\ufe0f SUSPICIOUS: Data source '/simulated/data/fake_prices.csv' not in validated locations. Agent fake_strategy_agent may be using fake data."
+    },
+    {
+      "timestamp": "2026-03-09T11:54:35.042172",
+      "level": "warning",
+      "agent": "fake_strategy_agent",
+      "message": "\ud83d\udea9 AUDIT ALERT: fake_strategy_agent used unverified data source: /simulated/data/fake_prices.csv"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:35.042247",
+      "level": "warning",
+      "agent": "fake_strategy_agent",
+      "message": "\ud83d\udea9 SUSPICIOUS: fake_strategy_agent claims 1040% return - likely fake"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:35.042313",
+      "level": "warning",
+      "agent": "fake_strategy_agent",
+      "message": "\ud83d\udea9 SUSPICIOUS: fake_strategy_agent claims 95.5% win rate - likely fake"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:35.042540",
+      "level": "error",
+      "agent": "fake_strategy_agent",
+      "message": "\u274c Audit FAILED for fake_strategy_agent: claim_1040_percent_return"
+    },
+    {
+      "timestamp": "2026-03-09T11:54:43.991553",
+      "level": "info",
+      "agent": "AUDITOR",
+      "message": "Executing audit task: generate_report"
+    }
+  ]
+}

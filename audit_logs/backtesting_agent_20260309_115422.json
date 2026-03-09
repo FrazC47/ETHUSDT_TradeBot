@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-03-09T11:54:22.196427",
+  "agent": "backtesting_agent",
+  "operation": "6_month_backtest",
+  "inputs": {
+    "start_date": "2025-09-01",
+    "end_date": "2026-03-07",
+    "initial_capital": 1000,
+    "risk_per_trade": 0.015
+  },
+  "outputs": {
+    "total_return": 2.43,
+    "win_rate": 34.9,
+    "total_trades": 344,
+    "data_validated": true
+  },
+  "data_sources": [
+    {
+      "source": "/root/.openclaw/workspace/data/indicators/1h_indicators.csv",
+      "verified": true,
+      "checks": {
+        "valid_location": true,
+        "file_exists": true,
+        "file_size": 96799333,
+        "sample_valid": true
+      }
+    },
+    {
+      "source": "/root/.openclaw/workspace/data/indicators/4h_indicators.csv",
+      "verified": true,
+      "checks": {
+        "valid_location": true,
+        "file_exists": true,
+        "file_size": 24192865,
+        "sample_valid": true
+      }
+    },
+    {
+      "source": "/root/.openclaw/workspace/data/indicators/1d_indicators.csv",
+      "verified": true,
+      "checks": {
+        "valid_location": true,
+        "file_exists": true,
+        "file_size": 3504283,
+        "sample_valid": true
+      }
+    }
+  ],
+  "verification_status": "passed"
+}
