@@ -436,6 +436,21 @@
                     <div class="toggle-switch active" data-indicator="stops"></div>
                 </div>
             </div>
+            
+            <div class="panel">
+                <div class="panel-title">Rejected Setups (STAY FLAT)</div>
+                <div class="indicator-item">
+                    <div class="indicator-label">Show Rejected Setups</div>
+                    <div class="toggle-switch" data-indicator="rejected"></div>
+                </div>
+                <div class="indicator-item">
+                    <div class="indicator-label">Show Rejection Reason</div>
+                    <div class="toggle-switch" data-indicator="reject-reason"></div>
+                </div>
+                <div style="margin-top: 10px; font-size: 11px; color: #868993; padding: 8px; background: #1a1d29; border-radius: 4px;">
+                    💡 Click rejected setups to see why they were filtered out
+                </div>
+            </div>
         </div>
         
         <div class="chart-container">
@@ -457,8 +472,10 @@
         let candleSeries;
         let indicatorSeries = {};
         let tradeMarkers = [];
+        let rejectedSetupMarkers = [];
         let currentData = [];
         let trades = [];
+        let rejectedSetups = [];
         
         // Indicator configurations
         const indicatorConfig = {
@@ -750,6 +767,143 @@
             document.getElementById('tradesPanel').style.display = 'block';
         }
         
+        // Add rejected setup markers to chart
+        function addRejectedSetupMarkers(setupsData) {
+            rejectedSetupMarkers = [];
+            
+            setupsData.forEach((setup, index) => {
+                // Yellow triangle for rejected setups
+                const marker = {
+                    time: setup.time,
+                    position: setup.direction === 'LONG' ? 'belowBar' : 'aboveBar',
+                    color: '#FFEB3B', // Yellow
+                    shape: setup.direction === 'LONG' ? 'triangleUp' : 'triangleDown',
+                    text: `R${index + 1}`,
+                    size: 1,
+                };
+                
+                rejectedSetupMarkers.push(marker);
+            });
+            
+            // Combine with trade markers if they exist
+            updateAllMarkers();
+        }
+        
+        // Update all markers (trades + rejected setups)
+        function updateAllMarkers() {
+            let allMarkers = [...tradeMarkers];
+            
+            // Add rejected setups if toggle is on
+            const showRejected = document.querySelector('[data-indicator="rejected"]')?.classList.contains('active');
+            if (showRejected) {
+                allMarkers = [...allMarkers, ...rejectedSetupMarkers];
+            }
+            
+            candleSeries.setMarkers(allMarkers);
+        }
+        
+        // Generate sample rejected setups for demonstration
+        function generateSampleRejectedSetups() {
+            rejectedSetups = [
+                {
+                    id: 1,
+                    time: currentData[80]?.time,
+                    direction: 'LONG',
+                    price: 2180,
+                    reason: 'Insufficient volume (vol_ratio: 0.65)',
+                    confluenceScore: 8,
+                    confirmations: ['1h_BULLISH', '4h_BULLISH'],
+                },
+                {
+                    id: 2,
+                    time: currentData[120]?.time,
+                    direction: 'SHORT',
+                    price: 2350,
+                    reason: 'ADX too low (18.5) - choppy market',
+                    confluenceScore: 7,
+                    confirmations: ['1h_BEARISH'],
+                },
+                {
+                    id: 3,
+                    time: currentData[180]?.time,
+                    direction: 'LONG',
+                    price: 2250,
+                    reason: 'Only 2 confirmations (need 4+)',
+                    confluenceScore: 6,
+                    confirmations: ['1h_BULLISH', '15m_BULLISH'],
+                },
+                {
+                    id: 4,
+                    time: currentData[250]?.time,
+                    direction: 'SHORT',
+                    price: 2450,
+                    reason: 'Price above VWAP for SHORT (31% win rate)',
+                    confluenceScore: 9,
+                    confirmations: ['1d_BEARISH', '4h_BEARISH', '1h_BEARISH'],
+                },
+                {
+                    id: 5,
+                    time: currentData[300]?.time,
+                    direction: 'LONG',
+                    price: 2380,
+                    reason: 'R:R ratio only 1.5:1 (need 2:1+)',
+                    confluenceScore: 10,
+                    confirmations: ['1d_BULLISH', '4h_BULLISH', '1h_BULLISH', '15m_BULLISH'],
+                },
+            ].filter(s => s.time);
+            
+            renderRejectedSetupsList();
+            addRejectedSetupMarkers(rejectedSetups);
+        }
+        
+        // Render rejected setups list
+        function renderRejectedSetupsList() {
+            const container = document.getElementById('tradesList');
+            
+            // Add separator if trades exist
+            if (trades.length > 0) {
+                const separator = document.createElement('div');
+                separator.className = 'section-title';
+                separator.style.marginTop = '20px';
+                separator.textContent = `Rejected Setups (${rejectedSetups.length})`;
+                container.appendChild(separator);
+            }
+            
+            rejectedSetups.forEach((setup, index) => {
+                const item = document.createElement('div');
+                item.className = 'trade-item';
+                item.style.borderLeft = '3px solid #FFEB3B';
+                item.dataset.setupId = setup.id;
+                
+                item.innerHTML = `
+                    <div class="trade-number" style="background: #FFEB3B; color: #000;">R${index + 1}</div>
+                    <div class="trade-info">
+                        <div>${setup.direction} - REJECTED</div>
+                        <div style="font-size: 10px; color: #868993;">Score: ${setup.confluenceScore}/10</div>
+                    </div>
+                    <div class="trade-detail">
+                        <div>Price: ${setup.price.toFixed(2)}</div>
+                        <div style="color: #FFEB3B;">Reason: ${setup.reason}</div>
+                        <div style="margin-top: 5px; font-size: 10px;">
+                            Confirmations: ${setup.confirmations.join(', ')}
+                        </div>
+                    </div>
+                `;
+                
+                item.addEventListener('click', () => {
+                    item.classList.toggle('expanded');
+                    item.classList.toggle('active');
+                    
+                    // Center chart on this setup
+                    if (item.classList.contains('active')) {
+                        chart.timeScale().scrollToPosition(setup.time, 10);
+                    }
+                });
+                
+                container.appendChild(item);
+            });
+        }
+        
         // Event listeners
         document.addEventListener('DOMContentLoaded', () => {
             initChart();
@@ -774,7 +928,23 @@
             document.querySelectorAll('.toggle-switch').forEach(toggle => {
                 toggle.addEventListener('click', () => {
                     toggle.classList.toggle('active');
-                    updateIndicators();
+                    
+                    const indicator = toggle.dataset.indicator;
+                    
+                    // Handle rejected setups toggle
+                    if (indicator === 'rejected') {
+                        updateAllMarkers();
+                    } else if (indicator === 'reject-reason') {
+                        // Toggle visibility of rejection reasons
+                        document.querySelectorAll('.trade-item[data-setup-id]').forEach(item => {
+                            const detail = item.querySelector('.trade-detail');
+                            if (detail) {
+                                detail.style.display = toggle.classList.contains('active') ? 'block' : 'none';
+                            }
+                        });
+                    } else {
+                        updateIndicators();
+                    }
                 });
             });
             
@@ -800,6 +970,22 @@
         setTimeout(() => {
             // This would normally load from your data file
             document.getElementById('loading').style.display = 'none';
+            
+            // Generate sample data for demonstration
+            if (currentData.length === 0) {
+                // Create dummy data structure
+                currentData = Array.from({length: 400}, (_, i) => ({
+                    time: 1727808000 + (i * 3600),
+                    open: 2200 + Math.random() * 200,
+                    high: 2300 + Math.random() * 200,
+                    low: 2100 + Math.random() * 200,
+                    close: 2200 + Math.random() * 200,
+                }));
+            }
+            
+            // Generate sample trades and rejected setups
+            generateSampleTrades();
+            generateSampleRejectedSetups();
         }, 1000);
     </script>
 </body>
