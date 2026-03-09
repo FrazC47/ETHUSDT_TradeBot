@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETHUSDT Trading Chart - Interactive Analysis</title>
+    <script src="https://unpkg.com/lightweight-charts@4.1.0/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #131722;
+            color: #d1d4dc;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #1e222d;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #2a2e39;
+        }
+        
+        .header h1 {
+            font-size: 16px;
+            color: #fff;
+        }
+        
+        .timeframe-selector {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .tf-btn {
+            padding: 5px 12px;
+            background: #2a2e39;
+            border: none;
+            color: #d1d4dc;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+        
+        .tf-btn:hover {
+            background: #363a45;
+        }
+        
+        .tf-btn.active {
+            background: #2962ff;
+            color: white;
+        }
+        
+        .main-container {
+            display: flex;
+            height: calc(100vh - 50px);
+        }
+        
+        .sidebar {
+            width: 280px;
+            background: #1e222d;
+            border-right: 1px solid #2a2e39;
+            overflow-y: auto;
+            padding: 15px;
+        }
+        
+        .panel {
+            margin-bottom: 20px;
+            background: #131722;
+            border-radius: 6px;
+            padding: 15px;
+            border: 1px solid #2a2e39;
+        }
+        
+        .panel-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .panel-title::before {
+            content: '';
+            display: inline-block;
+            width: 3px;
+            height: 14px;
+            background: #2962ff;
+            border-radius: 2px;
+        }
+        
+        .indicator-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #2a2e39;
+        }
+        
+        .indicator-item:last-child {
+            border-bottom: none;
+        }
+        
+        .indicator-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+        }
+        
+        .indicator-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+        
+        .toggle-switch {
+            position: relative;
+            width: 36px;
+            height: 18px;
+            background: #2a2e39;
+            border-radius: 9px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .toggle-switch.active {
+            background: #2962ff;
+        }
+        
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 14px;
+            height: 14px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.2s;
+        }
+        
+        .toggle-switch.active::after {
+            transform: translateX(18px);
+        }
+        
+        .date-range {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .date-input {
+            background: #2a2e39;
+            border: 1px solid #363a45;
+            color: #d1d4dc;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        
+        .chart-container {
+            flex: 1;
+            position: relative;
+        }
+        
+        #chart {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .trades-panel {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(30, 34, 45, 0.95);
+            border: 1px solid #2a2e39;
+            border-radius: 6px;
+            padding: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+            width: 250px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .trade-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px;
+            margin-bottom: 5px;
+            background: #131722;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-size: 11px;
+        }
+        
+        .trade-item:hover {
+            background: #2a2e39;
+        }
+        
+        .trade-item.active {
+            border: 1px solid #2962ff;
+        }
+        
+        .trade-number {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        
+        .trade-win {
+            background: #26a69a;
+            color: white;
+        }
+        
+        .trade-loss {
+            background: #ef5350;
+            color: white;
+        }
+        
+        .trade-info {
+            flex: 1;
+        }
+        
+        .trade-pnl {
+            font-weight: bold;
+        }
+        
+        .pnl-positive {
+            color: #26a69a;
+        }
+        
+        .pnl-negative {
+            color: #ef5350;
+        }
+        
+        .trade-detail {
+            display: none;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #2a2e39;
+            font-size: 10px;
+            color: #868993;
+        }
+        
+        .trade-item.expanded .trade-detail {
+            display: block;
+        }
+        
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #2a2e39;
+            border-top-color: #2962ff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .file-input {
+            margin-bottom: 15px;
+        }
+        
+        .file-input input {
+            display: none;
+        }
+        
+        .file-label {
+            display: block;
+            padding: 10px;
+            background: #2962ff;
+            color: white;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.2s;
+        }
+        
+        .file-label:hover {
+            background: #1e54c5;
+        }
+        
+        .section-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #868993;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📈 ETHUSDT Trading Chart</h1>
+        <div class="timeframe-selector">
+            <button class="tf-btn" data-tf="1M">1M</button>
+            <button class="tf-btn" data-tf="1W">1W</button>
+            <button class="tf-btn" data-tf="1D">1D</button>
+            <button class="tf-btn" data-tf="4H">4H</button>
+            <button class="tf-btn active" data-tf="1H">1H</button>
+            <button class="tf-btn" data-tf="15M">15M</button>
+            <button class="tf-btn" data-tf="5M">5M</button>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="panel">
+                <div class="panel-title">Data Source</div>
+                <div class="file-input">
+                    <label class="file-label" for="csvFile">
+                        📁 Load CSV File
+                    </label>
+                    <input type="file" id="csvFile" accept=".csv">
+                </div>
+                <div id="fileInfo" style="font-size: 11px; color: #868993;"></div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-title">Moving Averages</div>
+                <div class="indicator-item">
+                    <div class="indicator-label">
+                        <div class="indicator-color" style="background: #2196F3;"></div>
+                        EMA 9
+                    </div>
+                    <div class="toggle-switch active" data-indicator="ema9"></div>
+                </div>
+                <div class="indicator-item">
+                    <div class="indicator-label">
+                        <div class="indicator-color" style="background: #FF9800;"></div>
+                        EMA 21
+                    </div>
+                    <div class="toggle-switch active" data-indicator="ema21"></div>
+                </div>
+                <div class="indicator-item">
+                    <div class="indicator-label">
+                        <div class="indicator-color" style="background: #9C27B0;"></div>
+                        EMA 50
+                    </div>
+                    <div class="toggle-switch" data-indicator="ema50"></div>
+                </div>
+                <div class="indicator-item">
+                    <div class="indicator-label">
+                        <div class="indicator-color" style="background: #795548;"></div>
+                        EMA 200
+                    </div>
+                    <div class="toggle-switch" data-indicator="ema200"></div>
+                </div>
+                
+                <div class="section-title" style="margin-top: 15px;">Date Range</div>
+                <div class="date-range">
+                    <input type="datetime-local" class="date-input" id="startDate" placeholder="Start Date">
+                    <input type="datetime-local" class="date-input" id="endDate" placeholder="End Date">
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-title">Oscillators</div>
+                <div class="indicator-item">
+                    <div class="indicator-label">
+                        <div class="indicator-color" style="background: #E91E63;"></div>
+                        RSI (14)
+                    </div>
+                    <div class="toggle-switch" data-indicator="rsi"></div>
+                </div>
+                <div class="indicator-item">
+                    <div class="indicator-label">
+                        <div class="indicator-color" style="background: #00BCD4;"></div>
+                        MACD
+                    </div>
+                    <div class="toggle-switch" data-indicator="macd"></div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-title">Volatility</div>
+                <div class="indicator-item">
+                    <div class="indicator-label">
+                        <div class="indicator-color" style="background: #607D8B;"></div>
+                        Bollinger Bands
+                    </div>
+                    <div class="toggle-switch" data-indicator="bb"></div>
+                </div>
+                <div class="indicator-item">
+                    <div class="indicator-label">
+                        <div class="indicator-color" style="background: #FF5722;"></div>
+                        ATR (14)
+                    </div>
+                    <div class="toggle-switch" data-indicator="atr"></div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-title">Trades</div>
+                <div class="indicator-item">
+                    <div class="indicator-label">Show All Trades</div>
+                    <div class="toggle-switch active" data-indicator="trades"></div>
+                </div>
+                <div class="indicator-item">
+                    <div class="indicator-label">Show Entry/Exit</div>
+                    <div class="toggle-switch active" data-indicator="markers"></div>
+                </div>
+                <div class="indicator-item">
+                    <div class="indicator-label">Show Stop Loss</div>
+                    <div class="toggle-switch active" data-indicator="stops"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chart-container">
+            <div id="chart"></div>
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <div>Loading chart...</div>
+            </div>
+            <div class="trades-panel" id="tradesPanel" style="display: none;">
+                <div class="section-title">Trade History</div>
+                <div id="tradesList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let chart;
+        let candleSeries;
+        let indicatorSeries = {};
+        let tradeMarkers = [];
+        let currentData = [];
+        let trades = [];
+        
+        // Indicator configurations
+        const indicatorConfig = {
+            ema9: { color: '#2196F3', lineWidth: 1 },
+            ema21: { color: '#FF9800', lineWidth: 1 },
+            ema50: { color: '#9C27B0', lineWidth: 2 },
+            ema200: { color: '#795548', lineWidth: 2 },
+            bb: { color: '#607D8B', lineWidth: 1 },
+            rsi: { color: '#E91E63', lineWidth: 1 },
+            macd: { color: '#00BCD4', lineWidth: 1 },
+            atr: { color: '#FF5722', lineWidth: 1 }
+        };
+        
+        // Initialize chart
+        function initChart() {
+            const chartContainer = document.getElementById('chart');
+            
+            chart = LightweightCharts.createChart(chartContainer, {
+                layout: {
+                    background: { color: '#131722' },
+                    textColor: '#d1d4dc',
+                },
+                grid: {
+                    vertLines: { color: '#2a2e39' },
+                    horzLines: { color: '#2a2e39' },
+                },
+                crosshair: {
+                    mode: LightweightCharts.CrosshairMode.Normal,
+                    vertLine: {
+                        color: '#758696',
+                        labelBackgroundColor: '#758696',
+                    },
+                    horzLine: {
+                        color: '#758696',
+                        labelBackgroundColor: '#758696',
+                    },
+                },
+                rightPriceScale: {
+                    borderColor: '#2a2e39',
+                },
+                timeScale: {
+                    borderColor: '#2a2e39',
+                    timeVisible: true,
+                    secondsVisible: false,
+                },
+            });
+            
+            // Add candlestick series
+            candleSeries = chart.addCandlestickSeries({
+                upColor: '#26a69a',
+                downColor: '#ef5350',
+                borderUpColor: '#26a69a',
+                borderDownColor: '#ef5350',
+                wickUpColor: '#26a69a',
+                wickDownColor: '#ef5350',
+            });
+            
+            // Handle resize
+            window.addEventListener('resize', () => {
+                chart.applyOptions({
+                    width: chartContainer.clientWidth,
+                    height: chartContainer.clientHeight,
+                });
+            });
+        }
+        
+        // Calculate EMA
+        function calculateEMA(data, period) {
+            const k = 2 / (period + 1);
+            let ema = [data[0].value];
+            
+            for (let i = 1; i < data.length; i++) {
+                ema.push(data[i].value * k + ema[i - 1] * (1 - k));
+            }
+            
+            return ema;
+        }
+        
+        // Add indicator to chart
+        function addIndicator(name, data) {
+            if (indicatorSeries[name]) {
+                chart.removeSeries(indicatorSeries[name]);
+            }
+            
+            const config = indicatorConfig[name];
+            indicatorSeries[name] = chart.addLineSeries({
+                color: config.color,
+                lineWidth: config.lineWidth,
+                title: name.toUpperCase(),
+            });
+            
+            indicatorSeries[name].setData(data);
+        }
+        
+        // Remove indicator from chart
+        function removeIndicator(name) {
+            if (indicatorSeries[name]) {
+                chart.removeSeries(indicatorSeries[name]);
+                delete indicatorSeries[name];
+            }
+        }
+        
+        // Add trade markers
+        function addTradeMarkers(tradesData) {
+            tradeMarkers = [];
+            
+            tradesData.forEach((trade, index) => {
+                const entryMarker = {
+                    time: trade.entryTime,
+                    position: trade.direction === 'LONG' ? 'belowBar' : 'aboveBar',
+                    color: trade.direction === 'LONG' ? '#26a69a' : '#ef5350',
+                    shape: trade.direction === 'LONG' ? 'arrowUp' : 'arrowDown',
+                    text: `#${index + 1} ${trade.direction}`,
+                    size: 2,
+                };
+                
+                const exitMarker = {
+                    time: trade.exitTime,
+                    position: trade.direction === 'LONG' ? 'aboveBar' : 'belowBar',
+                    color: trade.result === 'WIN' ? '#26a69a' : '#ef5350',
+                    shape: 'circle',
+                    text: `#${index + 1} ${trade.result}`,
+                    size: 1,
+                };
+                
+                tradeMarkers.push(entryMarker, exitMarker);
+            });
+            
+            candleSeries.setMarkers(tradeMarkers);
+        }
+        
+        // Load CSV data
+        function loadCSV(file) {
+            document.getElementById('loading').style.display = 'block';
+            
+            Papa.parse(file, {
+                header: true,
+                dynamicTyping: true,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    processData(results.data);
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('fileInfo').textContent = 
+                        `Loaded: ${file.name} (${results.data.length} candles)`;
+                },
+                error: function(error) {
+                    console.error('Error parsing CSV:', error);
+                    alert('Error loading CSV file');
+                }
+            });
+        }
+        
+        // Process loaded data
+        function processData(data) {
+            currentData = data.map(row => ({
+                time: new Date(row.open_time).getTime() / 1000,
+                open: row.open,
+                high: row.high,
+                low: row.low,
+                close: row.close,
+                ema9: row.ema_9,
+                ema21: row.ema_21,
+                ema50: row.ema_50,
+                ema200: row.ema_200,
+                rsi: row.rsi_14,
+                macd: row.macd_hist_12_26,
+                bbUpper: row.bb_upper,
+                bbLower: row.bb_lower,
+                atr: row.atr_14,
+            }));
+            
+            // Set candle data
+            const candleData = currentData.map(d => ({
+                time: d.time,
+                open: d.open,
+                high: d.high,
+                low: d.low,
+                close: d.close,
+            }));
+            
+            candleSeries.setData(candleData);
+            chart.timeScale().fitContent();
+            
+            // Update indicators based on toggles
+            updateIndicators();
+        }
+        
+        // Update visible indicators
+        function updateIndicators() {
+            document.querySelectorAll('.toggle-switch').forEach(toggle => {
+                const indicator = toggle.dataset.indicator;
+                const isActive = toggle.classList.contains('active');
+                
+                if (!indicator || !currentData.length) return;
+                
+                if (isActive && indicator.startsWith('ema')) {
+                    const period = indicator.replace('ema', '');
+                    const emaData = currentData
+                        .filter(d => d[indicator] !== null && d[indicator] !== undefined)
+                        .map(d => ({
+                            time: d.time,
+                            value: d[indicator],
+                        }));
+                    
+                    if (emaData.length > 0) {
+                        addIndicator(indicator, emaData);
+                    }
+                } else if (!isActive && indicator.startsWith('ema')) {
+                    removeIndicator(indicator);
+                }
+            });
+        }
+        
+        // Generate sample trades for demonstration
+        function generateSampleTrades() {
+            trades = [
+                {
+                    id: 1,
+                    direction: 'LONG',
+                    entryTime: currentData[100]?.time,
+                    exitTime: currentData[120]?.time,
+                    entryPrice: 2200,
+                    exitPrice: 2332,
+                    stopLoss: 2134,
+                    result: 'WIN',
+                    pnl: 132,
+                },
+                {
+                    id: 2,
+                    direction: 'SHORT',
+                    entryTime: currentData[150]?.time,
+                    exitTime: currentData[170]?.time,
+                    entryPrice: 2400,
+                    exitPrice: 2328,
+                    stopLoss: 2472,
+                    result: 'WIN',
+                    pnl: 72,
+                },
+                {
+                    id: 3,
+                    direction: 'LONG',
+                    entryTime: currentData[200]?.time,
+                    exitTime: currentData[210]?.time,
+                    entryPrice: 2300,
+                    exitPrice: 2231,
+                    stopLoss: 2231,
+                    result: 'LOSS',
+                    pnl: -69,
+                },
+            ].filter(t => t.entryTime && t.exitTime);
+            
+            renderTradesList();
+        }
+        
+        // Render trades list
+        function renderTradesList() {
+            const container = document.getElementById('tradesList');
+            container.innerHTML = '';
+            
+            trades.forEach((trade, index) => {
+                const item = document.createElement('div');
+                item.className = 'trade-item';
+                item.dataset.tradeId = trade.id;
+                
+                const pnlClass = trade.pnl >= 0 ? 'pnl-positive' : 'pnl-negative';
+                const winClass = trade.result === 'WIN' ? 'trade-win' : 'trade-loss';
+                
+                item.innerHTML = `
+                    <div class="trade-number ${winClass}">${index + 1}</div>
+                    <div class="trade-info">
+                        <div>${trade.direction} - ${trade.result}</div>
+                        <div class="trade-pnl ${pnlClass}">${trade.pnl >= 0 ? '+' : ''}${trade.pnl.toFixed(2)}</div>
+                    </div>
+                    <div class="trade-detail">
+                        <div>Entry: ${trade.entryPrice.toFixed(2)}</div>
+                        <div>Exit: ${trade.exitPrice.toFixed(2)}</div>
+                        <div>Stop: ${trade.stopLoss.toFixed(2)}</div>
+                    </div>
+                `;
+                
+                item.addEventListener('click', () => {
+                    item.classList.toggle('expanded');
+                    item.classList.toggle('active');
+                });
+                
+                container.appendChild(item);
+            });
+            
+            document.getElementById('tradesPanel').style.display = 'block';
+        }
+        
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            initChart();
+            
+            // File input
+            document.getElementById('csvFile').addEventListener('change', (e) => {
+                if (e.target.files.length > 0) {
+                    loadCSV(e.target.files[0]);
+                }
+            });
+            
+            // Timeframe buttons
+            document.querySelectorAll('.tf-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.tf-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    // In real implementation, this would load different timeframe data
+                });
+            });
+            
+            // Indicator toggles
+            document.querySelectorAll('.toggle-switch').forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    toggle.classList.toggle('active');
+                    updateIndicators();
+                });
+            });
+            
+            // Date range
+            document.getElementById('startDate').addEventListener('change', updateDateRange);
+            document.getElementById('endDate').addEventListener('change', updateDateRange);
+        });
+        
+        // Update chart based on date range
+        function updateDateRange() {
+            const start = new Date(document.getElementById('startDate').value).getTime() / 1000;
+            const end = new Date(document.getElementById('endDate').value).getTime() / 1000;
+            
+            if (start && end && currentData.length > 0) {
+                chart.timeScale().setVisibleLogicalRange({
+                    from: start,
+                    to: end,
+                });
+            }
+        }
+        
+        // Load sample data on startup
+        setTimeout(() => {
+            // This would normally load from your data file
+            document.getElementById('loading').style.display = 'none';
+        }, 1000);
+    </script>
+</body>
+</html>
