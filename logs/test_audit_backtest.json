@@ -1,0 +1,24 @@
+{
+  "task": "audit_operation",
+  "params": {
+    "agent_name": "backtesting_agent",
+    "operation": "6_month_backtest",
+    "inputs": {
+      "start_date": "2025-09-01",
+      "end_date": "2026-03-07",
+      "initial_capital": 1000,
+      "risk_per_trade": 0.015
+    },
+    "outputs": {
+      "total_return": 2.43,
+      "win_rate": 34.9,
+      "total_trades": 344,
+      "data_validated": true
+    },
+    "data_sources": [
+      "/root/.openclaw/workspace/data/indicators/1h_indicators.csv",
+      "/root/.openclaw/workspace/data/indicators/4h_indicators.csv",
+      "/root/.openclaw/workspace/data/indicators/1d_indicators.csv"
+    ]
+  }
+}

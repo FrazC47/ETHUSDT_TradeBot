@@ -1,0 +1,19 @@
+{
+  "task": "audit_operation",
+  "params": {
+    "agent_name": "fake_strategy_agent",
+    "operation": "claim_1040_percent_return",
+    "inputs": {
+      "strategy": "mystery_strategy",
+      "period": "6_months"
+    },
+    "outputs": {
+      "total_return": 1040,
+      "win_rate": 95.5,
+      "total_trades": 100
+    },
+    "data_sources": [
+      "/simulated/data/fake_prices.csv"
+    ]
+  }
+}
