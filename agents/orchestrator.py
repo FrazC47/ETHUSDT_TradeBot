@@ -9,6 +9,10 @@ import os
 import sys
 from datetime import datetime
 from pathlib import Path
+try:
+    from path_utils import get_project_root
+except ModuleNotFoundError:
+    from agents.path_utils import get_project_root
 from typing import Dict, List, Optional
 import subprocess
 import time
@@ -20,7 +24,7 @@ class TradingOrchestrator:
     """
     
     def __init__(self):
-        self.base_dir = Path("/root/.openclaw/workspace")
+        self.base_dir = get_project_root()
         self.agents_dir = self.base_dir / "agents"
         self.data_dir = self.base_dir / "data"
         self.logs_dir = self.base_dir / "logs"

@@ -17,6 +17,10 @@ import hashlib
 import sys
 from datetime import datetime
 from pathlib import Path
+try:
+    from path_utils import get_project_root
+except ModuleNotFoundError:
+    from agents.path_utils import get_project_root
 from typing import Dict, List, Optional
 from enum import Enum
 
@@ -39,7 +43,7 @@ class AuditorAgent:
     """
     
     def __init__(self, task_file=None):
-        self.base_dir = Path("/root/.openclaw/workspace")
+        self.base_dir = get_project_root()
         self.audit_dir = self.base_dir / "audit_logs"
         self.audit_dir.mkdir(parents=True, exist_ok=True)
         
@@ -57,6 +61,8 @@ class AuditorAgent:
         
         # Known data sources (ground truth)
         self.validated_data_sources = [
+            str((self.base_dir / "data" / "raw").resolve()) + "/",
+            str((self.base_dir / "data" / "indicators").resolve()) + "/",
             "/data/raw/",
             "/data/indicators/",
             "https://fapi.binance.com"  # Only valid API
