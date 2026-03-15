@@ -11,6 +11,10 @@ import hashlib
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
+try:
+    from path_utils import get_project_root
+except ModuleNotFoundError:
+    from agents.path_utils import get_project_root
 from typing import Dict, List, Tuple, Optional
 
 class BacktestingAgent:
@@ -26,12 +30,14 @@ class BacktestingAgent:
     """
     
     def __init__(self, task_file=None):
-        self.base_dir = Path("/root/.openclaw/workspace")
+        self.base_dir = get_project_root()
         self.data_dir = self.base_dir / "data" / "indicators"
-        self.raw_data_dir = Path("/data/raw")  # Raw candle data
+        self.raw_data_dir = self.base_dir / "data" / "raw"
         self.results_dir = self.base_dir / "backtest_results"
-        self.log_file = self.base_dir / "logs" / f"backtest_agent_{datetime.now().strftime('%Y%m%d')}.log"
-        
+        logs_dir = self.base_dir / "logs"
+        logs_dir.mkdir(parents=True, exist_ok=True)
+        self.log_file = logs_dir / f"backtest_agent_{datetime.now().strftime('%Y%m%d')}.log"
+
         self.results_dir.mkdir(parents=True, exist_ok=True)
         self.task = self.load_task(task_file) if task_file else None
         

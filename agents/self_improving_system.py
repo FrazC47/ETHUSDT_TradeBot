@@ -11,6 +11,10 @@ import time
 import subprocess
 from datetime import datetime
 from pathlib import Path
+try:
+    from path_utils import get_project_root
+except ModuleNotFoundError:
+    from agents.path_utils import get_project_root
 from typing import Dict, List
 
 class SelfImprovingSystem:
@@ -27,8 +31,8 @@ class SelfImprovingSystem:
     7. Repeat
     """
     
-    def __init__(self):
-        self.base_dir = Path("/root/.openclaw/workspace")
+    def __init__(self, task_file: str = None):
+        self.base_dir = get_project_root()
         self.agents_dir = self.base_dir / "agents"
         self.forensics_dir = self.base_dir / "forensics"
         self.learning_dir = self.base_dir / "learning"
@@ -40,7 +44,10 @@ class SelfImprovingSystem:
             d.mkdir(parents=True, exist_ok=True)
         
         self.state = self.load_state()
-        self.log_file = self.base_dir / "logs" / f"self_improving_{datetime.now().strftime('%Y%m%d')}.log"
+        logs_dir = self.base_dir / "logs"
+        logs_dir.mkdir(parents=True, exist_ok=True)
+        self.log_file = logs_dir / f"self_improving_{datetime.now().strftime('%Y%m%d')}.log"
+        self.task = self.load_task(task_file) if task_file else None
         
     def log(self, message, level="INFO"):
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -50,6 +57,11 @@ class SelfImprovingSystem:
         with open(self.log_file, 'a') as f:
             f.write(log_entry + "\n")
     
+    def load_task(self, task_file):
+        """Load task parameters from JSON file."""
+        with open(task_file) as f:
+            return json.load(f)
+
     def load_state(self) -> Dict:
         """Load system state"""
         if self.state_file.exists():
@@ -351,9 +363,14 @@ class SelfImprovingSystem:
         return True
 
 def main():
-    system = SelfImprovingSystem()
+    task_file = sys.argv[1] if len(sys.argv) > 1 else None
+    system = SelfImprovingSystem(task_file)
     system.run()
-    
+
+    if task_file:
+        system.execute_task()
+        return
+
     print("\n" + "="*70)
     print("SELF-IMPROVING SYSTEM READY")
     print("="*70)

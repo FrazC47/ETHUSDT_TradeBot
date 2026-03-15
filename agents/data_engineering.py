@@ -11,6 +11,10 @@ import json
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
+try:
+    from path_utils import get_project_root
+except ModuleNotFoundError:
+    from agents.path_utils import get_project_root
 
 class DataEngineeringAgent:
     """
@@ -22,10 +26,12 @@ class DataEngineeringAgent:
     """
     
     def __init__(self, task_file=None):
-        self.base_dir = Path("/root/.openclaw/workspace")
+        self.base_dir = get_project_root()
         self.data_dir = self.base_dir / "data" / "indicators"
-        self.log_file = self.base_dir / "logs" / f"data_agent_{datetime.now().strftime('%Y%m%d')}.log"
-        
+        logs_dir = self.base_dir / "logs"
+        logs_dir.mkdir(parents=True, exist_ok=True)
+        self.log_file = logs_dir / f"data_agent_{datetime.now().strftime('%Y%m%d')}.log"
+        self.task_file_path = Path(task_file) if task_file else None
         self.task = self.load_task(task_file) if task_file else None
         
     def log(self, message):
@@ -50,7 +56,7 @@ class DataEngineeringAgent:
             if result:
                 self.task['result'] = result
             
-            task_file = Path(self.task.get('task_file', f"/tmp/task_{self.task['task_id']}.json"))
+            task_file = self.task_file_path or Path(self.task.get('task_file', f"/tmp/task_{self.task['task_id']}.json"))
             with open(task_file, 'w') as f:
                 json.dump(self.task, f, indent=2, default=str)
     
