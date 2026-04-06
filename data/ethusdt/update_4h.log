@@ -1,0 +1,1064 @@
+[2026-03-23 04:07:24] ==================================================
+[2026-03-23 04:07:24] ETHUSDT 4-Hour Data Update Started
+[2026-03-23 04:07:24] ==================================================
+[2026-03-23 04:07:24] Fetching klines from Binance...
+[2026-03-23 04:07:24] Fetched 1000 candles
+[2026-03-23 04:07:24] Calculating technical indicators...
+[2026-03-23 04:07:24] Indicators calculated successfully
+[2026-03-23 04:07:24] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-23 04:07:24] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-23 04:07:24] --------------------------------------------------
+[2026-03-23 04:07:24] Update Summary:
+[2026-03-23 04:07:24]   Latest Close: 2066.30 USDT
+[2026-03-23 04:07:24]   RSI(14): 33.64
+[2026-03-23 04:07:24]   MACD: -31.2110
+[2026-03-23 04:07:24]   EMA50: 2143.66
+[2026-03-23 04:07:24]   Trend: Bearish
+[2026-03-23 04:07:24] ==================================================
+[2026-03-23 04:07:24] Update completed successfully!
+[2026-03-23 04:07:24] ==================================================
+[2026-03-24 12:06:20] ==================================================
+[2026-03-24 12:06:20] ETHUSDT 4-Hour Data Update Started
+[2026-03-24 12:06:20] ==================================================
+[2026-03-24 12:06:20] Fetching klines from Binance...
+[2026-03-24 12:06:20] Fetched 1000 candles
+[2026-03-24 12:06:20] Calculating technical indicators...
+[2026-03-24 12:06:20] Indicators calculated successfully
+[2026-03-24 12:06:20] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-24 12:06:20] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-24 12:06:20] --------------------------------------------------
+[2026-03-24 12:06:20] Update Summary:
+[2026-03-24 12:06:20]   Latest Close: 2148.08 USDT
+[2026-03-24 12:06:20]   RSI(14): 61.88
+[2026-03-24 12:06:20]   MACD: -6.3515
+[2026-03-24 12:06:20]   EMA50: 2137.53
+[2026-03-24 12:06:20]   Trend: Bullish
+[2026-03-24 12:06:20] ==================================================
+[2026-03-24 12:06:20] Update completed successfully!
+[2026-03-24 12:06:20] ==================================================
+[2026-03-25 12:05:08] ==================================================
+[2026-03-25 12:05:08] ETHUSDT 4-Hour Data Update Started
+[2026-03-25 12:05:08] ==================================================
+[2026-03-25 12:05:08] Fetching klines from Binance...
+[2026-03-25 12:05:08] Fetched 1000 candles
+[2026-03-25 12:05:08] Calculating technical indicators...
+[2026-03-25 12:05:08] Indicators calculated successfully
+[2026-03-25 12:05:08] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-25 12:05:08] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-25 12:05:08] --------------------------------------------------
+[2026-03-25 12:05:08] Update Summary:
+[2026-03-25 12:05:08]   Latest Close: 2159.23 USDT
+[2026-03-25 12:05:08]   RSI(14): 70.25
+[2026-03-25 12:05:08]   MACD: 3.5992
+[2026-03-25 12:05:08]   EMA50: 2140.50
+[2026-03-25 12:05:08]   Trend: Bullish
+[2026-03-25 12:05:08] ==================================================
+[2026-03-25 12:05:08] Update completed successfully!
+[2026-03-25 12:05:08] ==================================================
+[2026-03-26 04:05:28] ==================================================
+[2026-03-26 04:05:28] ETHUSDT 4-Hour Data Update Started
+[2026-03-26 04:05:28] ==================================================
+[2026-03-26 04:05:28] Fetching klines from Binance...
+[2026-03-26 04:05:28] Fetched 1000 candles
+[2026-03-26 04:05:28] Calculating technical indicators...
+[2026-03-26 04:05:28] Indicators calculated successfully
+[2026-03-26 04:05:28] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-26 04:05:28] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-26 04:05:28] --------------------------------------------------
+[2026-03-26 04:05:28] Update Summary:
+[2026-03-26 04:05:28]   Latest Close: 2167.48 USDT
+[2026-03-26 04:05:28]   RSI(14): 58.83
+[2026-03-26 04:05:28]   MACD: 9.3903
+[2026-03-26 04:05:28]   EMA50: 2145.35
+[2026-03-26 04:05:28]   Trend: Bullish
+[2026-03-26 04:05:28] ==================================================
+[2026-03-26 04:05:28] Update completed successfully!
+[2026-03-26 04:05:28] ==================================================
+[2026-03-27 04:06:09] ==================================================
+[2026-03-27 04:06:09] ETHUSDT 4-Hour Data Update Started
+[2026-03-27 04:06:09] ==================================================
+[2026-03-27 04:06:09] Fetching klines from Binance...
+[2026-03-27 04:06:10] Fetched 1000 candles
+[2026-03-27 04:06:10] Calculating technical indicators...
+[2026-03-27 04:06:10] Indicators calculated successfully
+[2026-03-27 04:06:10] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-27 04:06:10] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-27 04:06:10] --------------------------------------------------
+[2026-03-27 04:06:10] Update Summary:
+[2026-03-27 04:06:10]   Latest Close: 2047.61 USDT
+[2026-03-27 04:06:10]   RSI(14): 32.55
+[2026-03-27 04:06:10]   MACD: -17.2078
+[2026-03-27 04:06:10]   EMA50: 2132.08
+[2026-03-27 04:06:10]   Trend: Bearish
+[2026-03-27 04:06:10] ==================================================
+[2026-03-27 04:06:10] Update completed successfully!
+[2026-03-27 04:06:10] ==================================================
+[2026-03-28 08:06:17] ==================================================
+[2026-03-28 08:06:17] ETHUSDT 4-Hour Data Update Started
+[2026-03-28 08:06:17] ==================================================
+[2026-03-28 08:06:17] Fetching klines from Binance...
+[2026-03-28 08:06:17] Fetched 1000 candles
+[2026-03-28 08:06:17] Calculating technical indicators...
+[2026-03-28 08:06:17] Indicators calculated successfully
+[2026-03-28 08:06:18] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-28 08:06:18] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-28 08:06:18] --------------------------------------------------
+[2026-03-28 08:06:18] Update Summary:
+[2026-03-28 08:06:18]   Latest Close: 1992.78 USDT
+[2026-03-28 08:06:18]   RSI(14): 9.29
+[2026-03-28 08:06:18]   MACD: -38.9387
+[2026-03-28 08:06:18]   EMA50: 2102.79
+[2026-03-28 08:06:18]   Trend: Bearish
+[2026-03-28 08:06:18] ==================================================
+[2026-03-28 08:06:18] Update completed successfully!
+[2026-03-28 08:06:18] ==================================================
+[2026-03-29 00:06:37] ==================================================
+[2026-03-29 00:06:37] ETHUSDT 4-Hour Data Update Started
+[2026-03-29 00:06:37] ==================================================
+[2026-03-29 00:06:37] Fetching klines from Binance...
+[2026-03-29 00:06:37] Fetched 1000 candles
+[2026-03-29 00:06:37] Calculating technical indicators...
+[2026-03-29 00:06:37] Indicators calculated successfully
+[2026-03-29 00:06:37] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-29 00:06:37] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-29 00:06:37] --------------------------------------------------
+[2026-03-29 00:06:37] Update Summary:
+[2026-03-29 00:06:37]   Latest Close: 2027.79 USDT
+[2026-03-29 00:06:37]   RSI(14): 38.56
+[2026-03-29 00:06:37]   MACD: -32.8842
+[2026-03-29 00:06:37]   EMA50: 2089.73
+[2026-03-29 00:06:37]   Trend: Bearish
+[2026-03-29 00:06:37] ==================================================
+[2026-03-29 00:06:37] Update completed successfully!
+[2026-03-29 00:06:37] ==================================================
+[2026-03-30 00:06:42] ==================================================
+[2026-03-30 00:06:42] ETHUSDT 4-Hour Data Update Started
+[2026-03-30 00:06:42] ==================================================
+[2026-03-30 00:06:42] Fetching klines from Binance...
+[2026-03-30 00:06:42] Fetched 1000 candles
+[2026-03-30 00:06:42] Calculating technical indicators...
+[2026-03-30 00:06:42] Indicators calculated successfully
+[2026-03-30 00:06:43] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-30 00:06:43] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-30 00:06:43] --------------------------------------------------
+[2026-03-30 00:06:43] Update Summary:
+[2026-03-30 00:06:43]   Latest Close: 1992.43 USDT
+[2026-03-30 00:06:43]   RSI(14): 50.24
+[2026-03-30 00:06:43]   MACD: -28.2928
+[2026-03-30 00:06:43]   EMA50: 2070.35
+[2026-03-30 00:06:43]   Trend: Bullish
+[2026-03-30 00:06:43] ==================================================
+[2026-03-30 00:06:43] Update completed successfully!
+[2026-03-30 00:06:43] ==================================================
+[2026-03-30 04:05:02] ==================================================
+[2026-03-30 04:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-03-30 04:05:02] ==================================================
+[2026-03-30 04:05:02] Fetching klines from Binance...
+[2026-03-30 04:05:03] Fetched 1000 candles
+[2026-03-30 04:05:03] Calculating technical indicators...
+[2026-03-30 04:05:03] Indicators calculated successfully
+[2026-03-30 04:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-30 04:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-30 04:05:03] --------------------------------------------------
+[2026-03-30 04:05:03] Update Summary:
+[2026-03-30 04:05:03]   Latest Close: 1998.06 USDT
+[2026-03-30 04:05:03]   RSI(14): 52.53
+[2026-03-30 04:05:03]   MACD: -26.8437
+[2026-03-30 04:05:03]   EMA50: 2067.64
+[2026-03-30 04:05:03]   Trend: Bullish
+[2026-03-30 04:05:03] ==================================================
+[2026-03-30 04:05:03] Update completed successfully!
+[2026-03-30 04:05:03] ==================================================
+[2026-03-30 08:05:02] ==================================================
+[2026-03-30 08:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-03-30 08:05:02] ==================================================
+[2026-03-30 08:05:02] Fetching klines from Binance...
+[2026-03-30 08:05:03] Fetched 1000 candles
+[2026-03-30 08:05:03] Calculating technical indicators...
+[2026-03-30 08:05:03] Indicators calculated successfully
+[2026-03-30 08:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-30 08:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-30 08:05:03] --------------------------------------------------
+[2026-03-30 08:05:03] Update Summary:
+[2026-03-30 08:05:03]   Latest Close: 1981.19 USDT
+[2026-03-30 08:05:03]   RSI(14): 46.38
+[2026-03-30 08:05:03]   MACD: -27.7910
+[2026-03-30 08:05:03]   EMA50: 2063.75
+[2026-03-30 08:05:03]   Trend: Bullish
+[2026-03-30 08:05:03] ==================================================
+[2026-03-30 08:05:03] Update completed successfully!
+[2026-03-30 08:05:03] ==================================================
+[2026-03-30 12:05:03] ==================================================
+[2026-03-30 12:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-03-30 12:05:03] ==================================================
+[2026-03-30 12:05:03] Fetching klines from Binance...
+[2026-03-30 12:05:03] Fetched 1000 candles
+[2026-03-30 12:05:03] Calculating technical indicators...
+[2026-03-30 12:05:03] Indicators calculated successfully
+[2026-03-30 12:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-30 12:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-30 12:05:03] --------------------------------------------------
+[2026-03-30 12:05:03] Update Summary:
+[2026-03-30 12:05:03]   Latest Close: 2036.85 USDT
+[2026-03-30 12:05:03]   RSI(14): 61.42
+[2026-03-30 12:05:03]   MACD: -19.5692
+[2026-03-30 12:05:03]   EMA50: 2064.75
+[2026-03-30 12:05:03]   Trend: Bullish
+[2026-03-30 12:05:03] ==================================================
+[2026-03-30 12:05:03] Update completed successfully!
+[2026-03-30 12:05:03] ==================================================
+[2026-03-30 16:05:02] ==================================================
+[2026-03-30 16:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-03-30 16:05:02] ==================================================
+[2026-03-30 16:05:02] Fetching klines from Binance...
+[2026-03-30 16:05:02] Fetched 1000 candles
+[2026-03-30 16:05:02] Calculating technical indicators...
+[2026-03-30 16:05:02] Indicators calculated successfully
+[2026-03-30 16:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-30 16:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-30 16:05:02] --------------------------------------------------
+[2026-03-30 16:05:02] Update Summary:
+[2026-03-30 16:05:02]   Latest Close: 2061.40 USDT
+[2026-03-30 16:05:02]   RSI(14): 66.87
+[2026-03-30 16:05:02]   MACD: -12.9644
+[2026-03-30 16:05:02]   EMA50: 2065.48
+[2026-03-30 16:05:02]   Trend: Bullish
+[2026-03-30 16:05:02] ==================================================
+[2026-03-30 16:05:02] Update completed successfully!
+[2026-03-30 16:05:02] ==================================================
+[2026-03-30 20:05:02] ==================================================
+[2026-03-30 20:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-03-30 20:05:02] ==================================================
+[2026-03-30 20:05:02] Fetching klines from Binance...
+[2026-03-30 20:05:03] Fetched 1000 candles
+[2026-03-30 20:05:03] Calculating technical indicators...
+[2026-03-30 20:05:03] Indicators calculated successfully
+[2026-03-30 20:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-30 20:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-30 20:05:03] --------------------------------------------------
+[2026-03-30 20:05:03] Update Summary:
+[2026-03-30 20:05:03]   Latest Close: 2072.59 USDT
+[2026-03-30 20:05:03]   RSI(14): 65.80
+[2026-03-30 20:05:03]   MACD: -7.5614
+[2026-03-30 20:05:03]   EMA50: 2066.13
+[2026-03-30 20:05:03]   Trend: Bullish
+[2026-03-30 20:05:03] ==================================================
+[2026-03-30 20:05:03] Update completed successfully!
+[2026-03-30 20:05:03] ==================================================
+[2026-03-31 00:05:02] ==================================================
+[2026-03-31 00:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-03-31 00:05:02] ==================================================
+[2026-03-31 00:05:02] Fetching klines from Binance...
+[2026-03-31 00:05:03] Fetched 1000 candles
+[2026-03-31 00:05:03] Calculating technical indicators...
+[2026-03-31 00:05:03] Indicators calculated successfully
+[2026-03-31 00:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-31 00:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-31 00:05:03] --------------------------------------------------
+[2026-03-31 00:05:03] Update Summary:
+[2026-03-31 00:05:03]   Latest Close: 2066.86 USDT
+[2026-03-31 00:05:03]   RSI(14): 66.68
+[2026-03-31 00:05:03]   MACD: -4.1972
+[2026-03-31 00:05:03]   EMA50: 2066.23
+[2026-03-31 00:05:03]   Trend: Bullish
+[2026-03-31 00:05:03] ==================================================
+[2026-03-31 00:05:03] Update completed successfully!
+[2026-03-31 00:05:03] ==================================================
+[2026-03-31 04:05:02] ==================================================
+[2026-03-31 04:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-03-31 04:05:02] ==================================================
+[2026-03-31 04:05:02] Fetching klines from Binance...
+[2026-03-31 04:05:03] Fetched 1000 candles
+[2026-03-31 04:05:03] Calculating technical indicators...
+[2026-03-31 04:05:03] Indicators calculated successfully
+[2026-03-31 04:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-31 04:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-31 04:05:03] --------------------------------------------------
+[2026-03-31 04:05:03] Update Summary:
+[2026-03-31 04:05:03]   Latest Close: 2024.90 USDT
+[2026-03-31 04:05:03]   RSI(14): 49.56
+[2026-03-31 04:05:03]   MACD: -7.6403
+[2026-03-31 04:05:03]   EMA50: 2062.99
+[2026-03-31 04:05:03]   Trend: Bullish
+[2026-03-31 04:05:03] ==================================================
+[2026-03-31 04:05:03] Update completed successfully!
+[2026-03-31 04:05:03] ==================================================
+[2026-03-31 08:05:03] ==================================================
+[2026-03-31 08:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-03-31 08:05:03] ==================================================
+[2026-03-31 08:05:03] Fetching klines from Binance...
+[2026-03-31 08:05:03] Fetched 1000 candles
+[2026-03-31 08:05:03] Calculating technical indicators...
+[2026-03-31 08:05:03] Indicators calculated successfully
+[2026-03-31 08:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-31 08:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-31 08:05:03] --------------------------------------------------
+[2026-03-31 08:05:03] Update Summary:
+[2026-03-31 08:05:03]   Latest Close: 2025.51 USDT
+[2026-03-31 08:05:03]   RSI(14): 51.13
+[2026-03-31 08:05:03]   MACD: -7.4074
+[2026-03-31 08:05:03]   EMA50: 2061.58
+[2026-03-31 08:05:03]   Trend: Bullish
+[2026-03-31 08:05:03] ==================================================
+[2026-03-31 08:05:03] Update completed successfully!
+[2026-03-31 08:05:03] ==================================================
+[2026-03-31 12:05:02] ==================================================
+[2026-03-31 12:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-03-31 12:05:02] ==================================================
+[2026-03-31 12:05:02] Fetching klines from Binance...
+[2026-03-31 12:05:02] Fetched 1000 candles
+[2026-03-31 12:05:02] Calculating technical indicators...
+[2026-03-31 12:05:02] Indicators calculated successfully
+[2026-03-31 12:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-31 12:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-31 12:05:02] --------------------------------------------------
+[2026-03-31 12:05:02] Update Summary:
+[2026-03-31 12:05:02]   Latest Close: 2064.98 USDT
+[2026-03-31 12:05:02]   RSI(14): 65.00
+[2026-03-31 12:05:02]   MACD: -1.5531
+[2026-03-31 12:05:02]   EMA50: 2063.26
+[2026-03-31 12:05:02]   Trend: Bullish
+[2026-03-31 12:05:02] ==================================================
+[2026-03-31 12:05:02] Update completed successfully!
+[2026-03-31 12:05:02] ==================================================
+[2026-03-31 16:05:02] ==================================================
+[2026-03-31 16:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-03-31 16:05:02] ==================================================
+[2026-03-31 16:05:02] Fetching klines from Binance...
+[2026-03-31 16:05:03] Fetched 1000 candles
+[2026-03-31 16:05:03] Calculating technical indicators...
+[2026-03-31 16:05:03] Indicators calculated successfully
+[2026-03-31 16:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-31 16:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-31 16:05:03] --------------------------------------------------
+[2026-03-31 16:05:03] Update Summary:
+[2026-03-31 16:05:03]   Latest Close: 2057.75 USDT
+[2026-03-31 16:05:03]   RSI(14): 60.21
+[2026-03-31 16:05:03]   MACD: -0.6554
+[2026-03-31 16:05:03]   EMA50: 2062.71
+[2026-03-31 16:05:03]   Trend: Bullish
+[2026-03-31 16:05:03] ==================================================
+[2026-03-31 16:05:03] Update completed successfully!
+[2026-03-31 16:05:03] ==================================================
+[2026-03-31 20:05:02] ==================================================
+[2026-03-31 20:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-03-31 20:05:02] ==================================================
+[2026-03-31 20:05:02] Fetching klines from Binance...
+[2026-03-31 20:05:02] Fetched 1000 candles
+[2026-03-31 20:05:02] Calculating technical indicators...
+[2026-03-31 20:05:02] Indicators calculated successfully
+[2026-03-31 20:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-03-31 20:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-03-31 20:05:02] --------------------------------------------------
+[2026-03-31 20:05:02] Update Summary:
+[2026-03-31 20:05:02]   Latest Close: 2045.18 USDT
+[2026-03-31 20:05:02]   RSI(14): 58.11
+[2026-03-31 20:05:02]   MACD: -1.4036
+[2026-03-31 20:05:02]   EMA50: 2061.39
+[2026-03-31 20:05:02]   Trend: Bullish
+[2026-03-31 20:05:02] ==================================================
+[2026-03-31 20:05:02] Update completed successfully!
+[2026-03-31 20:05:02] ==================================================
+[2026-04-01 00:05:03] ==================================================
+[2026-04-01 00:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-01 00:05:03] ==================================================
+[2026-04-01 00:05:03] Fetching klines from Binance...
+[2026-04-01 00:05:03] Fetched 1000 candles
+[2026-04-01 00:05:03] Calculating technical indicators...
+[2026-04-01 00:05:03] Indicators calculated successfully
+[2026-04-01 00:05:04] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-01 00:05:04] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-01 00:05:04] --------------------------------------------------
+[2026-04-01 00:05:04] Update Summary:
+[2026-04-01 00:05:04]   Latest Close: 2058.77 USDT
+[2026-04-01 00:05:04]   RSI(14): 60.92
+[2026-04-01 00:05:04]   MACD: 0.7404
+[2026-04-01 00:05:04]   EMA50: 2061.66
+[2026-04-01 00:05:04]   Trend: Bullish
+[2026-04-01 00:05:04] ==================================================
+[2026-04-01 00:05:04] Update completed successfully!
+[2026-04-01 00:05:04] ==================================================
+[2026-04-01 04:05:03] ==================================================
+[2026-04-01 04:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-01 04:05:03] ==================================================
+[2026-04-01 04:05:03] Fetching klines from Binance...
+[2026-04-01 04:05:03] Fetched 1000 candles
+[2026-04-01 04:05:03] Calculating technical indicators...
+[2026-04-01 04:05:03] Indicators calculated successfully
+[2026-04-01 04:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-01 04:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-01 04:05:03] --------------------------------------------------
+[2026-04-01 04:05:03] Update Summary:
+[2026-04-01 04:05:03]   Latest Close: 2098.19 USDT
+[2026-04-01 04:05:03]   RSI(14): 68.76
+[2026-04-01 04:05:03]   MACD: 7.2781
+[2026-04-01 04:05:03]   EMA50: 2064.51
+[2026-04-01 04:05:03]   Trend: Bullish
+[2026-04-01 04:05:03] ==================================================
+[2026-04-01 04:05:03] Update completed successfully!
+[2026-04-01 04:05:03] ==================================================
+[2026-04-01 08:05:02] ==================================================
+[2026-04-01 08:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-01 08:05:02] ==================================================
+[2026-04-01 08:05:02] Fetching klines from Binance...
+[2026-04-01 08:05:03] Fetched 1000 candles
+[2026-04-01 08:05:03] Calculating technical indicators...
+[2026-04-01 08:05:03] Indicators calculated successfully
+[2026-04-01 08:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-01 08:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-01 08:05:03] --------------------------------------------------
+[2026-04-01 08:05:03] Update Summary:
+[2026-04-01 08:05:03]   Latest Close: 2104.60 USDT
+[2026-04-01 08:05:03]   RSI(14): 69.04
+[2026-04-01 08:05:03]   MACD: 10.9140
+[2026-04-01 08:05:03]   EMA50: 2066.36
+[2026-04-01 08:05:03]   Trend: Bullish
+[2026-04-01 08:05:03] ==================================================
+[2026-04-01 08:05:03] Update completed successfully!
+[2026-04-01 08:05:03] ==================================================
+[2026-04-01 12:05:02] ==================================================
+[2026-04-01 12:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-01 12:05:02] ==================================================
+[2026-04-01 12:05:02] Fetching klines from Binance...
+[2026-04-01 12:05:02] Fetched 1000 candles
+[2026-04-01 12:05:02] Calculating technical indicators...
+[2026-04-01 12:05:02] Indicators calculated successfully
+[2026-04-01 12:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-01 12:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-01 12:05:02] --------------------------------------------------
+[2026-04-01 12:05:02] Update Summary:
+[2026-04-01 12:05:02]   Latest Close: 2101.42 USDT
+[2026-04-01 12:05:02]   RSI(14): 71.04
+[2026-04-01 12:05:02]   MACD: 12.8280
+[2026-04-01 12:05:02]   EMA50: 2067.67
+[2026-04-01 12:05:02]   Trend: Bullish
+[2026-04-01 12:05:02] ==================================================
+[2026-04-01 12:05:02] Update completed successfully!
+[2026-04-01 12:05:02] ==================================================
+[2026-04-01 16:05:03] ==================================================
+[2026-04-01 16:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-01 16:05:03] ==================================================
+[2026-04-01 16:05:03] Fetching klines from Binance...
+[2026-04-01 16:05:03] Fetched 1000 candles
+[2026-04-01 16:05:03] Calculating technical indicators...
+[2026-04-01 16:05:03] Indicators calculated successfully
+[2026-04-01 16:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-01 16:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-01 16:05:03] --------------------------------------------------
+[2026-04-01 16:05:03] Update Summary:
+[2026-04-01 16:05:03]   Latest Close: 2133.83 USDT
+[2026-04-01 16:05:03]   RSI(14): 69.16
+[2026-04-01 16:05:03]   MACD: 18.6943
+[2026-04-01 16:05:03]   EMA50: 2071.38
+[2026-04-01 16:05:03]   Trend: Bullish
+[2026-04-01 16:05:03] ==================================================
+[2026-04-01 16:05:03] Update completed successfully!
+[2026-04-01 16:05:03] ==================================================
+[2026-04-01 20:05:02] ==================================================
+[2026-04-01 20:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-01 20:05:02] ==================================================
+[2026-04-01 20:05:02] Fetching klines from Binance...
+[2026-04-01 20:05:02] Fetched 1000 candles
+[2026-04-01 20:05:02] Calculating technical indicators...
+[2026-04-01 20:05:02] Indicators calculated successfully
+[2026-04-01 20:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-01 20:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-01 20:05:02] --------------------------------------------------
+[2026-04-01 20:05:02] Update Summary:
+[2026-04-01 20:05:02]   Latest Close: 2131.69 USDT
+[2026-04-01 20:05:02]   RSI(14): 65.21
+[2026-04-01 20:05:02]   MACD: 21.1497
+[2026-04-01 20:05:02]   EMA50: 2073.80
+[2026-04-01 20:05:02]   Trend: Bullish
+[2026-04-01 20:05:02] ==================================================
+[2026-04-01 20:05:02] Update completed successfully!
+[2026-04-01 20:05:02] ==================================================
+[2026-04-02 00:05:03] ==================================================
+[2026-04-02 00:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-02 00:05:03] ==================================================
+[2026-04-02 00:05:03] Fetching klines from Binance...
+[2026-04-02 00:05:03] Fetched 1000 candles
+[2026-04-02 00:05:03] Calculating technical indicators...
+[2026-04-02 00:05:03] Indicators calculated successfully
+[2026-04-02 00:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-02 00:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-02 00:05:03] --------------------------------------------------
+[2026-04-02 00:05:03] Update Summary:
+[2026-04-02 00:05:04]   Latest Close: 2129.93 USDT
+[2026-04-02 00:05:04]   RSI(14): 62.91
+[2026-04-02 00:05:04]   MACD: 22.8052
+[2026-04-02 00:05:04]   EMA50: 2076.13
+[2026-04-02 00:05:04]   Trend: Bullish
+[2026-04-02 00:05:04] ==================================================
+[2026-04-02 00:05:04] Update completed successfully!
+[2026-04-02 00:05:04] ==================================================
+[2026-04-02 04:05:02] ==================================================
+[2026-04-02 04:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-02 04:05:02] ==================================================
+[2026-04-02 04:05:02] Fetching klines from Binance...
+[2026-04-02 04:05:03] Fetched 1000 candles
+[2026-04-02 04:05:03] Calculating technical indicators...
+[2026-04-02 04:05:03] Indicators calculated successfully
+[2026-04-02 04:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-02 04:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-02 04:05:03] --------------------------------------------------
+[2026-04-02 04:05:03] Update Summary:
+[2026-04-02 04:05:03]   Latest Close: 2133.73 USDT
+[2026-04-02 04:05:03]   RSI(14): 62.71
+[2026-04-02 04:05:03]   MACD: 24.6444
+[2026-04-02 04:05:03]   EMA50: 2078.82
+[2026-04-02 04:05:03]   Trend: Bullish
+[2026-04-02 04:05:03] ==================================================
+[2026-04-02 04:05:03] Update completed successfully!
+[2026-04-02 04:05:03] ==================================================
+[2026-04-02 08:05:02] ==================================================
+[2026-04-02 08:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-02 08:05:02] ==================================================
+[2026-04-02 08:05:02] Fetching klines from Binance...
+[2026-04-02 08:05:03] Fetched 1000 candles
+[2026-04-02 08:05:03] Calculating technical indicators...
+[2026-04-02 08:05:03] Indicators calculated successfully
+[2026-04-02 08:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-02 08:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-02 08:05:03] --------------------------------------------------
+[2026-04-02 08:05:03] Update Summary:
+[2026-04-02 08:05:03]   Latest Close: 2138.91 USDT
+[2026-04-02 08:05:03]   RSI(14): 82.57
+[2026-04-02 08:05:03]   MACD: 25.9067
+[2026-04-02 08:05:03]   EMA50: 2081.42
+[2026-04-02 08:05:03]   Trend: Bullish
+[2026-04-02 08:05:03] ==================================================
+[2026-04-02 08:05:03] Update completed successfully!
+[2026-04-02 08:05:03] ==================================================
+[2026-04-02 12:05:03] ==================================================
+[2026-04-02 12:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-02 12:05:03] ==================================================
+[2026-04-02 12:05:03] Fetching klines from Binance...
+[2026-04-02 12:05:03] Fetched 1000 candles
+[2026-04-02 12:05:03] Calculating technical indicators...
+[2026-04-02 12:05:03] Indicators calculated successfully
+[2026-04-02 12:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-02 12:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-02 12:05:03] --------------------------------------------------
+[2026-04-02 12:05:03] Update Summary:
+[2026-04-02 12:05:03]   Latest Close: 2055.31 USDT
+[2026-04-02 12:05:03]   RSI(14): 55.59
+[2026-04-02 12:05:03]   MACD: 14.4316
+[2026-04-02 12:05:03]   EMA50: 2077.29
+[2026-04-02 12:05:03]   Trend: Bearish
+[2026-04-02 12:05:03] ==================================================
+[2026-04-02 12:05:03] Update completed successfully!
+[2026-04-02 12:05:03] ==================================================
+[2026-04-02 16:05:02] ==================================================
+[2026-04-02 16:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-02 16:05:02] ==================================================
+[2026-04-02 16:05:02] Fetching klines from Binance...
+[2026-04-02 16:05:02] Fetched 1000 candles
+[2026-04-02 16:05:02] Calculating technical indicators...
+[2026-04-02 16:05:02] Indicators calculated successfully
+[2026-04-02 16:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-02 16:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-02 16:05:02] --------------------------------------------------
+[2026-04-02 16:05:02] Update Summary:
+[2026-04-02 16:05:02]   Latest Close: 2052.27 USDT
+[2026-04-02 16:05:02]   RSI(14): 46.73
+[2026-04-02 16:05:02]   MACD: 10.2435
+[2026-04-02 16:05:02]   EMA50: 2076.34
+[2026-04-02 16:05:02]   Trend: Bearish
+[2026-04-02 16:05:02] ==================================================
+[2026-04-02 16:05:02] Update completed successfully!
+[2026-04-02 16:05:02] ==================================================
+[2026-04-02 20:05:03] ==================================================
+[2026-04-02 20:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-02 20:05:03] ==================================================
+[2026-04-02 20:05:03] Fetching klines from Binance...
+[2026-04-02 20:05:03] Fetched 1000 candles
+[2026-04-02 20:05:03] Calculating technical indicators...
+[2026-04-02 20:05:03] Indicators calculated successfully
+[2026-04-02 20:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-02 20:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-02 20:05:03] --------------------------------------------------
+[2026-04-02 20:05:03] Update Summary:
+[2026-04-02 20:05:03]   Latest Close: 2029.63 USDT
+[2026-04-02 20:05:03]   RSI(14): 44.33
+[2026-04-02 20:05:03]   MACD: 3.8044
+[2026-04-02 20:05:03]   EMA50: 2073.78
+[2026-04-02 20:05:03]   Trend: Bearish
+[2026-04-02 20:05:03] ==================================================
+[2026-04-02 20:05:03] Update completed successfully!
+[2026-04-02 20:05:03] ==================================================
+[2026-04-03 00:05:03] ==================================================
+[2026-04-03 00:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-03 00:05:03] ==================================================
+[2026-04-03 00:05:03] Fetching klines from Binance...
+[2026-04-03 00:05:03] Fetched 1000 candles
+[2026-04-03 00:05:03] Calculating technical indicators...
+[2026-04-03 00:05:03] Indicators calculated successfully
+[2026-04-03 00:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-03 00:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-03 00:05:03] --------------------------------------------------
+[2026-04-03 00:05:03] Update Summary:
+[2026-04-03 00:05:03]   Latest Close: 2056.46 USDT
+[2026-04-03 00:05:03]   RSI(14): 53.13
+[2026-04-03 00:05:03]   MACD: 3.9061
+[2026-04-03 00:05:03]   EMA50: 2074.23
+[2026-04-03 00:05:03]   Trend: Bearish
+[2026-04-03 00:05:03] ==================================================
+[2026-04-03 00:05:03] Update completed successfully!
+[2026-04-03 00:05:03] ==================================================
+[2026-04-03 04:05:02] ==================================================
+[2026-04-03 04:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-03 04:05:02] ==================================================
+[2026-04-03 04:05:02] Fetching klines from Binance...
+[2026-04-03 04:05:02] Fetched 1000 candles
+[2026-04-03 04:05:02] Calculating technical indicators...
+[2026-04-03 04:05:03] Indicators calculated successfully
+[2026-04-03 04:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-03 04:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-03 04:05:03] --------------------------------------------------
+[2026-04-03 04:05:03] Update Summary:
+[2026-04-03 04:05:03]   Latest Close: 2062.70 USDT
+[2026-04-03 04:05:03]   RSI(14): 51.67
+[2026-04-03 04:05:03]   MACD: 3.1128
+[2026-04-03 04:05:03]   EMA50: 2074.11
+[2026-04-03 04:05:03]   Trend: Bearish
+[2026-04-03 04:05:03] ==================================================
+[2026-04-03 04:05:03] Update completed successfully!
+[2026-04-03 04:05:03] ==================================================
+[2026-04-03 08:05:02] ==================================================
+[2026-04-03 08:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-03 08:05:02] ==================================================
+[2026-04-03 08:05:02] Fetching klines from Binance...
+[2026-04-03 08:05:03] Fetched 1000 candles
+[2026-04-03 08:05:03] Calculating technical indicators...
+[2026-04-03 08:05:03] Indicators calculated successfully
+[2026-04-03 08:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-03 08:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-03 08:05:03] --------------------------------------------------
+[2026-04-03 08:05:03] Update Summary:
+[2026-04-03 08:05:03]   Latest Close: 2058.89 USDT
+[2026-04-03 08:05:03]   RSI(14): 40.64
+[2026-04-03 08:05:03]   MACD: 1.2563
+[2026-04-03 08:05:03]   EMA50: 2073.31
+[2026-04-03 08:05:03]   Trend: Bearish
+[2026-04-03 08:05:03] ==================================================
+[2026-04-03 08:05:03] Update completed successfully!
+[2026-04-03 08:05:03] ==================================================
+[2026-04-03 12:05:02] ==================================================
+[2026-04-03 12:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-03 12:05:02] ==================================================
+[2026-04-03 12:05:02] Fetching klines from Binance...
+[2026-04-03 12:05:02] Fetched 1000 candles
+[2026-04-03 12:05:02] Calculating technical indicators...
+[2026-04-03 12:05:02] Indicators calculated successfully
+[2026-04-03 12:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-03 12:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-03 12:05:02] --------------------------------------------------
+[2026-04-03 12:05:02] Update Summary:
+[2026-04-03 12:05:02]   Latest Close: 2055.48 USDT
+[2026-04-03 12:05:02]   RSI(14): 37.17
+[2026-04-03 12:05:02]   MACD: -0.4259
+[2026-04-03 12:05:02]   EMA50: 2072.43
+[2026-04-03 12:05:02]   Trend: Bearish
+[2026-04-03 12:05:02] ==================================================
+[2026-04-03 12:05:02] Update completed successfully!
+[2026-04-03 12:05:02] ==================================================
+[2026-04-03 16:05:02] ==================================================
+[2026-04-03 16:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-03 16:05:02] ==================================================
+[2026-04-03 16:05:02] Fetching klines from Binance...
+[2026-04-03 16:05:03] Fetched 1000 candles
+[2026-04-03 16:05:03] Calculating technical indicators...
+[2026-04-03 16:05:03] Indicators calculated successfully
+[2026-04-03 16:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-03 16:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-03 16:05:03] --------------------------------------------------
+[2026-04-03 16:05:03] Update Summary:
+[2026-04-03 16:05:03]   Latest Close: 2067.04 USDT
+[2026-04-03 16:05:03]   RSI(14): 41.20
+[2026-04-03 16:05:03]   MACD: 0.1130
+[2026-04-03 16:05:03]   EMA50: 2072.61
+[2026-04-03 16:05:03]   Trend: Bearish
+[2026-04-03 16:05:03] ==================================================
+[2026-04-03 16:05:03] Update completed successfully!
+[2026-04-03 16:05:03] ==================================================
+[2026-04-03 20:05:02] ==================================================
+[2026-04-03 20:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-03 20:05:02] ==================================================
+[2026-04-03 20:05:02] Fetching klines from Binance...
+[2026-04-03 20:05:02] Fetched 1000 candles
+[2026-04-03 20:05:02] Calculating technical indicators...
+[2026-04-03 20:05:02] Indicators calculated successfully
+[2026-04-03 20:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-03 20:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-03 20:05:02] --------------------------------------------------
+[2026-04-03 20:05:02] Update Summary:
+[2026-04-03 20:05:02]   Latest Close: 2062.91 USDT
+[2026-04-03 20:05:02]   RSI(14): 30.87
+[2026-04-03 20:05:02]   MACD: -0.7146
+[2026-04-03 20:05:02]   EMA50: 2072.07
+[2026-04-03 20:05:02]   Trend: Bearish
+[2026-04-03 20:05:02] ==================================================
+[2026-04-03 20:05:02] Update completed successfully!
+[2026-04-03 20:05:02] ==================================================
+[2026-04-04 00:05:03] ==================================================
+[2026-04-04 00:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-04 00:05:03] ==================================================
+[2026-04-04 00:05:03] Fetching klines from Binance...
+[2026-04-04 00:05:04] Fetched 1000 candles
+[2026-04-04 00:05:04] Calculating technical indicators...
+[2026-04-04 00:05:04] Indicators calculated successfully
+[2026-04-04 00:05:04] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-04 00:05:04] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-04 00:05:04] --------------------------------------------------
+[2026-04-04 00:05:04] Update Summary:
+[2026-04-04 00:05:04]   Latest Close: 2052.57 USDT
+[2026-04-04 00:05:04]   RSI(14): 27.76
+[2026-04-04 00:05:04]   MACD: -2.6222
+[2026-04-04 00:05:04]   EMA50: 2070.86
+[2026-04-04 00:05:04]   Trend: Bearish
+[2026-04-04 00:05:04] ==================================================
+[2026-04-04 00:05:04] Update completed successfully!
+[2026-04-04 00:05:04] ==================================================
+[2026-04-04 04:05:02] ==================================================
+[2026-04-04 04:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-04 04:05:02] ==================================================
+[2026-04-04 04:05:02] Fetching klines from Binance...
+[2026-04-04 04:05:02] Fetched 1000 candles
+[2026-04-04 04:05:02] Calculating technical indicators...
+[2026-04-04 04:05:02] Indicators calculated successfully
+[2026-04-04 04:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-04 04:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-04 04:05:02] --------------------------------------------------
+[2026-04-04 04:05:02] Update Summary:
+[2026-04-04 04:05:02]   Latest Close: 2052.78 USDT
+[2026-04-04 04:05:02]   RSI(14): 27.88
+[2026-04-04 04:05:02]   MACD: -3.3353
+[2026-04-04 04:05:02]   EMA50: 2070.16
+[2026-04-04 04:05:02]   Trend: Bearish
+[2026-04-04 04:05:02] ==================================================
+[2026-04-04 04:05:02] Update completed successfully!
+[2026-04-04 04:05:02] ==================================================
+[2026-04-04 08:05:02] ==================================================
+[2026-04-04 08:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-04 08:05:02] ==================================================
+[2026-04-04 08:05:02] Fetching klines from Binance...
+[2026-04-04 08:05:02] Fetched 1000 candles
+[2026-04-04 08:05:02] Calculating technical indicators...
+[2026-04-04 08:05:02] Indicators calculated successfully
+[2026-04-04 08:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-04 08:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-04 08:05:02] --------------------------------------------------
+[2026-04-04 08:05:02] Update Summary:
+[2026-04-04 08:05:02]   Latest Close: 2052.02 USDT
+[2026-04-04 08:05:02]   RSI(14): 25.50
+[2026-04-04 08:05:02]   MACD: -3.8588
+[2026-04-04 08:05:02]   EMA50: 2069.49
+[2026-04-04 08:05:02]   Trend: Bearish
+[2026-04-04 08:05:02] ==================================================
+[2026-04-04 08:05:02] Update completed successfully!
+[2026-04-04 08:05:02] ==================================================
+[2026-04-04 12:05:03] ==================================================
+[2026-04-04 12:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-04 12:05:03] ==================================================
+[2026-04-04 12:05:03] Fetching klines from Binance...
+[2026-04-04 12:05:03] Fetched 1000 candles
+[2026-04-04 12:05:03] Calculating technical indicators...
+[2026-04-04 12:05:03] Indicators calculated successfully
+[2026-04-04 12:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-04 12:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-04 12:05:03] --------------------------------------------------
+[2026-04-04 12:05:03] Update Summary:
+[2026-04-04 12:05:03]   Latest Close: 2049.74 USDT
+[2026-04-04 12:05:03]   RSI(14): 25.33
+[2026-04-04 12:05:03]   MACD: -4.5938
+[2026-04-04 12:05:03]   EMA50: 2068.64
+[2026-04-04 12:05:03]   Trend: Bearish
+[2026-04-04 12:05:03] ==================================================
+[2026-04-04 12:05:03] Update completed successfully!
+[2026-04-04 12:05:03] ==================================================
+[2026-04-04 16:05:03] ==================================================
+[2026-04-04 16:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-04 16:05:03] ==================================================
+[2026-04-04 16:05:03] Fetching klines from Binance...
+[2026-04-04 16:05:03] Fetched 1000 candles
+[2026-04-04 16:05:03] Calculating technical indicators...
+[2026-04-04 16:05:03] Indicators calculated successfully
+[2026-04-04 16:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-04 16:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-04 16:05:03] --------------------------------------------------
+[2026-04-04 16:05:03] Update Summary:
+[2026-04-04 16:05:03]   Latest Close: 2054.16 USDT
+[2026-04-04 16:05:03]   RSI(14): 48.95
+[2026-04-04 16:05:03]   MACD: -4.3903
+[2026-04-04 16:05:03]   EMA50: 2068.22
+[2026-04-04 16:05:03]   Trend: Bearish
+[2026-04-04 16:05:03] ==================================================
+[2026-04-04 16:05:03] Update completed successfully!
+[2026-04-04 16:05:03] ==================================================
+[2026-04-04 20:05:02] ==================================================
+[2026-04-04 20:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-04 20:05:02] ==================================================
+[2026-04-04 20:05:02] Fetching klines from Binance...
+[2026-04-04 20:05:02] Fetched 1000 candles
+[2026-04-04 20:05:02] Calculating technical indicators...
+[2026-04-04 20:05:02] Indicators calculated successfully
+[2026-04-04 20:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-04 20:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-04 20:05:03] --------------------------------------------------
+[2026-04-04 20:05:03] Update Summary:
+[2026-04-04 20:05:03]   Latest Close: 2052.34 USDT
+[2026-04-04 20:05:03]   RSI(14): 48.22
+[2026-04-04 20:05:03]   MACD: -4.7239
+[2026-04-04 20:05:03]   EMA50: 2067.51
+[2026-04-04 20:05:03]   Trend: Bearish
+[2026-04-04 20:05:03] ==================================================
+[2026-04-04 20:05:03] Update completed successfully!
+[2026-04-04 20:05:03] ==================================================
+[2026-04-05 00:05:03] ==================================================
+[2026-04-05 00:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-05 00:05:03] ==================================================
+[2026-04-05 00:05:03] Fetching klines from Binance...
+[2026-04-05 00:05:04] Fetched 1000 candles
+[2026-04-05 00:05:04] Calculating technical indicators...
+[2026-04-05 00:05:04] Indicators calculated successfully
+[2026-04-05 00:05:04] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-05 00:05:04] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-05 00:05:04] --------------------------------------------------
+[2026-04-05 00:05:04] Update Summary:
+[2026-04-05 00:05:04]   Latest Close: 2054.92 USDT
+[2026-04-05 00:05:04]   RSI(14): 62.51
+[2026-04-05 00:05:04]   MACD: -4.3373
+[2026-04-05 00:05:04]   EMA50: 2067.17
+[2026-04-05 00:05:04]   Trend: Bearish
+[2026-04-05 00:05:04] ==================================================
+[2026-04-05 00:05:04] Update completed successfully!
+[2026-04-05 00:05:04] ==================================================
+[2026-04-05 04:05:02] ==================================================
+[2026-04-05 04:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-05 04:05:02] ==================================================
+[2026-04-05 04:05:02] Fetching klines from Binance...
+[2026-04-05 04:05:02] Fetched 1000 candles
+[2026-04-05 04:05:02] Calculating technical indicators...
+[2026-04-05 04:05:02] Indicators calculated successfully
+[2026-04-05 04:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-05 04:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-05 04:05:02] --------------------------------------------------
+[2026-04-05 04:05:02] Update Summary:
+[2026-04-05 04:05:02]   Latest Close: 2060.10 USDT
+[2026-04-05 04:05:02]   RSI(14): 50.34
+[2026-04-05 04:05:02]   MACD: -3.2157
+[2026-04-05 04:05:02]   EMA50: 2067.26
+[2026-04-05 04:05:02]   Trend: Bearish
+[2026-04-05 04:05:02] ==================================================
+[2026-04-05 04:05:02] Update completed successfully!
+[2026-04-05 04:05:02] ==================================================
+[2026-04-05 08:05:02] ==================================================
+[2026-04-05 08:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-05 08:05:02] ==================================================
+[2026-04-05 08:05:02] Fetching klines from Binance...
+[2026-04-05 08:05:03] Fetched 1000 candles
+[2026-04-05 08:05:03] Calculating technical indicators...
+[2026-04-05 08:05:03] Indicators calculated successfully
+[2026-04-05 08:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-05 08:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-05 08:05:03] --------------------------------------------------
+[2026-04-05 08:05:03] Update Summary:
+[2026-04-05 08:05:03]   Latest Close: 2064.34 USDT
+[2026-04-05 08:05:03]   RSI(14): 49.22
+[2026-04-05 08:05:03]   MACD: -2.2401
+[2026-04-05 08:05:03]   EMA50: 2067.35
+[2026-04-05 08:05:03]   Trend: Bullish
+[2026-04-05 08:05:03] ==================================================
+[2026-04-05 08:05:03] Update completed successfully!
+[2026-04-05 08:05:03] ==================================================
+[2026-04-05 12:05:02] ==================================================
+[2026-04-05 12:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-05 12:05:02] ==================================================
+[2026-04-05 12:05:02] Fetching klines from Binance...
+[2026-04-05 12:05:02] Fetched 1000 candles
+[2026-04-05 12:05:02] Calculating technical indicators...
+[2026-04-05 12:05:02] Indicators calculated successfully
+[2026-04-05 12:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-05 12:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-05 12:05:02] --------------------------------------------------
+[2026-04-05 12:05:02] Update Summary:
+[2026-04-05 12:05:02]   Latest Close: 2056.26 USDT
+[2026-04-05 12:05:02]   RSI(14): 49.29
+[2026-04-05 12:05:02]   MACD: -2.9078
+[2026-04-05 12:05:02]   EMA50: 2066.62
+[2026-04-05 12:05:02]   Trend: Bearish
+[2026-04-05 12:05:02] ==================================================
+[2026-04-05 12:05:02] Update completed successfully!
+[2026-04-05 12:05:02] ==================================================
+[2026-04-05 16:05:02] ==================================================
+[2026-04-05 16:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-05 16:05:02] ==================================================
+[2026-04-05 16:05:02] Fetching klines from Binance...
+[2026-04-05 16:05:03] Fetched 1000 candles
+[2026-04-05 16:05:03] Calculating technical indicators...
+[2026-04-05 16:05:03] Indicators calculated successfully
+[2026-04-05 16:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-05 16:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-05 16:05:03] --------------------------------------------------
+[2026-04-05 16:05:03] Update Summary:
+[2026-04-05 16:05:03]   Latest Close: 2037.18 USDT
+[2026-04-05 16:05:03]   RSI(14): 39.39
+[2026-04-05 16:05:03]   MACD: -5.6070
+[2026-04-05 16:05:03]   EMA50: 2064.75
+[2026-04-05 16:05:03]   Trend: Bearish
+[2026-04-05 16:05:03] ==================================================
+[2026-04-05 16:05:03] Update completed successfully!
+[2026-04-05 16:05:03] ==================================================
+[2026-04-05 20:05:03] ==================================================
+[2026-04-05 20:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-05 20:05:03] ==================================================
+[2026-04-05 20:05:03] Fetching klines from Binance...
+[2026-04-05 20:05:03] Fetched 1000 candles
+[2026-04-05 20:05:03] Calculating technical indicators...
+[2026-04-05 20:05:03] Indicators calculated successfully
+[2026-04-05 20:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-05 20:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-05 20:05:03] --------------------------------------------------
+[2026-04-05 20:05:03] Update Summary:
+[2026-04-05 20:05:03]   Latest Close: 2038.79 USDT
+[2026-04-05 20:05:03]   RSI(14): 32.47
+[2026-04-05 20:05:03]   MACD: -6.0272
+[2026-04-05 20:05:03]   EMA50: 2063.93
+[2026-04-05 20:05:03]   Trend: Bearish
+[2026-04-05 20:05:03] ==================================================
+[2026-04-05 20:05:03] Update completed successfully!
+[2026-04-05 20:05:03] ==================================================
+[2026-04-06 00:05:04] ==================================================
+[2026-04-06 00:05:04] ETHUSDT 4-Hour Data Update Started
+[2026-04-06 00:05:04] ==================================================
+[2026-04-06 00:05:04] Fetching klines from Binance...
+[2026-04-06 00:05:04] Fetched 1000 candles
+[2026-04-06 00:05:04] Calculating technical indicators...
+[2026-04-06 00:05:04] Indicators calculated successfully
+[2026-04-06 00:05:05] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-06 00:05:05] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-06 00:05:05] --------------------------------------------------
+[2026-04-06 00:05:05] Update Summary:
+[2026-04-06 00:05:05]   Latest Close: 2055.99 USDT
+[2026-04-06 00:05:05]   RSI(14): 46.05
+[2026-04-06 00:05:05]   MACD: -4.3093
+[2026-04-06 00:05:05]   EMA50: 2064.19
+[2026-04-06 00:05:05]   Trend: Bearish
+[2026-04-06 00:05:05] ==================================================
+[2026-04-06 00:05:05] Update completed successfully!
+[2026-04-06 00:05:05] ==================================================
+[2026-04-06 04:05:03] ==================================================
+[2026-04-06 04:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-06 04:05:03] ==================================================
+[2026-04-06 04:05:03] Fetching klines from Binance...
+[2026-04-06 04:05:03] Fetched 1000 candles
+[2026-04-06 04:05:03] Calculating technical indicators...
+[2026-04-06 04:05:03] Indicators calculated successfully
+[2026-04-06 04:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-06 04:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-06 04:05:03] --------------------------------------------------
+[2026-04-06 04:05:03] Update Summary:
+[2026-04-06 04:05:03]   Latest Close: 2062.53 USDT
+[2026-04-06 04:05:03]   RSI(14): 57.11
+[2026-04-06 04:05:03]   MACD: -2.9409
+[2026-04-06 04:05:03]   EMA50: 2064.36
+[2026-04-06 04:05:03]   Trend: Bullish
+[2026-04-06 04:05:03] ==================================================
+[2026-04-06 04:05:03] Update completed successfully!
+[2026-04-06 04:05:03] ==================================================
+[2026-04-06 08:05:02] ==================================================
+[2026-04-06 08:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-06 08:05:02] ==================================================
+[2026-04-06 08:05:02] Fetching klines from Binance...
+[2026-04-06 08:05:03] Fetched 1000 candles
+[2026-04-06 08:05:03] Calculating technical indicators...
+[2026-04-06 08:05:03] Indicators calculated successfully
+[2026-04-06 08:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-06 08:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-06 08:05:03] --------------------------------------------------
+[2026-04-06 08:05:03] Update Summary:
+[2026-04-06 08:05:03]   Latest Close: 2122.20 USDT
+[2026-04-06 08:05:03]   RSI(14): 75.28
+[2026-04-06 08:05:03]   MACD: 5.4602
+[2026-04-06 08:05:03]   EMA50: 2068.42
+[2026-04-06 08:05:03]   Trend: Bullish
+[2026-04-06 08:05:03] ==================================================
+[2026-04-06 08:05:03] Update completed successfully!
+[2026-04-06 08:05:03] ==================================================
+[2026-04-06 12:05:02] ==================================================
+[2026-04-06 12:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-06 12:05:02] ==================================================
+[2026-04-06 12:05:02] Fetching klines from Binance...
+[2026-04-06 12:05:02] Fetched 1000 candles
+[2026-04-06 12:05:02] Calculating technical indicators...
+[2026-04-06 12:05:02] Indicators calculated successfully
+[2026-04-06 12:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-06 12:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-06 12:05:02] --------------------------------------------------
+[2026-04-06 12:05:02] Update Summary:
+[2026-04-06 12:05:02]   Latest Close: 2134.17 USDT
+[2026-04-06 12:05:02]   RSI(14): 77.08
+[2026-04-06 12:05:02]   MACD: 10.3977
+[2026-04-06 12:05:02]   EMA50: 2071.27
+[2026-04-06 12:05:02]   Trend: Bullish
+[2026-04-06 12:05:02] ==================================================
+[2026-04-06 12:05:02] Update completed successfully!
+[2026-04-06 12:05:02] ==================================================
+[2026-04-06 16:05:03] ==================================================
+[2026-04-06 16:05:03] ETHUSDT 4-Hour Data Update Started
+[2026-04-06 16:05:03] ==================================================
+[2026-04-06 16:05:03] Fetching klines from Binance...
+[2026-04-06 16:05:03] Fetched 1000 candles
+[2026-04-06 16:05:03] Calculating technical indicators...
+[2026-04-06 16:05:03] Indicators calculated successfully
+[2026-04-06 16:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-06 16:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-06 16:05:03] --------------------------------------------------
+[2026-04-06 16:05:03] Update Summary:
+[2026-04-06 16:05:03]   Latest Close: 2135.76 USDT
+[2026-04-06 16:05:03]   RSI(14): 79.33
+[2026-04-06 16:05:03]   MACD: 13.8726
+[2026-04-06 16:05:03]   EMA50: 2073.83
+[2026-04-06 16:05:03]   Trend: Bullish
+[2026-04-06 16:05:03] ==================================================
+[2026-04-06 16:05:03] Update completed successfully!
+[2026-04-06 16:05:03] ==================================================
+[2026-04-06 20:05:02] ==================================================
+[2026-04-06 20:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-06 20:05:02] ==================================================
+[2026-04-06 20:05:02] Fetching klines from Binance...
+[2026-04-06 20:05:02] Fetched 1000 candles
+[2026-04-06 20:05:02] Calculating technical indicators...
+[2026-04-06 20:05:02] Indicators calculated successfully
+[2026-04-06 20:05:02] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-06 20:05:02] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-06 20:05:02] --------------------------------------------------
+[2026-04-06 20:05:02] Update Summary:
+[2026-04-06 20:05:02]   Latest Close: 2151.52 USDT
+[2026-04-06 20:05:02]   RSI(14): 80.89
+[2026-04-06 20:05:02]   MACD: 18.6199
+[2026-04-06 20:05:02]   EMA50: 2077.47
+[2026-04-06 20:05:02]   Trend: Bullish
+[2026-04-06 20:05:02] ==================================================
+[2026-04-06 20:05:02] Update completed successfully!
+[2026-04-06 20:05:02] ==================================================
+[2026-04-07 00:05:02] ==================================================
+[2026-04-07 00:05:02] ETHUSDT 4-Hour Data Update Started
+[2026-04-07 00:05:02] ==================================================
+[2026-04-07 00:05:02] Fetching klines from Binance...
+[2026-04-07 00:05:03] Fetched 1000 candles
+[2026-04-07 00:05:03] Calculating technical indicators...
+[2026-04-07 00:05:03] Indicators calculated successfully
+[2026-04-07 00:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h.csv
+[2026-04-07 00:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_4h_metrics.json
+[2026-04-07 00:05:03] --------------------------------------------------
+[2026-04-07 00:05:03] Update Summary:
+[2026-04-07 00:05:03]   Latest Close: 2164.60 USDT
+[2026-04-07 00:05:03]   RSI(14): 83.30
+[2026-04-07 00:05:03]   MACD: 22.9936
+[2026-04-07 00:05:03]   EMA50: 2081.38
+[2026-04-07 00:05:03]   Trend: Bullish
+[2026-04-07 00:05:03] ==================================================
+[2026-04-07 00:05:03] Update completed successfully!
+[2026-04-07 00:05:03] ==================================================

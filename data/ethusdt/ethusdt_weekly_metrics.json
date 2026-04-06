@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-04-07T00:05:04.671538",
+  "symbol": "ETHUSDT",
+  "interval": "1w",
+  "current_price": 2164.59,
+  "weekly_change": 2.5789,
+  "monthly_change": -0.6294,
+  "quarterly_change": -34.0874,
+  "yearly_change": 35.4765,
+  "yearly_high": 4956.78,
+  "yearly_low": 1537.26,
+  "indicators": {
+    "ema_10": 2189.31,
+    "ema_20": 2474.27,
+    "ema_50": 2820.5,
+    "sma_30": 2962.39,
+    "sma_52": 3027.32,
+    "rsi_14": 27.14,
+    "macd": -353.8908,
+    "macd_signal": -337.1383,
+    "macd_hist": -16.7525,
+    "bb_upper": 3541.64,
+    "bb_lower": 1467.29,
+    "bb_position": 0.3362,
+    "atr_14": 337.66
+  },
+  "signals": {
+    "ema_trend": "bearish",
+    "long_term_trend": "bearish",
+    "rsi_signal": "oversold",
+    "macd_signal": "bearish",
+    "bb_signal": "middle",
+    "volume_signal": "low"
+  },
+  "volume": {
+    "current": 248065.4464,
+    "sma_10": 3235416.1006,
+    "ratio": 0.08
+  },
+  "data_points": 452
+}

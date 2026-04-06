@@ -1,0 +1,517 @@
+[2026-03-23 00:08:56] ==========================================
+[2026-03-23 00:08:56] Starting ETHUSDT Daily Data Update
+[2026-03-23 00:08:56] ==========================================
+[2026-03-23 00:08:56] Running 1-hour data update...
+[2026-03-23 00:08:57] ==================================================
+[2026-03-23 00:08:57] Starting ETHUSDT 1-Hour Data Update
+[2026-03-23 00:08:57] ==================================================
+[2026-03-23 00:08:57] Fetching K-line data from Binance...
+[2026-03-23 00:08:57] Fetched 1000 data points
+[2026-03-23 00:08:57] Calculating technical indicators...
+[2026-03-23 00:08:57] Generating trading signals...
+[2026-03-23 00:08:57] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-03-23 00:08:57] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-03-23 00:08:57] --------------------------------------------------
+[2026-03-23 00:08:57] Current Price: $2082.69
+[2026-03-23 00:08:57] 1H Change: -0.0197%
+[2026-03-23 00:08:57] RSI(14): 38.94
+[2026-03-23 00:08:57] MACD Hist: -0.2267
+[2026-03-23 00:08:57] Signals: {'ema_trend': 'bearish', 'rsi_signal': 'neutral', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-03-23 00:08:57] --------------------------------------------------
+[2026-03-23 00:08:57] Update completed successfully!
+[2026-03-23 00:08:57] 
+[2026-03-23 00:08:57] 1-hour update completed successfully
+[2026-03-23 00:08:57] Running weekly data update...
+[2026-03-23 00:08:58] ==================================================
+[2026-03-23 00:08:58] Starting ETHUSDT Weekly Data Update
+[2026-03-23 00:08:58] ==================================================
+[2026-03-23 00:08:58] Fetching weekly K-line data from Binance...
+[2026-03-23 00:08:58] Fetched 449 weekly data points
+[2026-03-23 00:08:58] Calculating technical indicators...
+[2026-03-23 00:08:58] Generating trading signals...
+[2026-03-23 00:08:58] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-03-23 00:08:58] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-03-23 00:08:58] --------------------------------------------------
+[2026-03-23 00:08:58] Current Price: $2082.69
+[2026-03-23 00:08:58] Weekly Change: -4.3892%
+[2026-03-23 00:08:58] Yearly Change: 3.8235%
+[2026-03-23 00:08:58] RSI(14): 27.42
+[2026-03-23 00:08:58] MACD Hist: -80.1648
+[2026-03-23 00:08:58] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'oversold', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'normal'}
+[2026-03-23 00:08:58] --------------------------------------------------
+[2026-03-23 00:08:58] Weekly update completed successfully!
+[2026-03-23 00:08:58] 
+[2026-03-23 00:08:59] Weekly update completed successfully
+[2026-03-23 00:08:59] ==========================================
+[2026-03-23 00:08:59] Daily update completed successfully!
+[2026-03-23 00:08:59] ==========================================
+[2026-03-25 00:05:21] ==========================================
+[2026-03-25 00:05:21] Starting ETHUSDT Daily Data Update
+[2026-03-25 00:05:21] ==========================================
+[2026-03-25 00:05:21] Running 1-hour data update...
+[2026-03-25 00:05:22] ==================================================
+[2026-03-25 00:05:22] Starting ETHUSDT 1-Hour Data Update
+[2026-03-25 00:05:22] ==================================================
+[2026-03-25 00:05:22] Fetching K-line data from Binance...
+[2026-03-25 00:05:22] Fetched 1000 data points
+[2026-03-25 00:05:22] Calculating technical indicators...
+[2026-03-25 00:05:22] Generating trading signals...
+[2026-03-25 00:05:22] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-03-25 00:05:22] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-03-25 00:05:22] --------------------------------------------------
+[2026-03-25 00:05:22] Current Price: $2135.1
+[2026-03-25 00:05:22] 1H Change: -0.0023%
+[2026-03-25 00:05:22] RSI(14): 49.65
+[2026-03-25 00:05:22] MACD Hist: -4.5138
+[2026-03-25 00:05:22] Signals: {'ema_trend': 'neutral', 'rsi_signal': 'neutral', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-03-25 00:05:22] --------------------------------------------------
+[2026-03-25 00:05:22] Update completed successfully!
+[2026-03-25 00:05:22] 
+[2026-03-25 00:05:22] 1-hour update completed successfully
+[2026-03-25 00:05:22] Running weekly data update...
+[2026-03-25 00:05:23] ==================================================
+[2026-03-25 00:05:23] Starting ETHUSDT Weekly Data Update
+[2026-03-25 00:05:23] ==================================================
+[2026-03-25 00:05:23] Fetching weekly K-line data from Binance...
+[2026-03-25 00:05:23] Fetched 450 weekly data points
+[2026-03-25 00:05:23] Calculating technical indicators...
+[2026-03-25 00:05:23] Generating trading signals...
+[2026-03-25 00:05:23] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-03-25 00:05:23] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-03-25 00:05:23] --------------------------------------------------
+[2026-03-25 00:05:23] Current Price: $2135.03
+[2026-03-25 00:05:23] Weekly Change: 3.9506%
+[2026-03-25 00:05:23] Yearly Change: 18.1049%
+[2026-03-25 00:05:23] RSI(14): 30.48
+[2026-03-25 00:05:23] MACD Hist: -55.9723
+[2026-03-25 00:05:23] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'neutral', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-03-25 00:05:23] --------------------------------------------------
+[2026-03-25 00:05:23] Weekly update completed successfully!
+[2026-03-25 00:05:23] 
+[2026-03-25 00:05:23] Weekly update completed successfully
+[2026-03-25 00:05:23] ==========================================
+[2026-03-25 00:05:23] Daily update completed successfully!
+[2026-03-25 00:05:23] ==========================================
+[2026-03-27 00:05:17] ==========================================
+[2026-03-27 00:05:17] Starting ETHUSDT Daily Data Update
+[2026-03-27 00:05:17] ==========================================
+[2026-03-27 00:05:17] Running 1-hour data update...
+[2026-03-27 00:05:18] ==================================================
+[2026-03-27 00:05:18] Starting ETHUSDT 1-Hour Data Update
+[2026-03-27 00:05:18] ==================================================
+[2026-03-27 00:05:18] Fetching K-line data from Binance...
+[2026-03-27 00:05:18] Fetched 1000 data points
+[2026-03-27 00:05:18] Calculating technical indicators...
+[2026-03-27 00:05:18] Generating trading signals...
+[2026-03-27 00:05:18] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-03-27 00:05:18] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-03-27 00:05:18] --------------------------------------------------
+[2026-03-27 00:05:18] Current Price: $2068.37
+[2026-03-27 00:05:18] 1H Change: -0.098%
+[2026-03-27 00:05:18] RSI(14): 16.51
+[2026-03-27 00:05:18] MACD Hist: -5.194
+[2026-03-27 00:05:18] Signals: {'ema_trend': 'bearish', 'rsi_signal': 'oversold', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-03-27 00:05:18] --------------------------------------------------
+[2026-03-27 00:05:18] Update completed successfully!
+[2026-03-27 00:05:18] 
+[2026-03-27 00:05:18] 1-hour update completed successfully
+[2026-03-27 00:05:18] Running weekly data update...
+[2026-03-27 00:05:19] ==================================================
+[2026-03-27 00:05:19] Starting ETHUSDT Weekly Data Update
+[2026-03-27 00:05:19] ==================================================
+[2026-03-27 00:05:19] Fetching weekly K-line data from Binance...
+[2026-03-27 00:05:19] Fetched 450 weekly data points
+[2026-03-27 00:05:19] Calculating technical indicators...
+[2026-03-27 00:05:19] Generating trading signals...
+[2026-03-27 00:05:19] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-03-27 00:05:19] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-03-27 00:05:19] --------------------------------------------------
+[2026-03-27 00:05:19] Current Price: $2068.31
+[2026-03-27 00:05:19] Weekly Change: 0.7021%
+[2026-03-27 00:05:19] Yearly Change: 14.4141%
+[2026-03-27 00:05:19] RSI(14): 28.32
+[2026-03-27 00:05:19] MACD Hist: -60.2302
+[2026-03-27 00:05:19] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'oversold', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-03-27 00:05:19] --------------------------------------------------
+[2026-03-27 00:05:19] Weekly update completed successfully!
+[2026-03-27 00:05:19] 
+[2026-03-27 00:05:19] Weekly update completed successfully
+[2026-03-27 00:05:19] ==========================================
+[2026-03-27 00:05:19] Daily update completed successfully!
+[2026-03-27 00:05:19] ==========================================
+[2026-03-31 00:05:01] ==========================================
+[2026-03-31 00:05:01] Starting ETHUSDT Daily Data Update
+[2026-03-31 00:05:01] ==========================================
+[2026-03-31 00:05:01] Running 1-hour data update...
+[2026-03-31 00:05:03] ==================================================
+[2026-03-31 00:05:03] Starting ETHUSDT 1-Hour Data Update
+[2026-03-31 00:05:03] ==================================================
+[2026-03-31 00:05:03] Fetching K-line data from Binance...
+[2026-03-31 00:05:03] Fetched 1000 data points
+[2026-03-31 00:05:03] Calculating technical indicators...
+[2026-03-31 00:05:03] Generating trading signals...
+[2026-03-31 00:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-03-31 00:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-03-31 00:05:03] --------------------------------------------------
+[2026-03-31 00:05:03] Current Price: $2066.86
+[2026-03-31 00:05:03] 1H Change: -0.3697%
+[2026-03-31 00:05:03] RSI(14): 67.47
+[2026-03-31 00:05:03] MACD Hist: 1.9341
+[2026-03-31 00:05:03] Signals: {'ema_trend': 'bullish', 'rsi_signal': 'neutral', 'macd_signal': 'bullish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-03-31 00:05:03] --------------------------------------------------
+[2026-03-31 00:05:03] Update completed successfully!
+[2026-03-31 00:05:03] 
+[2026-03-31 00:05:03] 1-hour update completed successfully
+[2026-03-31 00:05:03] Running weekly data update...
+[2026-03-31 00:05:04] ==================================================
+[2026-03-31 00:05:04] Starting ETHUSDT Weekly Data Update
+[2026-03-31 00:05:04] ==================================================
+[2026-03-31 00:05:04] Fetching weekly K-line data from Binance...
+[2026-03-31 00:05:05] Fetched 451 weekly data points
+[2026-03-31 00:05:05] Calculating technical indicators...
+[2026-03-31 00:05:05] Generating trading signals...
+[2026-03-31 00:05:05] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-03-31 00:05:05] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-03-31 00:05:05] --------------------------------------------------
+[2026-03-31 00:05:05] Current Price: $2067.4
+[2026-03-31 00:05:05] Weekly Change: 4.17%
+[2026-03-31 00:05:05] Yearly Change: 30.7852%
+[2026-03-31 00:05:05] RSI(14): 30.28
+[2026-03-31 00:05:05] MACD Hist: -43.6089
+[2026-03-31 00:05:05] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'neutral', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-03-31 00:05:05] --------------------------------------------------
+[2026-03-31 00:05:05] Weekly update completed successfully!
+[2026-03-31 00:05:05] 
+[2026-03-31 00:05:05] Weekly update completed successfully
+[2026-03-31 00:05:05] ==========================================
+[2026-03-31 00:05:05] Daily update completed successfully!
+[2026-03-31 00:05:05] ==========================================
+[2026-04-01 00:05:01] ==========================================
+[2026-04-01 00:05:01] Starting ETHUSDT Daily Data Update
+[2026-04-01 00:05:01] ==========================================
+[2026-04-01 00:05:01] Running 1-hour data update...
+[2026-04-01 00:05:03] ==================================================
+[2026-04-01 00:05:03] Starting ETHUSDT 1-Hour Data Update
+[2026-04-01 00:05:03] ==================================================
+[2026-04-01 00:05:03] Fetching K-line data from Binance...
+[2026-04-01 00:05:04] Fetched 1000 data points
+[2026-04-01 00:05:04] Calculating technical indicators...
+[2026-04-01 00:05:04] Generating trading signals...
+[2026-04-01 00:05:04] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-04-01 00:05:04] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-04-01 00:05:04] --------------------------------------------------
+[2026-04-01 00:05:04] Current Price: $2058.77
+[2026-04-01 00:05:04] 1H Change: 0.1908%
+[2026-04-01 00:05:04] RSI(14): 45.55
+[2026-04-01 00:05:04] MACD Hist: 0.2055
+[2026-04-01 00:05:04] Signals: {'ema_trend': 'bullish', 'rsi_signal': 'neutral', 'macd_signal': 'bullish_cross', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-01 00:05:04] --------------------------------------------------
+[2026-04-01 00:05:04] Update completed successfully!
+[2026-04-01 00:05:04] 
+[2026-04-01 00:05:04] 1-hour update completed successfully
+[2026-04-01 00:05:04] Running weekly data update...
+[2026-04-01 00:05:05] ==================================================
+[2026-04-01 00:05:05] Starting ETHUSDT Weekly Data Update
+[2026-04-01 00:05:05] ==================================================
+[2026-04-01 00:05:05] Fetching weekly K-line data from Binance...
+[2026-04-01 00:05:05] Fetched 451 weekly data points
+[2026-04-01 00:05:05] Calculating technical indicators...
+[2026-04-01 00:05:05] Generating trading signals...
+[2026-04-01 00:05:05] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-04-01 00:05:05] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-04-01 00:05:05] --------------------------------------------------
+[2026-04-01 00:05:05] Current Price: $2059.17
+[2026-04-01 00:05:05] Weekly Change: 3.7553%
+[2026-04-01 00:05:05] Yearly Change: 30.2646%
+[2026-04-01 00:05:05] RSI(14): 30.02
+[2026-04-01 00:05:05] MACD Hist: -44.1341
+[2026-04-01 00:05:05] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'neutral', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-01 00:05:05] --------------------------------------------------
+[2026-04-01 00:05:05] Weekly update completed successfully!
+[2026-04-01 00:05:05] 
+[2026-04-01 00:05:06] Weekly update completed successfully
+[2026-04-01 00:05:06] ==========================================
+[2026-04-01 00:05:06] Daily update completed successfully!
+[2026-04-01 00:05:06] ==========================================
+[2026-04-02 00:05:01] ==========================================
+[2026-04-02 00:05:01] Starting ETHUSDT Daily Data Update
+[2026-04-02 00:05:01] ==========================================
+[2026-04-02 00:05:01] Running 1-hour data update...
+[2026-04-02 00:05:03] ==================================================
+[2026-04-02 00:05:03] Starting ETHUSDT 1-Hour Data Update
+[2026-04-02 00:05:03] ==================================================
+[2026-04-02 00:05:03] Fetching K-line data from Binance...
+[2026-04-02 00:05:04] Fetched 1000 data points
+[2026-04-02 00:05:04] Calculating technical indicators...
+[2026-04-02 00:05:04] Generating trading signals...
+[2026-04-02 00:05:04] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-04-02 00:05:04] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-04-02 00:05:04] --------------------------------------------------
+[2026-04-02 00:05:04] Current Price: $2129.92
+[2026-04-02 00:05:04] 1H Change: -0.2398%
+[2026-04-02 00:05:04] RSI(14): 65.61
+[2026-04-02 00:05:04] MACD Hist: -1.9038
+[2026-04-02 00:05:04] Signals: {'ema_trend': 'bullish', 'rsi_signal': 'neutral', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-02 00:05:04] --------------------------------------------------
+[2026-04-02 00:05:04] Update completed successfully!
+[2026-04-02 00:05:04] 
+[2026-04-02 00:05:04] 1-hour update completed successfully
+[2026-04-02 00:05:04] Running weekly data update...
+[2026-04-02 00:05:05] ==================================================
+[2026-04-02 00:05:05] Starting ETHUSDT Weekly Data Update
+[2026-04-02 00:05:05] ==================================================
+[2026-04-02 00:05:05] Fetching weekly K-line data from Binance...
+[2026-04-02 00:05:05] Fetched 451 weekly data points
+[2026-04-02 00:05:05] Calculating technical indicators...
+[2026-04-02 00:05:05] Generating trading signals...
+[2026-04-02 00:05:05] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-04-02 00:05:05] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-04-02 00:05:05] --------------------------------------------------
+[2026-04-02 00:05:05] Current Price: $2129.92
+[2026-04-02 00:05:05] Weekly Change: 7.3202%
+[2026-04-02 00:05:05] Yearly Change: 34.7403%
+[2026-04-02 00:05:05] RSI(14): 32.17
+[2026-04-02 00:05:05] MACD Hist: -39.619
+[2026-04-02 00:05:05] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'neutral', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-02 00:05:05] --------------------------------------------------
+[2026-04-02 00:05:05] Weekly update completed successfully!
+[2026-04-02 00:05:05] 
+[2026-04-02 00:05:05] Weekly update completed successfully
+[2026-04-02 00:05:05] ==========================================
+[2026-04-02 00:05:05] Daily update completed successfully!
+[2026-04-02 00:05:05] ==========================================
+[2026-04-03 00:05:01] ==========================================
+[2026-04-03 00:05:01] Starting ETHUSDT Daily Data Update
+[2026-04-03 00:05:01] ==========================================
+[2026-04-03 00:05:01] Running 1-hour data update...
+[2026-04-03 00:05:03] ==================================================
+[2026-04-03 00:05:03] Starting ETHUSDT 1-Hour Data Update
+[2026-04-03 00:05:03] ==================================================
+[2026-04-03 00:05:03] Fetching K-line data from Binance...
+[2026-04-03 00:05:03] Fetched 1000 data points
+[2026-04-03 00:05:03] Calculating technical indicators...
+[2026-04-03 00:05:03] Generating trading signals...
+[2026-04-03 00:05:04] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-04-03 00:05:04] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-04-03 00:05:04] --------------------------------------------------
+[2026-04-03 00:05:04] Current Price: $2056.46
+[2026-04-03 00:05:04] 1H Change: -0.1525%
+[2026-04-03 00:05:04] RSI(14): 42.38
+[2026-04-03 00:05:04] MACD Hist: 0.5439
+[2026-04-03 00:05:04] Signals: {'ema_trend': 'bearish', 'rsi_signal': 'neutral', 'macd_signal': 'bullish_cross', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-03 00:05:04] --------------------------------------------------
+[2026-04-03 00:05:04] Update completed successfully!
+[2026-04-03 00:05:04] 
+[2026-04-03 00:05:04] 1-hour update completed successfully
+[2026-04-03 00:05:04] Running weekly data update...
+[2026-04-03 00:05:05] ==================================================
+[2026-04-03 00:05:05] Starting ETHUSDT Weekly Data Update
+[2026-04-03 00:05:05] ==================================================
+[2026-04-03 00:05:05] Fetching weekly K-line data from Binance...
+[2026-04-03 00:05:05] Fetched 451 weekly data points
+[2026-04-03 00:05:05] Calculating technical indicators...
+[2026-04-03 00:05:05] Generating trading signals...
+[2026-04-03 00:05:05] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-04-03 00:05:05] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-04-03 00:05:05] --------------------------------------------------
+[2026-04-03 00:05:05] Current Price: $2056.46
+[2026-04-03 00:05:05] Weekly Change: 3.6188%
+[2026-04-03 00:05:05] Yearly Change: 30.0931%
+[2026-04-03 00:05:05] RSI(14): 29.94
+[2026-04-03 00:05:05] MACD Hist: -44.307
+[2026-04-03 00:05:05] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'oversold', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-03 00:05:05] --------------------------------------------------
+[2026-04-03 00:05:05] Weekly update completed successfully!
+[2026-04-03 00:05:05] 
+[2026-04-03 00:05:05] Weekly update completed successfully
+[2026-04-03 00:05:05] ==========================================
+[2026-04-03 00:05:05] Daily update completed successfully!
+[2026-04-03 00:05:05] ==========================================
+[2026-04-04 00:05:01] ==========================================
+[2026-04-04 00:05:01] Starting ETHUSDT Daily Data Update
+[2026-04-04 00:05:01] ==========================================
+[2026-04-04 00:05:01] Running 1-hour data update...
+[2026-04-04 00:05:03] ==================================================
+[2026-04-04 00:05:03] Starting ETHUSDT 1-Hour Data Update
+[2026-04-04 00:05:03] ==================================================
+[2026-04-04 00:05:03] Fetching K-line data from Binance...
+[2026-04-04 00:05:03] Fetched 1000 data points
+[2026-04-04 00:05:03] Calculating technical indicators...
+[2026-04-04 00:05:04] Generating trading signals...
+[2026-04-04 00:05:04] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-04-04 00:05:04] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-04-04 00:05:04] --------------------------------------------------
+[2026-04-04 00:05:04] Current Price: $2052.57
+[2026-04-04 00:05:04] 1H Change: 0.0639%
+[2026-04-04 00:05:04] RSI(14): 50.09
+[2026-04-04 00:05:04] MACD Hist: 0.2935
+[2026-04-04 00:05:04] Signals: {'ema_trend': 'bearish', 'rsi_signal': 'neutral', 'macd_signal': 'bullish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-04 00:05:04] --------------------------------------------------
+[2026-04-04 00:05:04] Update completed successfully!
+[2026-04-04 00:05:04] 
+[2026-04-04 00:05:04] 1-hour update completed successfully
+[2026-04-04 00:05:04] Running weekly data update...
+[2026-04-04 00:05:05] ==================================================
+[2026-04-04 00:05:05] Starting ETHUSDT Weekly Data Update
+[2026-04-04 00:05:05] ==================================================
+[2026-04-04 00:05:05] Fetching weekly K-line data from Binance...
+[2026-04-04 00:05:05] Fetched 451 weekly data points
+[2026-04-04 00:05:05] Calculating technical indicators...
+[2026-04-04 00:05:05] Generating trading signals...
+[2026-04-04 00:05:05] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-04-04 00:05:05] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-04-04 00:05:05] --------------------------------------------------
+[2026-04-04 00:05:05] Current Price: $2052.57
+[2026-04-04 00:05:05] Weekly Change: 3.4228%
+[2026-04-04 00:05:05] Yearly Change: 29.847%
+[2026-04-04 00:05:05] RSI(14): 29.82
+[2026-04-04 00:05:05] MACD Hist: -44.5553
+[2026-04-04 00:05:05] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'oversold', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-04 00:05:05] --------------------------------------------------
+[2026-04-04 00:05:05] Weekly update completed successfully!
+[2026-04-04 00:05:05] 
+[2026-04-04 00:05:05] Weekly update completed successfully
+[2026-04-04 00:05:05] ==========================================
+[2026-04-04 00:05:05] Daily update completed successfully!
+[2026-04-04 00:05:05] ==========================================
+[2026-04-05 00:05:02] ==========================================
+[2026-04-05 00:05:02] Starting ETHUSDT Daily Data Update
+[2026-04-05 00:05:02] ==========================================
+[2026-04-05 00:05:02] Running 1-hour data update...
+[2026-04-05 00:05:03] ==================================================
+[2026-04-05 00:05:04] Starting ETHUSDT 1-Hour Data Update
+[2026-04-05 00:05:04] ==================================================
+[2026-04-05 00:05:04] Fetching K-line data from Binance...
+[2026-04-05 00:05:04] Fetched 1000 data points
+[2026-04-05 00:05:04] Calculating technical indicators...
+[2026-04-05 00:05:04] Generating trading signals...
+[2026-04-05 00:05:04] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-04-05 00:05:04] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-04-05 00:05:04] --------------------------------------------------
+[2026-04-05 00:05:04] Current Price: $2054.92
+[2026-04-05 00:05:04] 1H Change: -0.0666%
+[2026-04-05 00:05:04] RSI(14): 58.24
+[2026-04-05 00:05:04] MACD Hist: 0.6942
+[2026-04-05 00:05:04] Signals: {'ema_trend': 'neutral', 'rsi_signal': 'neutral', 'macd_signal': 'bullish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-05 00:05:04] --------------------------------------------------
+[2026-04-05 00:05:04] Update completed successfully!
+[2026-04-05 00:05:04] 
+[2026-04-05 00:05:04] 1-hour update completed successfully
+[2026-04-05 00:05:04] Running weekly data update...
+[2026-04-05 00:05:05] ==================================================
+[2026-04-05 00:05:05] Starting ETHUSDT Weekly Data Update
+[2026-04-05 00:05:05] ==================================================
+[2026-04-05 00:05:05] Fetching weekly K-line data from Binance...
+[2026-04-05 00:05:05] Fetched 451 weekly data points
+[2026-04-05 00:05:05] Calculating technical indicators...
+[2026-04-05 00:05:05] Generating trading signals...
+[2026-04-05 00:05:05] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-04-05 00:05:05] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-04-05 00:05:05] --------------------------------------------------
+[2026-04-05 00:05:05] Current Price: $2054.92
+[2026-04-05 00:05:05] Weekly Change: 3.5412%
+[2026-04-05 00:05:05] Yearly Change: 29.9957%
+[2026-04-05 00:05:05] RSI(14): 29.89
+[2026-04-05 00:05:05] MACD Hist: -44.4053
+[2026-04-05 00:05:05] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'oversold', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-05 00:05:05] --------------------------------------------------
+[2026-04-05 00:05:05] Weekly update completed successfully!
+[2026-04-05 00:05:05] 
+[2026-04-05 00:05:06] Weekly update completed successfully
+[2026-04-05 00:05:06] ==========================================
+[2026-04-05 00:05:06] Daily update completed successfully!
+[2026-04-05 00:05:06] ==========================================
+[2026-04-06 00:05:02] ==========================================
+[2026-04-06 00:05:02] Starting ETHUSDT Daily Data Update
+[2026-04-06 00:05:02] ==========================================
+[2026-04-06 00:05:02] Running 1-hour data update...
+[2026-04-06 00:05:04] ==================================================
+[2026-04-06 00:05:04] Starting ETHUSDT 1-Hour Data Update
+[2026-04-06 00:05:04] ==================================================
+[2026-04-06 00:05:04] Fetching K-line data from Binance...
+[2026-04-06 00:05:04] Fetched 1000 data points
+[2026-04-06 00:05:04] Calculating technical indicators...
+[2026-04-06 00:05:05] Generating trading signals...
+[2026-04-06 00:05:05] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-04-06 00:05:05] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-04-06 00:05:05] --------------------------------------------------
+[2026-04-06 00:05:05] Current Price: $2055.99
+[2026-04-06 00:05:05] 1H Change: 0.1042%
+[2026-04-06 00:05:05] RSI(14): 47.39
+[2026-04-06 00:05:05] MACD Hist: 0.7345
+[2026-04-06 00:05:05] Signals: {'ema_trend': 'neutral', 'rsi_signal': 'neutral', 'macd_signal': 'bullish_cross', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-06 00:05:05] --------------------------------------------------
+[2026-04-06 00:05:05] Update completed successfully!
+[2026-04-06 00:05:05] 
+[2026-04-06 00:05:05] 1-hour update completed successfully
+[2026-04-06 00:05:05] Running weekly data update...
+[2026-04-06 00:05:06] ==================================================
+[2026-04-06 00:05:06] Starting ETHUSDT Weekly Data Update
+[2026-04-06 00:05:06] ==================================================
+[2026-04-06 00:05:06] Fetching weekly K-line data from Binance...
+[2026-04-06 00:05:06] Fetched 451 weekly data points
+[2026-04-06 00:05:06] Calculating technical indicators...
+[2026-04-06 00:05:06] Generating trading signals...
+[2026-04-06 00:05:06] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-04-06 00:05:06] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-04-06 00:05:06] --------------------------------------------------
+[2026-04-06 00:05:06] Current Price: $2056.0
+[2026-04-06 00:05:06] Weekly Change: 3.5956%
+[2026-04-06 00:05:06] Yearly Change: 30.064%
+[2026-04-06 00:05:06] RSI(14): 29.92
+[2026-04-06 00:05:06] MACD Hist: -44.3364
+[2026-04-06 00:05:06] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'oversold', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-06 00:05:06] --------------------------------------------------
+[2026-04-06 00:05:06] Weekly update completed successfully!
+[2026-04-06 00:05:06] 
+[2026-04-06 00:05:06] Weekly update completed successfully
+[2026-04-06 00:05:06] ==========================================
+[2026-04-06 00:05:07] Daily update completed successfully!
+[2026-04-06 00:05:07] ==========================================
+[2026-04-07 00:05:01] ==========================================
+[2026-04-07 00:05:01] Starting ETHUSDT Daily Data Update
+[2026-04-07 00:05:01] ==========================================
+[2026-04-07 00:05:01] Running 1-hour data update...
+[2026-04-07 00:05:02] ==================================================
+[2026-04-07 00:05:02] Starting ETHUSDT 1-Hour Data Update
+[2026-04-07 00:05:02] ==================================================
+[2026-04-07 00:05:02] Fetching K-line data from Binance...
+[2026-04-07 00:05:03] Fetched 1000 data points
+[2026-04-07 00:05:03] Calculating technical indicators...
+[2026-04-07 00:05:03] Generating trading signals...
+[2026-04-07 00:05:03] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h.csv
+[2026-04-07 00:05:03] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_1h_metrics.json
+[2026-04-07 00:05:03] --------------------------------------------------
+[2026-04-07 00:05:03] Current Price: $2164.6
+[2026-04-07 00:05:03] 1H Change: -0.0023%
+[2026-04-07 00:05:03] RSI(14): 73.33
+[2026-04-07 00:05:03] MACD Hist: 0.9138
+[2026-04-07 00:05:03] Signals: {'ema_trend': 'bullish', 'rsi_signal': 'overbought', 'macd_signal': 'bullish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-07 00:05:03] --------------------------------------------------
+[2026-04-07 00:05:03] Update completed successfully!
+[2026-04-07 00:05:03] 
+[2026-04-07 00:05:03] 1-hour update completed successfully
+[2026-04-07 00:05:03] Running weekly data update...
+[2026-04-07 00:05:04] ==================================================
+[2026-04-07 00:05:04] Starting ETHUSDT Weekly Data Update
+[2026-04-07 00:05:04] ==================================================
+[2026-04-07 00:05:04] Fetching weekly K-line data from Binance...
+[2026-04-07 00:05:04] Fetched 452 weekly data points
+[2026-04-07 00:05:04] Calculating technical indicators...
+[2026-04-07 00:05:04] Generating trading signals...
+[2026-04-07 00:05:04] Data saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly.csv
+[2026-04-07 00:05:04] Metrics saved to /root/.openclaw/workspace/data/ethusdt/ethusdt_weekly_metrics.json
+[2026-04-07 00:05:04] --------------------------------------------------
+[2026-04-07 00:05:04] Current Price: $2164.59
+[2026-04-07 00:05:04] Weekly Change: 2.5789%
+[2026-04-07 00:05:04] Yearly Change: 35.4765%
+[2026-04-07 00:05:04] RSI(14): 27.14
+[2026-04-07 00:05:04] MACD Hist: -16.7525
+[2026-04-07 00:05:04] Signals: {'ema_trend': 'bearish', 'long_term_trend': 'bearish', 'rsi_signal': 'oversold', 'macd_signal': 'bearish', 'bb_signal': 'middle', 'volume_signal': 'low'}
+[2026-04-07 00:05:04] --------------------------------------------------
+[2026-04-07 00:05:04] Weekly update completed successfully!
+[2026-04-07 00:05:04] 
+[2026-04-07 00:05:04] Weekly update completed successfully
+[2026-04-07 00:05:04] ==========================================
+[2026-04-07 00:05:04] Daily update completed successfully!
+[2026-04-07 00:05:04] ==========================================

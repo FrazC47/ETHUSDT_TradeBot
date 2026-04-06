@@ -1,0 +1,486 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.26",
+    "lastTouchedAt": "2026-03-26T12:00:00.000Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-23T17:56:14.046Z",
+    "lastRunVersion": "2026.3.23",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {}
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "groq": {
+        "baseUrl": "https://api.groq.com/openai/v1",
+        "apiKey": "__OPENCLAW_REDACTED__",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "llama-3.3-70b-versatile",
+            "name": "Groq Llama 3.3 70B",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {
+              "input": 5.9e-7,
+              "output": 7.9e-7,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 32768
+          },
+          {
+            "id": "llama-3.1-8b-instant",
+            "name": "Groq Llama 3.1 8B",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {
+              "input": 5e-8,
+              "output": 8e-8,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 32768
+          },
+          {
+            "id": "openai/gpt-oss-120b",
+            "name": "Groq GPT OSS 120B",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": {
+              "input": 1.5e-7,
+              "output": 6e-7,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 32768
+          },
+          {
+            "id": "openai/gpt-oss-20b",
+            "name": "Groq GPT OSS 20B",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": {
+              "input": 7.5e-8,
+              "output": 3e-7,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 32768
+          },
+          {
+            "id": "groq/qwen-qwq-32b",
+            "name": "Qwen QwQ 32B",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": {
+              "input": 2.9e-7,
+              "output": 5.9e-7,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 32768
+          },
+          {
+            "id": "meta-llama/llama-4-scout-17b-16e-instruct",
+            "name": "Groq Llama 4 Scout 17B",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {
+              "input": 1.1e-7,
+              "output": 3.4e-7,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "openai": {
+        "baseUrl": "https://api.openai.com/v1",
+        "apiKey": "__OPENCLAW_REDACTED__",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "gpt-5.4",
+            "name": "GPT-5.4",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 2.0e-6,
+              "output": 8.0e-6,
+              "cacheRead": 5.0e-7,
+              "cacheWrite": 0
+            },
+            "contextWindow": 256000,
+            "maxTokens": 16384
+          },
+          {
+            "id": "gpt-5.4-pro",
+            "name": "GPT-5.4 Pro",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 6.0e-6,
+              "output": 1.8e-5,
+              "cacheRead": 1.5e-6,
+              "cacheWrite": 0
+            },
+            "contextWindow": 256000,
+            "maxTokens": 16384
+          },
+          {
+            "id": "gpt-5.2",
+            "name": "GPT-5.2",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 1.0e-6,
+              "output": 4.0e-6,
+              "cacheRead": 2.5e-7,
+              "cacheWrite": 0
+            },
+            "contextWindow": 256000,
+            "maxTokens": 16384
+          },
+          {
+            "id": "gpt-5.1-codex",
+            "name": "GPT-5.1 Codex",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {
+              "input": 5.0e-7,
+              "output": 1.5e-6,
+              "cacheRead": 1.25e-7,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "gpt-4.1",
+            "name": "GPT-4.1",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 2.0e-6,
+              "output": 8.0e-6,
+              "cacheRead": 5.0e-7,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "gpt-5-mini",
+            "name": "GPT-5 Mini",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 3.0e-7,
+              "output": 1.2e-6,
+              "cacheRead": 7.5e-8,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 32768
+          },
+          {
+            "id": "gpt-5-nano",
+            "name": "GPT-5 Nano",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 1.0e-7,
+              "output": 4.0e-7,
+              "cacheRead": 2.5e-8,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 32768
+          }
+        ]
+      },
+      "google": {
+        "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+        "apiKey": "__OPENCLAW_REDACTED__",
+        "api": "gemini",
+        "models": [
+          {
+            "id": "gemini-3.1-pro-preview",
+            "name": "Gemini 3.1 Pro Preview",
+            "api": "gemini",
+            "reasoning": true,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 3.5e-6,
+              "output": 1.05e-5,
+              "cacheRead": 8.75e-7,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "gemini-3-flash-preview",
+            "name": "Gemini 3 Flash Preview",
+            "api": "gemini",
+            "reasoning": false,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 3.5e-7,
+              "output": 1.05e-6,
+              "cacheRead": 8.75e-8,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "gemini-2.5-pro",
+            "name": "Gemini 2.5 Pro",
+            "api": "gemini",
+            "reasoning": true,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 1.25e-6,
+              "output": 1.0e-5,
+              "cacheRead": 3.125e-7,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "gemini-2.5-flash",
+            "name": "Gemini 2.5 Flash",
+            "api": "gemini",
+            "reasoning": false,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 1.5e-7,
+              "output": 6.0e-7,
+              "cacheRead": 3.75e-8,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "gemini-2.5-flash-lite",
+            "name": "Gemini 2.5 Flash Lite",
+            "api": "gemini",
+            "reasoning": false,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 7.5e-8,
+              "output": 3.0e-7,
+              "cacheRead": 1.875e-8,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "groq/openai/gpt-oss-120b",
+        "fallbacks": [
+          "google/gemini-2.5-flash",
+          "openai/gpt-5-mini",
+          "groq/meta-llama/llama-4-scout-17b-16e-instruct"
+        ]
+      },
+      "compaction": {
+        "mode": "safeguard"
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "name": "main",
+        "params": {
+          "systemPrompt": "You are the top-level orchestrator. Your job is not just to route to one agent. Your job is to decide whether a task should be handled by one specialist agent or by a sequence of specialist agents working together.\n\nAvailable Agents:\n- research: Web search, document reading, synthesis, evidence gathering\n- analysis: Data analysis, comparison, scoring, tables, structured outputs\n- coding: Programming, debugging, scripts, technical implementation\n- reasoning: Complex logic, math, multi-step problem solving\n- execution: Action-oriented operational tasks and step execution\n- fast: Very short, simple, low-risk requests\n- general: General-purpose balanced worker for tasks that do not clearly fit a specialist\n\nCore Rules:\n1. For simple tasks, assign exactly one agent.\n2. For compound tasks, create a multi-step plan using multiple agents in sequence.\n3. Prefer this pattern when relevant: research -> analysis -> coding -> reasoning -> execution.\n4. Do not send the same subtask to multiple agents unless validation is required.\n5. Merge all sub-agent outputs into one coherent final answer.\n6. Keep delegation efficient; use the fewest agents needed.\n7. Never return only a routing choice when the task clearly requires multiple stages.\n8. If the task can be completed directly by general, use general.\n9. If a specialist fails, fall back intelligently.\n\nOutput ONLY JSON in one of these forms:\n\nFor single-agent tasks:\n{\"mode\":\"single\",\"selected_agent\":\"agent_id\",\"goal\":\"one sentence goal\",\"reasoning\":\"brief explanation\",\"confidence\":\"high|medium|low\"}\n\nFor multi-agent tasks:\n{\"mode\":\"multi\",\"plan\":[{\"step\":1,\"agent\":\"agent_id\",\"goal\":\"what this agent should do\"},{\"step\":2,\"agent\":\"agent_id\",\"goal\":\"what this agent should do\"}],\"merge_strategy\":\"how outputs should be combined\",\"reasoning\":\"brief explanation\",\"confidence\":\"high|medium|low\"}"
+        },
+        "model": {
+          "primary": "groq/openai/gpt-oss-120b",
+          "fallbacks": [
+            "groq/meta-llama/llama-4-scout-17b-16e-instruct",
+            "openai/gpt-5-nano",
+            "google/gemini-2.5-flash-lite"
+          ]
+        }
+      },
+      {
+        "id": "general",
+        "name": "general",
+        "params": {
+          "systemPrompt": "You are a general-purpose assistant. Handle the task efficiently. If the task is complex, delegate to a specialist agent."
+        },
+        "model": {
+          "primary": "groq/meta-llama/llama-4-scout-17b-16e-instruct",
+          "fallbacks": [
+            "groq/openai/gpt-oss-20b",
+            "openai/gpt-5-nano",
+            "google/gemini-2.5-flash-lite"
+          ]
+        }
+      },
+      {
+        "id": "fast",
+        "name": "fast",
+        "model": {
+          "primary": "groq/llama-3.1-8b-instant",
+          "fallbacks": [
+            "openai/gpt-5-nano",
+            "google/gemini-2.5-flash-lite",
+            "groq/meta-llama/llama-4-scout-17b-16e-instruct"
+          ]
+        }
+      },
+      {
+        "id": "reasoning",
+        "name": "reasoning",
+        "model": {
+          "primary": "openai/gpt-5.4",
+          "fallbacks": [
+            "google/gemini-2.5-pro",
+            "openai/gpt-5.2",
+            "groq/openai/gpt-oss-120b"
+          ]
+        }
+      },
+      {
+        "id": "coding",
+        "name": "coding",
+        "model": {
+          "primary": "google/gemini-2.5-pro",
+          "fallbacks": [
+            "openai/gpt-5.4",
+            "openai/gpt-5.1-codex",
+            "groq/openai/gpt-oss-120b"
+          ]
+        }
+      },
+      {
+        "id": "backup",
+        "name": "backup",
+        "model": {
+          "primary": "groq/meta-llama/llama-4-scout-17b-16e-instruct",
+          "fallbacks": [
+            "groq/llama-3.1-8b-instant",
+            "openai/gpt-5-nano",
+            "google/gemini-2.5-flash-lite"
+          ]
+        }
+      },
+      {
+        "id": "research",
+        "name": "research",
+        "model": {
+          "primary": "google/gemini-2.5-pro",
+          "fallbacks": [
+            "google/gemini-2.5-flash",
+            "openai/gpt-5-mini",
+            "groq/openai/gpt-oss-120b"
+          ]
+        }
+      },
+      {
+        "id": "execution",
+        "name": "execution",
+        "model": {
+          "primary": "groq/openai/gpt-oss-120b",
+          "fallbacks": [
+            "google/gemini-2.5-flash",
+            "openai/gpt-5-mini",
+            "groq/meta-llama/llama-4-scout-17b-16e-instruct"
+          ]
+        }
+      },
+      {
+        "id": "analysis",
+        "name": "analysis",
+        "model": {
+          "primary": "google/gemini-2.5-flash",
+          "fallbacks": [
+            "openai/gpt-5.2",
+            "groq/openai/gpt-oss-120b",
+            "openai/gpt-5-mini"
+          ]
+        }
+      }
+    ]
+  },
+  "tools": {
+    "profile": "full",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "duckduckgo"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "bash": true,
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://148.230.67.139:18789",
+        "https://openclaw.frazchishti.com"
+      ]
+    },
+    "auth": {
+      "rateLimit": {
+        "maxAttempts": 10,
+        "windowMs": 60000,
+        "lockoutMs": 300000
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "duckduckgo": {
+        "enabled": true
+      }
+    }
+  }
+}
