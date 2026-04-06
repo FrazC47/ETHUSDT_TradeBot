@@ -1,0 +1,23 @@
+# Data files (too large, regenerate locally)
+data/*.csv
+data/*.log
+data/*.json
+
+# Sensitive
+data/funding_rate*
+data/open_interest*
+data/long_short*
+.openclaw/
+
+# Temp files
+*.tmp
+*.bak
+CRONEOF
+EOF
+PYEOF
+
+# OS files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

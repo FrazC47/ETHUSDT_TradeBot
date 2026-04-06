@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "candle_date": "None",
+    "analysis_timestamp": "2026-03-06T22:50:10.130240",
+    "timeframe": "15m",
+    "total_indicators": 93,
+    "close_price": 1979.97,
+    "parent_timeframes": [
+      "1h",
+      "4h",
+      "1d"
+    ],
+    "parent_contexts_loaded": 3,
+    "all_parents_loaded": true
+  },
+  "indicator_values": {
+    "price_action": {
+      "price_change_pct": 0.0,
+      "price_range": 0.0,
+      "price_range_pct": 0.0,
+      "body_size": 10.319999999999936,
+      "upper_wick": 5.230000000000018,
+      "lower_wick": 1.9700000000000275,
+      "range_location": "11.24429223744309",
+      "is_bullish": false,
+      "is_bearish": true,
+      "consecutive_bullish": 0
+    },
+    "trend": {
+      "ema_9": 2020.2798240013824,
+      "ema_21": 2038.8704424316268,
+      "ema_50": 2056.109743053641,
+      "ema_200": 2071.6679859151586,
+      "sma_20": 2044.3160000000005,
+      "sma_50": 2061.6044,
+      "trend_bullish": false,
+      "trend_strong": false
+    },
+    "momentum": {
+      "rsi": 14.270806157056924,
+      "rsi_sma": 32.69351288815455,
+      "macd_line": -16.437116679111796,
+      "macd_signal": -9.860079124068276,
+      "macd_hist": -6.577037555043519
+    },
+    "volatility": {
+      "atr": 13.268571428571429,
+      "atr_pct": 0.6701400237665939,
+      "bb_middle": 2044.3160000000005,
+      "bb_upper": 2091.117189098645,
+      "bb_lower": 1997.5148109013555,
+      "bb_width": 0.0457866485402892,
+      "bb_position": -0.1874397984245154
+    },
+    "volume": {
+      "volume_sma_20": 33002.54745,
+      "volume_ratio": 2.536758204100393,
+      "vwap": 2028.431241450979,
+      "vwap_distance": -2.389099539618298
+    },
+    "trend_strength": {
+      "plus_dm": 0.0,
+      "minus_dm": 18.58999999999992,
+      "plus_di": 4.053617571059295,
+      "minus_di": 53.85981912144713,
+      "dx": 86.00111544896869,
+      "adx": 54.90449329361293,
+      "adx_trending": true
+    },
+    "fibonacci": {
+      "fib_0": 2067.43,
+      "fib_236": 2046.32452,
+      "fib_382": 2033.26774,
+      "fib_500": 2022.715,
+      "fib_618": 2012.16226,
+      "fib_786": 1997.13802,
+      "fib_100": 1978.0,
+      "fib_1272": 2091.75496,
+      "fib_1382": 2101.59226,
+      "fib_1618": 2122.69774,
+      "fib_200": 2156.86,
+      "fib_2618": 2212.1277399999994,
+      "fib_4236": 2356.8254799999995,
+      "fib_position": 0.9779715978977968
+    },
+    "structure": {
+      "hh": false,
+      "lh": false,
+      "hl": false,
+      "ll": false,
+      "structure_score": -0.5,
+      "structure_bullish": false,
+      "structure_bearish": true,
+      "swing_high": 0.0,
+      "swing_low": 0.0
+    },
+    "support_resistance": {
+      "resistance_1": 2081.61,
+      "resistance_2": 2067.43,
+      "resistance_3": 2064.58,
+      "resistance_4": 2056.6,
+      "support_1": 2047.38,
+      "support_2": 2058.01,
+      "support_3": 2038.1,
+      "support_4": 2035.08,
+      "dist_to_resistance_1": 5.1334111122895845,
+      "dist_to_support_1": -3.404597039349085,
+      "sr_zone_size": 1.7288140729405,
+      "position_in_sr_zone": -196.93251533742344
+    },
+    "trendlines": {
+      "bull_trend_line": null,
+      "bull_trend_touches": 0,
+      "bull_trend_valid": false,
+      "bull_trend_angle": -0.2066078835462166,
+      "bull_trend_slope_pct": -0.0360600345827119,
+      "dist_to_bull_trend": 0,
+      "bear_trend_line": null,
+      "bear_trend_touches": 0,
+      "bear_trend_valid": false,
+      "bear_trend_angle": -0.410147915469023,
+      "bear_trend_slope_pct": -0.0715855382114065,
+      "dist_to_bear_trend": 0,
+      "above_bull_trend": false,
+      "below_bear_trend": false,
+      "between_trend_lines": false,
+      "broke_bull_trend": false,
+      "broke_bear_trend": false
+    }
+  },
+  "parent_contexts": {
+    "one_hour": {
+      "regime": "bearish_distribution",
+      "trend_strength": "strong",
+      "bias": "bearish",
+      "close": 2020.77,
+      "key_levels": {
+        "nearest_resistance": 2163.0,
+        "nearest_support": 2092.43,
+        "distance_to_resistance_pct": 7.038406152110335,
+        "distance_to_support_pct": -3.5461729934628807
+      },
+      "fib_zone": "extension",
+      "alignments": {
+        "1h_vs_4h": "mixed",
+        "1h_vs_daily": "mixed",
+        "1h_vs_weekly": "aligned",
+        "quad_alignment": "moderate_confluence"
+      }
+    },
+    "four_hour": {
+      "regime": "transition",
+      "trend_strength": "strong",
+      "bias": "transition",
+      "close": 2047.65,
+      "key_levels": {
+        "nearest_resistance": 2090.0,
+        "nearest_support": 1945.08,
+        "distance_to_resistance_pct": 2.0682245500940057,
+        "distance_to_support_pct": 5.00915683832687
+      },
+      "fib_zone": "mid_range",
+      "alignments": {
+        "4h_vs_monthly": "mixed",
+        "4h_vs_weekly": "mixed",
+        "4h_vs_daily": "aligned",
+        "quad_alignment": "moderate_confluence"
+      }
+    },
+    "daily": {
+      "regime": "transition",
+      "trend_strength": "moderate",
+      "bias": "transition",
+      "close": 2067.24,
+      "key_levels": {
+        "nearest_resistance": 1995.56,
+        "nearest_support": 1897.24,
+        "distance_to_resistance_pct": -3.4674251659217044,
+        "distance_to_support_pct": 8.223525086588872
+      },
+      "fib_zone": "deep_correction",
+      "alignments": {
+        "daily_vs_monthly": "mixed",
+        "daily_vs_weekly": "mixed",
+        "triple_alignment": "mixed_signals"
+      }
+    },
+    "summary": "3/3 contexts loaded"
+  },
+  "interpretations": {
+    "regime": {
+      "classification": "bearish_distribution",
+      "confidence": 0.75,
+      "using_indicators": [
+        "trend_bullish",
+        "structure_bullish",
+        "rsi"
+      ]
+    },
+    "trend": {
+      "strength": "strong",
+      "adx_value": 54.90449329361293,
+      "using_indicators": [
+        "adx",
+        "plus_di",
+        "minus_di"
+      ]
+    },
+    "volatility": {
+      "regime": "normal",
+      "bb_width": 0.0457866485402892,
+      "using_indicators": [
+        "bb_width",
+        "atr_pct"
+      ]
+    },
+    "fibonacci_position": {
+      "zone": "extension",
+      "position": 0.9779715978977968,
+      "using_indicators": [
+        "fib_position",
+        "fib_618",
+        "fib_382"
+      ]
+    },
+    "key_levels": {
+      "nearest_resistance": 2081.61,
+      "nearest_support": 2047.38,
+      "distance_to_resistance_pct": 5.1334111122895845,
+      "distance_to_support_pct": -3.404597039349085
+    },
+    "volume": {
+      "volume_ratio": 2.536758204100393,
+      "above_average": true,
+      "using_indicators": [
+        "volume_ratio",
+        "volume_sma_20"
+      ]
+    },
+    "trendlines": {
+      "bull_valid": false,
+      "bear_valid": false,
+      "using_indicators": [
+        "bull_trend_valid",
+        "bear_trend_valid"
+      ]
+    },
+    "mtf_alignment": {
+      "alignments": {
+        "15m_vs_1h": "aligned",
+        "15m_vs_4h": "mixed",
+        "15m_vs_daily": "mixed",
+        "quad_alignment": "moderate_confluence"
+      },
+      "confluence_count": 1,
+      "using_context": [
+        "1h_regime",
+        "4h_regime",
+        "daily_regime"
+      ]
+    }
+  },
+  "comprehensive_analysis": {
+    "all_indicators_reviewed": true,
+    "total_indicators": 93,
+    "categories": [
+      "price_action",
+      "trend",
+      "momentum",
+      "volatility",
+      "volume",
+      "trend_strength",
+      "fibonacci",
+      "structure",
+      "support_resistance",
+      "trendlines"
+    ],
+    "narrative": "15m Analysis: Close 1979.97. Regime: bearish_distribution. Quad alignment: moderate_confluence. Trend strength: strong (ADX 54.9). Volatility: normal. Fibonacci: extension (0.98)."
+  }
+}
